@@ -90,6 +90,226 @@
       .floating-telegram i {
         font-size: 1.4rem;
       }
+
+      /* MODERN 2026 UI POLISH & SIMPLICITY */
+      .header {
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        background-color: rgba(8, 7, 18, 0.75) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .nav__cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: linear-gradient(135deg, #4f46e5, #7c3aed);
+        color: #fff !important;
+        padding: 0.55rem 1.25rem;
+        border-radius: 2rem;
+        font-family: var(--second-font);
+        font-size: var(--small-font-size);
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 4px 15px rgba(99, 102, 241, 0.35);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .nav__cta:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(99, 102, 241, 0.55);
+      }
+      .home__status-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.45rem 1.1rem;
+        border-radius: 2rem;
+        background: rgba(34, 197, 94, 0.1);
+        border: 1px solid rgba(34, 197, 94, 0.3);
+        color: #4ade80;
+        font-family: var(--second-font);
+        font-size: 0.82rem;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+        box-shadow: 0 0 20px rgba(34, 197, 94, 0.1);
+      }
+      .status-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #22c55e;
+        position: relative;
+      }
+      .status-dot::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        background-color: inherit;
+        animation: pulse-ring 1.8s infinite;
+      }
+      @keyframes pulse-ring {
+        0% { transform: scale(1); opacity: 0.8; }
+        100% { transform: scale(2.8); opacity: 0; }
+      }
+      .home__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.85rem;
+        margin-top: 1.75rem;
+      }
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.85rem 1.6rem;
+        background: linear-gradient(135deg, #4f46e5, #7c3aed);
+        color: #fff !important;
+        border-radius: 2rem;
+        font-family: var(--second-font);
+        font-size: var(--small-font-size);
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 30px rgba(79, 70, 229, 0.6);
+      }
+      .btn-secondary {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.85rem 1.6rem;
+        background: rgba(255, 255, 255, 0.05);
+        color: var(--title-color) !important;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 2rem;
+        font-family: var(--second-font);
+        font-size: var(--small-font-size);
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.2s, border-color 0.2s, transform 0.2s;
+      }
+      .btn-secondary:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.25);
+        transform: translateY(-3px);
+      }
+      /* STATS STRIP */
+      .stats__section {
+        padding: 2rem 0 1.5rem;
+        position: relative;
+        z-index: 2;
+      }
+      .stats__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 1.25rem;
+      }
+      .stat__card {
+        display: flex;
+        align-items: center;
+        gap: 1.15rem;
+        padding: 1.35rem 1.5rem;
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        border-radius: 1.5rem;
+        backdrop-filter: blur(10px);
+        transition: transform 0.3s, border-color 0.3s, background 0.3s, box-shadow 0.3s;
+      }
+      .stat__card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(124, 58, 237, 0.4);
+        background: rgba(255, 255, 255, 0.04);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+      }
+      .stat__icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        color: #a78bfa;
+        background: rgba(124, 58, 237, 0.15);
+        border: 1px solid rgba(124, 58, 237, 0.3);
+        flex-shrink: 0;
+      }
+      .stat__number {
+        font-family: var(--second-font);
+        font-size: 1.45rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 0.2rem;
+        letter-spacing: -0.02em;
+      }
+      .stat__label {
+        font-size: 0.8rem;
+        color: var(--text-color);
+        line-height: 1.3;
+      }
+      /* COPY PHONE BUTTON */
+      .copy-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .copy-btn:hover {
+        background: var(--first-color);
+        transform: scale(1.08);
+      }
+      .toast {
+        position: fixed;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%) translateY(100px);
+        background: #1e1b4b;
+        color: #fff;
+        border: 1px solid #6366f1;
+        padding: 0.75rem 1.5rem;
+        border-radius: 2rem;
+        font-family: var(--second-font);
+        font-size: 0.9rem;
+        font-weight: 500;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        opacity: 0;
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s;
+        pointer-events: none;
+      }
+      .toast.show {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+      }
+      @media screen and (min-width: 1150px) {
+        .home__buttons {
+          justify-content: flex-end;
+        }
+        .home__status-badge {
+          margin-left: auto;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        .home__buttons {
+          justify-content: center;
+        }
+        .home__status-badge {
+          margin: 0 auto 1rem;
+        }
+      }
     </style>
   </head>
   <body>
@@ -118,6 +338,11 @@
             </li>
           </ul>
         </div>
+
+        <a href="https://t.me/muhammadyucufmm" target="_blank" class="nav__cta">
+          <i class="ri-telegram-fill"></i>
+          <span>Bog'lanish</span>
+        </a>
       </nav>
     </header>
 
@@ -131,11 +356,23 @@
         <div class="home__shadow"></div>
         <div class="home__container container grid">
           <div class="home__data">
+            <div class="home__status-badge">
+              <span class="status-dot"></span>
+              <span>B2B & Savdo Konsaltingiga Ochiq</span>
+            </div>
             <h3 class="home__greeting">Salom, men</h3>
             <h1 class="home__name">
               Mahmudov <br />
               Muhammadyusuf
             </h1>
+            <div class="home__buttons">
+              <a href="#contact" class="btn-primary">
+                Konsultatsiya <i class="ri-arrow-right-up-line"></i>
+              </a>
+              <a href="#projects" class="btn-secondary">
+                Keyslar <i class="ri-briefcase-line"></i>
+              </a>
+            </div>
           </div>
 
           <div class="home__image">
@@ -194,6 +431,43 @@
         </div>
       </section>
 
+      <!-- STATS STRIP -->
+      <section class="stats__section">
+        <div class="stats__container container">
+          <div class="stat__card">
+            <div class="stat__icon"><i class="ri-money-dollar-circle-line"></i></div>
+            <div class="stat__content">
+              <h3 class="stat__number">$250,000+</h3>
+              <p class="stat__label">Jalb qilingan investitsiya (Nurinvest)</p>
+            </div>
+          </div>
+
+          <div class="stat__card">
+            <div class="stat__icon"><i class="ri-graduation-cap-line"></i></div>
+            <div class="stat__content">
+              <h3 class="stat__number">40+ / oy</h3>
+              <p class="stat__label">Chet elda ta'lim shartnomalari (HighWay)</p>
+            </div>
+          </div>
+
+          <div class="stat__card">
+            <div class="stat__icon"><i class="ri-line-chart-line"></i></div>
+            <div class="stat__content">
+              <h3 class="stat__number">100% KPI</h3>
+              <p class="stat__label">0 dan tizimli AmoCRM & Voronka</p>
+            </div>
+          </div>
+
+          <div class="stat__card">
+            <div class="stat__icon"><i class="ri-brain-line"></i></div>
+            <div class="stat__content">
+              <h3 class="stat__number">2x Tezlik</h3>
+              <p class="stat__label">Prompt Engineering & AI Integratsiyasi</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- ABOUT -->
       <section class="about section" id="about">
         <div class="about__shadow"></div>
@@ -211,11 +485,21 @@
               <b>Nurinvest</b> kompaniyasida jami <b>$250,000+</b> miqdorida investitsiya kirimini ta'minlaganman. <b>HighWay</b> (chet elga o'qishga jo'natish konsaltingi) kompaniyasida sotuv bo'limini <b>0 dan butunlay o'zim tizimlashtirib</b>, sotuvchilarni o'qitish va ilg'or sotuv strategiyalarini joriy etish orqali <b>oyiga kamida 30 tadan 40+ tagacha shartnomalar</b> imzolanishiga erishganman. Zamonaviy <b>Prompt Engineering (AI)</b> texnologiyalarini savdoga tadbiq etib, jamoa mahsuldorligini 2 baravar oshiraman.
             </p>
 
-            <a
-              href="tel:+998500534812"
-              class="button"
-              >50-053-48-12 <i class="ri-phone-line"></i
-            ></a>
+            <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+              <a
+                href="tel:+998500534812"
+                class="button"
+                >50-053-48-12 <i class="ri-phone-line"></i
+              ></a>
+              <button
+                type="button"
+                class="copy-btn"
+                onclick="copyPhone()"
+                title="Raqamni nusxalash"
+              >
+                <i class="ri-file-copy-line"></i>
+              </button>
+            </div>
           </div>
 
           <div class="about__image">
@@ -1011,5 +1295,33 @@
 
     <!-- MAIN JS -->
     <script src="static/js/main.js"></script>
+
+    <!-- TOAST NOTIFICATION & QUICK ACTIONS -->
+    <div id="toast" class="toast">Telefon raqami nusxalandi! 📋</div>
+    <script>
+      function copyPhone() {
+        const num = '+998500534812';
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(num);
+        } else {
+          const input = document.createElement('input');
+          input.value = num;
+          document.body.appendChild(input);
+          input.select();
+          document.execCommand('copy');
+          document.body.removeChild(input);
+        }
+        showToast('Telefon raqami nusxalandi! 📋');
+      }
+
+      function showToast(msg) {
+        const t = document.getElementById('toast');
+        if (t) {
+          t.textContent = msg;
+          t.classList.add('show');
+          setTimeout(() => t.classList.remove('show'), 2500);
+        }
+      }
+    </script>
   </body>
 </html>
