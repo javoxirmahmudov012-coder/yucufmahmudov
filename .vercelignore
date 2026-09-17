@@ -1,0 +1,6 @@
+requirements.txt
+app.py
+run.bat
+messages.json
+__pycache__
+templates

@@ -240,27 +240,32 @@ document.addEventListener("DOMContentLoaded", () => {
           body: JSON.stringify(formData)
         });
 
-        const res = await response.json();
-        if (response.ok && res.success) {
-          if (formStatus) {
-            formStatus.innerHTML = `<span style="color: #4ade80;">✔ ${res.message}</span>`;
-          }
-          contactForm.reset();
-        } else {
-          if (formStatus) {
-            formStatus.innerHTML = `<span style="color: #f87171;">✖ ${res.message || "Xatolik yuz berdi"}</span>`;
+        if (response.ok) {
+          const res = await response.json();
+          if (res.success) {
+            if (formStatus) {
+              formStatus.innerHTML = `<span style="color: #4ade80;">✔ ${res.message}</span>`;
+            }
+            contactForm.reset();
+            return;
           }
         }
+        throw new Error("Fallback to direct contact");
       } catch (err) {
+        // Fallback for static hosting (Vercel / GitHub Pages): open Telegram directly with pre-filled message
+        const tgText = `Assalomu alaykum Muhammadyusuf!\n\nIsmim: ${formData.name}\nKontakt: ${formData.contact}\nYo'nalish: ${formData.service}\nXabar: ${formData.message || "Konsultatsiya kerak"}`;
+        const tgUrl = `https://t.me/muhammadyucufmm?text=${encodeURIComponent(tgText)}`;
         if (formStatus) {
-          formStatus.innerHTML = `<span style="color: #f87171;">Aloqa xatosi! Telegram: @muhammadyucufmm</span>`;
+          formStatus.innerHTML = `<span style="color: #4ade80;">✔ Xabar tayyorlandi! Telegram ochilmoqda...</span>`;
         }
+        window.open(tgUrl, "_blank");
+        contactForm.reset();
       } finally {
         btn.disabled = false;
         btn.innerHTML = origBtnHtml;
         setTimeout(() => {
           if (formStatus) formStatus.innerHTML = "";
-        }, 6000);
+        }, 7000);
       }
     });
   }
