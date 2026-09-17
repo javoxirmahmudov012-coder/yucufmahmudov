@@ -23,7 +23,7 @@ PORTFOLIO_DATA = {
     'bio_lead': "AmoCRM, tizimli savdo voronkasi, SPIN savdo texnikalari va sun'iy intellekt vositalari orqali B2B hamda investitsiya savdolarini yangi cho'qqiga olib chiquvchi yetakchi mutaxassis.",
     'bio_details': [
         "24 yoshda, Toshkent shahrida istiqomat qilaman. B2B va B2C sohasida yuqori chekli bitimlarni muvaffaqiyatli yopish va savdo jamoalarini boshqarish bo'yicha 1.5 yildan ortiq samarali tajribaga egaman.",
-        "Nurinvest kompaniyasida 30 dan ortiq investorlar bilan ishlab, kompaniyaga $250,000+ miqdorida investitsiya kirimini ta'minlaganman. HighWay (chet elga o'qishga jo'natish konsaltingi) kompaniyasida sotuv bo'limini AmoCRM orqali tizimlashtirib, oylik savdo aylanmasini $30,000+ darajaga yetkazganmiz.",
+        "Nurinvest kompaniyasida 30 dan ortiq investorlar bilan ishlab, kompaniyaga $250,000+ miqdorida investitsiya kirimini ta'minlaganman. HighWay (chet elga o'qishga jo'natish konsaltingi) kompaniyasida sotuv bo'limini 0 dan butunlay o'zim tizimlashtirib, sotuvchilarni o'qitish va ilg'or sotuv texnikalari bo'yicha to'liq strategiyalar ishlab chiqqanman — natijada oyiga kamida 30 tadan 40+ tagacha xalqaro shartnomalar muvaffaqiyatli imzolangan.",
         "Zamonaviy texnologiyalar bilan doimiy hamnafas holda Najot Ta'limda Prompt Engineering (Sun'iy Intellekt) yo'nalishini tamomlaganman. Savdo skriptlari, voronkalar va mijozlar tahlilida ilg'or AI vositalaridan foydalanaman."
     ],
     'stats': [
@@ -69,14 +69,14 @@ PORTFOLIO_DATA = {
             'role': "Sotuv bo'limi rahbari (Head of Sales)",
             'period': '2026-yil mart — 2026-yil iyul',
             'duration': '5 oy',
-            'badge': 'Muvaffaqiyatli Keys',
+            'badge': 'Yetakchi Keys',
             'badge_class': 'bg-blue-500/20 text-blue-400 border-blue-500/30',
             'points': [
-                "Chet elga o'qishga jo'natish konsalting kompaniyasida sotuv bo'limi faoliyatini boshqarish va AmoCRM orqali savdo jarayonlarini to'liq tizimlashtirish.",
-                "Sotuv menejerlarini tizimli o'qitish, rivojlantirish va sotuvga to'laqonli javobgar bo'lib ish yuritish.",
-                "Mijozlar (talabalar va ota-onalar) bilan muzokara olib borib, xalqaro ta'lim dasturlari bo'yicha yuqori chekli shartnomalarni muvaffaqiyatli yopish.",
-                "O'rtacha chek: $1,000+ | Oyiga 30+ ta shartnoma | Oylik savdo aylanmasi: $30,000+.",
-                "Sotuv konversiyasini oshirish, KPI va reja asosida jamoa samaradorligini barqaror boshqarish."
+                "Chet elga o'qishga jo'natish konsalting kompaniyasida sotuv bo'limini 0 dan butunlay o'zim tizimlashtirganman.",
+                "Sotuvchilarni noldan o'qitish, ilg'or savdo psixologiyasi va muzokara texnikalari ustida ishlash bo'yicha to'liq strategiyalar ishlab chiqqanman.",
+                "Ushbu tizimli strategiya samarasi bilan oyiga kamida 30 tadan 40+ tagacha muvaffaqiyatli xalqaro shartnomalar tuzilishiga erishilgan.",
+                "O'rtacha chek: $1,000+ | Oylik savdo aylanmasi barqaror $30,000+ dan $40,000+ gacha yetkazilgan.",
+                "AmoCRM orqali lidlar oqimi, savdo voronkasi bosqichlari va menejerlar KPI ko'rsatkichlari to'liq nazoratga olingan."
             ]
         },
         {
@@ -179,14 +179,14 @@ PORTFOLIO_DATA = {
             'tags': ['Investitsiya', 'B2B Muzokaralar', 'VIP Mijozlar', 'Konsalting']
         },
         {
-            'title': 'AmoCRM Orqali Tizimli Savdo Qurish',
+            'title': 'HighWay: 0 dan Tizim va Oyiga 40+ Shartnoma',
             'company': 'HighWay',
             'category': 'Tizimlashtirish',
             'tag': 'Chet Elda Ta\'lim (Study Abroad)',
-            'metric': '$30K+ / oy',
-            'metric_label': 'Oylik aylanma',
-            'desc': "Chet elga o'qishga jo'natish konsaltingida barcha kiruvchi lidlar AmoCRM orqali tartibga solindi. Sotuv menejerlari qayta tayyorlanib, oylik shartnomalar soni 30+ taga, umumiy oylik tushum esa $30,000+ ga yetkazildi.",
-            'tags': ['amoCRM', 'Head of Sales', 'Study Abroad', 'KPI Tizimi']
+            'metric': '40+ / oy',
+            'metric_label': 'Xalqaro shartnomalar',
+            'desc': "HighWay chet elga o'qishga jo'natish konsaltingida sotuv bo'limi 0 dan to'liq tizimlashtirildi. Sotuvchilarni o'qitish va ilg'or sotuv texnikalari bo'yicha to'liq strategiyalar joriy etilib, oyiga kamida 30 tadan 40+ tagacha shartnomalar imzolanishiga erishildi.",
+            'tags': ['0 dan Tizimlashtirish', 'Sotuvchilarni O\'qitish', 'Kamida 30-40+ Shartnoma/oy', 'AmoCRM & Skriptlar']
         },
         {
             'title': 'B2B Jamoa va Ish Vaqti Nazorati',
