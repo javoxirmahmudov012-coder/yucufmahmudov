@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="uz" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ data.name }} — Sotuv Bo'limi Rahbari & B2B Strategist</title>
+    <meta name="description" content="Mahmudov Muhammadyusuf — Sotuv bo'limi rahbari, B2B sotuv boshqaruvchisi, investitsion konsultant va AI prompt muhandisi. $250,000+ jalb qilingan investitsiya, AmoCRM tizimi va yuqori chekli bitimlar.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#050811',
+                        cardBg: '#0f172a',
+                        brandBlue: '#3b82f6',
+                        brandCyan: '#06b6d4',
+                        brandPurple: '#8b5cf6',
+                        brandEmerald: '#10b981'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bg-darkBg text-slate-100 min-h-screen flex flex-col selection:bg-blue-600 selection:text-white">
+
+    <!-- Top Glow Line -->
+    <div class="h-1 w-full bg-gradient-to-r from-blue-600 via-purple-600 to-emerald-500 fixed top-0 left-0 z-50"></div>
+
+    <!-- Navigation Header -->
+    <header class="fixed top-1 left-0 right-0 z-40 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#hero" class="flex items-center space-x-3 group">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-blue-500/25 group-hover:scale-105 transition-transform duration-300 border border-white/20">
+                    MM
+                </div>
+                <div>
+                    <span class="text-base font-bold tracking-tight block text-white group-hover:text-blue-400 transition-colors">
+                        M. Muhammadyusuf
+                    </span>
+                    <span class="text-xs text-blue-400/90 font-medium flex items-center">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse mr-1.5"></span> Head of Sales
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-blue-400 transition-colors">Men Haqimda</a>
+                <a href="#stats" class="hover:text-blue-400 transition-colors">Natijalar</a>
+                <a href="#experience" class="hover:text-blue-400 transition-colors">Tajriba</a>
+                <a href="#cases" class="hover:text-blue-400 transition-colors">Keyslar</a>
+                <a href="#skills" class="hover:text-blue-400 transition-colors">Ko'nikmalar</a>
+                <a href="#education" class="hover:text-blue-400 transition-colors">Ta'lim & AI</a>
+                <a href="#contact" class="hover:text-blue-400 transition-colors">Aloqa</a>
+            </nav>
+
+            <!-- Call, Telegram & CTA Buttons -->
+            <div class="hidden sm:flex items-center space-x-3">
+                <a href="tel:{{ data.contact.phone_clean }}" class="flex items-center text-xs font-semibold px-3.5 py-2 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-slate-200 border border-slate-700/60 transition-all hover:border-blue-500/50">
+                    <i class="fa-solid fa-phone text-emerald-400 mr-2"></i>
+                    <span>{{ data.contact.phone_display }}</span>
+                </a>
+                <a href="{{ data.contact.telegram_url }}" target="_blank" class="flex items-center text-xs font-semibold px-3.5 py-2 rounded-xl bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 border border-blue-500/30 transition-all hover:border-blue-400">
+                    <i class="fa-brands fa-telegram text-blue-400 mr-2 text-sm"></i>
+                    <span>Telegram</span>
+                </a>
+                <a href="#contact" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-xs font-semibold shadow-lg shadow-blue-500/25 transition-all duration-300 hover:shadow-blue-500/40 hover:-translate-y-0.5 border border-blue-400/30">
+                    Bog'lanish <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" aria-label="Menuni ochish" class="lg:hidden w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-white">
+                <i class="fa-solid fa-bars-staggered text-lg"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden px-4 pt-3 pb-6 bg-[#090e1c] border-b border-slate-800 space-y-3">
+            <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white text-sm font-medium">Men Haqimda</a>
+            <a href="#stats" class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white text-sm font-medium">Natijalar</a>
+            <a href="#experience" class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white text-sm font-medium">Ish Tajribasi</a>
+            <a href="#cases" class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white text-sm font-medium">Muvaffaqiyatli Keyslar</a>
+            <a href="#skills" class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white text-sm font-medium">Ko'nikmalar</a>
+            <a href="#education" class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white text-sm font-medium">Ta'lim va AI</a>
+            <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white text-sm font-medium">Bog'lanish</a>
+            
+            <div class="pt-3 border-t border-slate-800 flex flex-col gap-2">
+                <a href="tel:{{ data.contact.phone_clean }}" class="flex items-center justify-center py-2.5 rounded-xl bg-slate-800 text-slate-200 text-sm font-semibold">
+                    <i class="fa-solid fa-phone text-emerald-400 mr-2"></i> {{ data.contact.phone }}
+                </a>
+                <a href="https://t.me/muhammadyucufmm" target="_blank" class="flex items-center justify-center py-2.5 rounded-xl bg-blue-600 text-white text-sm font-semibold">
+                    <i class="fa-brands fa-telegram mr-2"></i> Telegram orqali yozish
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow pt-20">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#03060f] border-t border-slate-800/80 pt-16 pb-12 mt-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <!-- Col 1: About -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white font-bold shadow-md shadow-blue-500/20">
+                            MM
+                        </div>
+                        <span class="font-bold text-lg text-white">Mahmudov Muhammadyusuf</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Sotuv bo'limi rahbari va investitsion maslahatchi. AmoCRM, B2B savdolar va sun'iy intellekt orqali biznes ko'rsatkichlarini maksimal darajada oshirish.
+                    </p>
+                    <div class="flex items-center space-x-3 pt-1">
+                        <a href="https://t.me/muhammadyucufmm" target="_blank" class="w-9 h-9 rounded-xl bg-slate-800/80 hover:bg-blue-600 hover:text-white text-slate-300 flex items-center justify-center transition-all border border-slate-700/60" title="Telegram">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                        <a href="mailto:{{ data.contact.email }}" class="w-9 h-9 rounded-xl bg-slate-800/80 hover:bg-red-500 hover:text-white text-slate-300 flex items-center justify-center transition-all border border-slate-700/60" title="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="tel:{{ data.contact.phone_clean }}" class="w-9 h-9 rounded-xl bg-slate-800/80 hover:bg-emerald-600 hover:text-white text-slate-300 flex items-center justify-center transition-all border border-slate-700/60" title="Telefon">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div>
+                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4 border-l-2 border-blue-500 pl-3">Tezkor Havolalar</h3>
+                    <ul class="space-y-2.5 text-sm text-slate-400">
+                        <li><a href="#about" class="hover:text-blue-400 transition-colors">Men Haqimda</a></li>
+                        <li><a href="#stats" class="hover:text-blue-400 transition-colors">Savdo Natijalari</a></li>
+                        <li><a href="#experience" class="hover:text-blue-400 transition-colors">Ish Tajribasi</a></li>
+                        <li><a href="#cases" class="hover:text-blue-400 transition-colors">Keyslar va Loyihalar</a></li>
+                        <li><a href="#skills" class="hover:text-blue-400 transition-colors">Ko'nikmalar & AI</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Competencies -->
+                <div>
+                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4 border-l-2 border-indigo-500 pl-3">Asosiy Yo'nalishlar</h3>
+                    <ul class="space-y-2.5 text-sm text-slate-400">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-blue-400 text-xs mr-2"></i> AmoCRM integratsiyasi va sozlash</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-blue-400 text-xs mr-2"></i> $10,000+ Investitsiya jalb qilish</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-blue-400 text-xs mr-2"></i> Sotuv jamoasini shakllantirish va KPI</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-blue-400 text-xs mr-2"></i> B2B muzokaralar va yirik shartnomalar</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-blue-400 text-xs mr-2"></i> Prompt Engineering va AI skriptlar</li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact -->
+                <div>
+                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4 border-l-2 border-emerald-500 pl-3">Bog'lanish</h3>
+                    <div class="space-y-3 text-sm text-slate-400">
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-phone text-emerald-400 mt-1"></i>
+                            <div>
+                                <span class="block text-xs text-slate-500">Telefon:</span>
+                                <a href="tel:{{ data.contact.phone_clean }}" class="text-white hover:text-emerald-400 font-semibold">{{ data.contact.phone }}</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-brands fa-telegram text-blue-400 mt-1"></i>
+                            <div>
+                                <span class="block text-xs text-slate-500">Telegram:</span>
+                                <a href="{{ data.contact.telegram_url }}" target="_blank" class="text-white hover:text-blue-400 font-semibold">{{ data.contact.telegram }}</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-envelope text-purple-400 mt-1"></i>
+                            <div>
+                                <span class="block text-xs text-slate-500">Elektron pochta:</span>
+                                <a href="mailto:{{ data.contact.email }}" class="text-slate-300 hover:text-purple-400 text-xs break-all">{{ data.contact.email }}</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-location-dot text-red-400 mt-1"></i>
+                            <div>
+                                <span class="block text-xs text-slate-500">Manzil:</span>
+                                <span class="text-slate-300 text-xs">{{ data.contact.location }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800/80 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 Mahmudov Muhammadyusuf. Barcha huquqlar himoyalangan.</p>
+                <div class="flex items-center space-x-4 mt-4 sm:mt-0">
+                    <span class="inline-flex items-center text-emerald-400">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping mr-2"></span> Loyihalar va takliflarga ochiq
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Resume Modal -->
+    <div id="resume-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative">
+            <button id="close-resume-modal" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="flex items-center space-x-4 mb-6">
+                <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="{{ data.name }}" class="w-16 h-16 rounded-full object-cover border-2 border-blue-500">
+                <div>
+                    <h3 class="text-xl font-bold text-white">{{ data.full_name }}</h3>
+                    <p class="text-sm text-blue-400">{{ data.role }}</p>
+                </div>
+            </div>
+            
+            <div class="space-y-4 text-sm text-slate-300">
+                <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/50">
+                    <h4 class="font-semibold text-white mb-2"><i class="fa-solid fa-briefcase text-blue-400 mr-2"></i> Rezyume xulosasi</h4>
+                    <p class="text-xs leading-relaxed text-slate-400">
+                        1.5+ yillik savdo boshqaruvi, investitsiya jalb qilish va jamoani tizimlashtirish tajribasi. $250,000+ investitsiya va $30,000+ oylik savdo aylanmasi natijalari.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-3 text-xs">
+                    <div class="p-3 rounded-lg bg-slate-800/40 border border-slate-800">
+                        <span class="text-slate-500 block">Telefon:</span>
+                        <span class="font-semibold text-white">{{ data.contact.phone }}</span>
+                    </div>
+                    <div class="p-3 rounded-lg bg-slate-800/40 border border-slate-800">
+                        <span class="text-slate-500 block">Telegram:</span>
+                        <span class="font-semibold text-white">{{ data.contact.telegram }}</span>
+                    </div>
+                    <div class="p-3 rounded-lg bg-slate-800/40 border border-slate-800">
+                        <span class="text-slate-500 block">Ta'lim:</span>
+                        <span class="font-semibold text-white">GulDU (Bakalavr, 2024)</span>
+                    </div>
+                    <div class="p-3 rounded-lg bg-slate-800/40 border border-slate-800">
+                        <span class="text-slate-500 block">AI & Tech:</span>
+                        <span class="font-semibold text-white">Najot Ta'lim (Prompt Eng.)</span>
+                    </div>
+                </div>
+
+                <div class="pt-4 flex flex-col sm:flex-row gap-3">
+                    <a href="tel:{{ data.contact.phone_clean }}" class="flex-1 py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-center text-sm transition-colors">
+                        <i class="fa-solid fa-phone mr-2"></i> Qo'ng'iroq qilish (50-053-48-12)
+                    </a>
+                    <a href="https://t.me/muhammadyucufmm" target="_blank" class="flex-1 py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-center text-sm transition-colors">
+                        <i class="fa-brands fa-telegram mr-2"></i> Telegram orqali yozish
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Telegram Quick Contact Widget -->
+    <a href="https://t.me/muhammadyucufmm" target="_blank" 
+       class="fixed bottom-6 right-6 z-50 flex items-center space-x-2.5 px-4 py-3 rounded-full bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-500 hover:from-blue-500 hover:to-indigo-500 text-white shadow-2xl shadow-blue-500/50 hover:shadow-blue-500/80 border border-white/20 transition-all duration-300 hover:scale-105 group"
+       title="Telegram orqali to'g'ridan-to'g'ri bog'lanish: @muhammadyucufmm">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </span>
+        <i class="fa-brands fa-telegram text-2xl text-white group-hover:scale-110 transition-transform"></i>
+        <span class="text-xs font-bold tracking-wide hidden sm:inline-block pr-1">Telegramda Bog'lanish</span>
+    </a>
+
+    <!-- Toast Notification Container -->
+    <div id="toast"></div>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,997 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/profile.jpg') }}" type="image/jpeg" />
+
+    <!-- REMIXICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}" />
+
+    <!-- STYLES CSS (Original Habib / Panda Coders Style) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+
+    <title>Mahmudov Muhammadyusuf — Shaxsiy Portfolio</title>
+    <meta name="description" content="Mahmudov Muhammadyusuf — Head of Sales, B2B Sotuv Boshqaruvchisi va Investitsion Konsultant. $250,000+ jalb qilingan investitsiya, AmoCRM tizimi va yuqori chekli bitimlar." />
+
+    <!-- Extra subtle styling for contact form & quick links -->
+    <style>
+      .home__profile, .about__profile {
+        object-fit: cover;
+        border-radius: 2rem;
+      }
+      .form__container {
+        margin-top: 2.5rem;
+        background-color: var(--container-color);
+        padding: 2rem;
+        border-radius: 2.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .form__group {
+        margin-bottom: 1.25rem;
+      }
+      .form__label {
+        display: block;
+        font-family: var(--second-font);
+        font-size: var(--small-font-size);
+        color: var(--text-color);
+        margin-bottom: 0.5rem;
+      }
+      .form__input, .form__textarea {
+        width: 100%;
+        background-color: var(--body-color);
+        color: var(--title-color);
+        padding: 1rem 1.25rem;
+        border-radius: 1.25rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        font-family: var(--body-font);
+        font-size: var(--normal-font-size);
+        outline: none;
+        transition: border-color 0.3s;
+      }
+      .form__input:focus, .form__textarea:focus {
+        border-color: var(--first-color);
+      }
+      .form__textarea {
+        resize: none;
+        height: 120px;
+      }
+      .floating-telegram {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        z-index: var(--z-fixed);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: linear-gradient(135deg, #0088cc, #00b4d8);
+        color: #fff;
+        padding: 0.85rem 1.4rem;
+        border-radius: 3rem;
+        font-family: var(--second-font);
+        font-size: var(--small-font-size);
+        font-weight: var(--font-semi-bold);
+        box-shadow: 0 10px 25px rgba(0, 136, 204, 0.4);
+        transition: transform 0.3s, box-shadow 0.3s;
+        text-decoration: none;
+      }
+      .floating-telegram:hover {
+        transform: translateY(-4px) scale(1.03);
+        box-shadow: 0 15px 30px rgba(0, 136, 204, 0.6);
+      }
+      .floating-telegram i {
+        font-size: 1.4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <div class="blob-animate"></div>
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Muhammadyusuf</a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li>
+              <a href="#about" class="nav__link">Men Haqimda</a>
+            </li>
+            <li>
+              <a href="#projects" class="nav__link">Keyslar</a>
+            </li>
+            <li>
+              <a href="#work" class="nav__link">Tajriba</a>
+            </li>
+            <li>
+              <a href="#services" class="nav__link">Ko'nikmalar</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav__link">Bog'lanish</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- CUSTOM CURSOR -->
+      <div class="cursor"></div>
+
+      <!-- HOME -->
+      <section class="home section section-top section-two" id="home">
+        <div class="home__shadow"></div>
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h3 class="home__greeting">Salom, men</h3>
+            <h1 class="home__name">
+              Mahmudov <br />
+              Muhammadyusuf
+            </h1>
+          </div>
+
+          <div class="home__image">
+            <div class="blob-animate"></div>
+            <img
+              src="{{ url_for('static', filename='images/profile.jpg') }}"
+              alt="Mahmudov Muhammadyusuf"
+              class="home__profile"
+            />
+          </div>
+
+          <div class="home__info">
+            <h3 class="home__split">Professional</h3>
+            <h2 class="home__profession-1">Head of Sales</h2>
+            <h2 class="home__profession-2">B2B Strategist</h2>
+          </div>
+
+          <div class="home__social">
+            <a
+              href="https://t.me/muhammadyucufmm"
+              target="_blank"
+              class="home__social-link"
+              title="Telegram: @muhammadyucufmm"
+            >
+              <i class="ri-telegram-fill"></i>
+            </a>
+            <a
+              href="tel:+998500534812"
+              class="home__social-link"
+              title="Telefon: +998 (50) 053-48-12"
+            >
+              <i class="ri-phone-fill"></i>
+            </a>
+            <a
+              href="mailto:muhammadyucufmahmudov@gmail.com"
+              class="home__social-link"
+              title="Email: muhammadyucufmahmudov@gmail.com"
+            >
+              <i class="ri-mail-fill"></i>
+            </a>
+            <a
+              href="https://t.me/muhammadyucufmm"
+              target="_blank"
+              class="home__social-link"
+              title="Direct Chat"
+            >
+              <i class="ri-chat-3-fill"></i>
+            </a>
+          </div>
+
+          <a
+            href="#contact"
+            class="home__cv"
+            >Bog'lanish <i class="ri-arrow-right-up-line"></i
+          ></a>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about section" id="about">
+        <div class="about__shadow"></div>
+
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title">
+              <span>Natijadorlik</span>
+              <br />
+              Va Tizimli Yondashuv
+            </h2>
+            <p class="about__description">
+              Men <b>Sotuv bo'limi rahbari va investitsion maslahatchi</b> sifatida B2B va B2C savdolarni tizimlashtirish, <b>AmoCRM</b> orqali savdo voronkasini yo'lga qo'yish hamda <b>yuqori chekli bitimlarni yopish</b> bo'yicha samarali tajribaga egaman.
+              <br /><br />
+              <b>Nurinvest</b> kompaniyasida jami <b>$250,000+</b> miqdorida investitsiya kirimini ta'minlaganman, <b>HighWay</b> avtomobil markazida oylik savdo aylanmasini <b>$30,000+</b> darajaga yetkazganmiz. Zamonaviy <b>Prompt Engineering (Sun'iy Intellekt)</b> texnologiyalarini savdoga tadbiq etib, jamoa mahsuldorligini 2 baravar oshiraman.
+            </p>
+
+            <a
+              href="tel:+998500534812"
+              class="button"
+              >50-053-48-12 <i class="ri-phone-line"></i
+            ></a>
+          </div>
+
+          <div class="about__image">
+            <div class="blob-animate"></div>
+            <div class="blob-animate"></div>
+            <img
+              src="{{ url_for('static', filename='images/profile.jpg') }}"
+              alt="Mahmudov Muhammadyusuf"
+              class="about__profile"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS (KEYSLAR) -->
+      <section class="projects section" id="projects">
+        <h2 class="section__title">
+          Mening Muvaffaqiyatli <br />
+          <span>Keyslarim</span>
+        </h2>
+
+        <div class="projects__container container grid">
+          <div class="projects__swiper swiper">
+            <div class="swiper-wrapper">
+              
+              <!-- Project 1: Nurinvest -->
+              <article class="projects__card swiper-slide">
+                <div class="blob"></div>
+
+                <div class="projects__number">
+                  <h1>01</h1>
+                  <h3>Invest</h3>
+                </div>
+
+                <div class="projects__data">
+                  <h1 class="projects__title">
+                    Nurinvest: <br />
+                    $250,000+ Investitsiya
+                  </h1>
+                  <p class="projects__subtitle">Yo'nalish va Yutuq</p>
+                  <p class="projects__description">
+                    30+ yirik investorlar jalb qilingan, har biri o'rtacha $10,000 chek bilan. Jami $250,000+ to'g'ridan-to'g'ri investitsiya kiritilgan.
+                  </p>
+                </div>
+
+                <div class="projects__image">
+                  <img
+                    src="{{ url_for('static', filename='images/project-1.svg') }}"
+                    alt="Nurinvest Keysi"
+                    class="projects__img"
+                  />
+                  <a
+                    href="https://t.me/muhammadyucufmm"
+                    target="_blank"
+                    class="projects__button"
+                  >
+                    <i class="ri-arrow-right-up-long-line"></i>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Project 2: HighWay -->
+              <article class="projects__card swiper-slide">
+                <div class="blob"></div>
+
+                <div class="projects__number">
+                  <h1>02</h1>
+                  <h3>Auto</h3>
+                </div>
+
+                <div class="projects__data">
+                  <h1 class="projects__title">
+                    HighWay: <br />
+                    $30,000+ Oylik Aylanma
+                  </h1>
+                  <p class="projects__subtitle">Yo'nalish va Yutuq</p>
+                  <p class="projects__description">
+                    AmoCRM orqali avtomobil markazi sotuv tizimi qurilgan. Oyiga 30+ yirik sotuv, $1,000+ o'rtacha chek va barqaror savdo rejasiga erishilgan.
+                  </p>
+                </div>
+
+                <div class="projects__image">
+                  <img
+                    src="{{ url_for('static', filename='images/project-2.svg') }}"
+                    alt="HighWay Keysi"
+                    class="projects__img"
+                  />
+                  <a
+                    href="https://t.me/muhammadyucufmm"
+                    target="_blank"
+                    class="projects__button"
+                  >
+                    <i class="ri-arrow-right-up-long-line"></i>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Project 3: Yogdu Media -->
+              <article class="projects__card swiper-slide">
+                <div class="blob"></div>
+
+                <div class="projects__number">
+                  <h1>03</h1>
+                  <h3>B2B</h3>
+                </div>
+
+                <div class="projects__data">
+                  <h1 class="projects__title">
+                    Yogdu Media: <br />
+                    B2B Menejment & KPI
+                  </h1>
+                  <p class="projects__subtitle">Yo'nalish va Yutuq</p>
+                  <p class="projects__description">
+                    Xodimlar ish vaqti hisobi (overtime, otgul, mehnat ta'tillari), savdo rejalarining 100% bajarilishini nazorat qilish va korporativ shartnomalar.
+                  </p>
+                </div>
+
+                <div class="projects__image">
+                  <img
+                    src="{{ url_for('static', filename='images/project-3.svg') }}"
+                    alt="Yogdu Media Keysi"
+                    class="projects__img"
+                  />
+                  <a
+                    href="https://t.me/muhammadyucufmm"
+                    target="_blank"
+                    class="projects__button"
+                  >
+                    <i class="ri-arrow-right-up-long-line"></i>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Project 4: AI & Prompt Engineering -->
+              <article class="projects__card swiper-slide">
+                <div class="blob"></div>
+
+                <div class="projects__number">
+                  <h1>04</h1>
+                  <h3>AI</h3>
+                </div>
+
+                <div class="projects__data">
+                  <h1 class="projects__title">
+                    Prompt Engineering: <br />
+                    AI Savdo Integratsiyasi
+                  </h1>
+                  <p class="projects__subtitle">Yo'nalish va Yutuq</p>
+                  <p class="projects__description">
+                    Najot Ta'lim Markazida Samandar Sultonov kursi. CRM skriptlar, mijozlar e'tirozlariga avtomatlashtirilgan javoblar va jarayonlarni 2x tezlashtirish.
+                  </p>
+                </div>
+
+                <div class="projects__image">
+                  <img
+                    src="{{ url_for('static', filename='images/project-4.svg') }}"
+                    alt="AI Keysi"
+                    class="projects__img"
+                  />
+                  <a
+                    href="https://t.me/muhammadyucufmm"
+                    target="_blank"
+                    class="projects__button"
+                  >
+                    <i class="ri-arrow-right-up-long-line"></i>
+                  </a>
+                </div>
+              </article>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK (EXPERIENCE & EDUCATION) -->
+      <section class="work section" id="work">
+        <h2 class="section__title">
+          <span>Mening Ish</span>
+          <br />
+          Tajribam & Ta'lim
+        </h2>
+
+        <div class="work__container container grid">
+          <div class="work__tabs">
+            <!-- Button Experience -->
+            <button class="work__button work-active" data-target="#experience">
+              Tajriba <i class="ri-briefcase-3-line"></i>
+            </button>
+
+            <!-- Button Education -->
+            <button class="work__button" data-target="#education">
+              Ta'lim & Kurslar <i class="ri-graduation-cap-line"></i>
+            </button>
+          </div>
+
+          <div class="work__area">
+            <div class="work__line"></div>
+
+            <!-- Content Experience -->
+            <div class="work__content work-active" data-content id="experience">
+              
+              <!-- 1. Yogdu Media -->
+              <div class="work__card">
+                <div class="work__data">
+                  <div>
+                    <h1 class="work__title">B2B Manager</h1>
+                    <h3 class="work__subtitle">Yogdu Media (yogdu_agency)</h3>
+                  </div>
+                  <h2 class="work__year">
+                    Iyun 2026 —<br />
+                    Hozirgacha
+                  </h2>
+                </div>
+
+                <p class="work__description">
+                  Xodimlar ish vaqtini aniq hisobga olish (ish soatlari, overtime, otgul va mehnat ta'tillari). Savdo rejalari bajarilishi va sotuv samaradorligi (KPI) ko'rsatkichlarini qat'iy nazorat qilish va B2B bitimlarni tuzish.
+                </p>
+              </div>
+
+              <!-- 2. HighWay -->
+              <div class="work__card">
+                <div class="work__data">
+                  <div>
+                    <h1 class="work__title">Sotuv Bo'limi Rahbari</h1>
+                    <h3 class="work__subtitle">HighWay (Avtomobil Biznesi)</h3>
+                  </div>
+                  <h2 class="work__year">
+                    Mart 2026 —<br />
+                    Iyul 2026
+                  </h2>
+                </div>
+
+                <p class="work__description">
+                  Sotuv bo'limi faoliyatini boshqarish va AmoCRM orqali savdo jarayonlarini to'liq tizimlashtirish. Menejerlarni o'qitish va rivojlantirish. O'rtacha chek: $1,000+ | Oyiga 30+ ta sotuv | Oylik savdo aylanmasi: $30,000+.
+                </p>
+              </div>
+
+              <!-- 3. Nurinvest -->
+              <div class="work__card">
+                <div class="work__data">
+                  <div>
+                    <h1 class="work__title">Sotuv Bo'limi Rahbari & Konsultant</h1>
+                    <h3 class="work__subtitle">Nurinvest (Investment Consultant)</h3>
+                  </div>
+                  <h2 class="work__year">
+                    Fevral 2025 —<br />
+                    Dekabr 2025
+                  </h2>
+                </div>
+
+                <p class="work__description">
+                  Mijozlarga investitsiya produktlari bo'yicha professional maslahatlar va muzokaralar. Oyiga o'rtacha 5 ta yirik investor (chek $10,000). Umumiy 30+ investor jalb qilinib, kompaniyaga $250,000+ investitsiya kirimi ta'minlangan.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Content Education -->
+            <div class="work__content" data-content id="education">
+              
+              <!-- 1. Najot Ta'lim -->
+              <div class="work__card">
+                <div class="work__data">
+                  <div>
+                    <h1 class="work__title">Prompt Engineering (Sun'iy Intellekt)</h1>
+                    <h3 class="work__subtitle">Najot Ta'lim Markazi (Samandar Sultonov)</h3>
+                  </div>
+                  <h2 class="work__year">2026</h2>
+                </div>
+
+                <p class="work__description">
+                  Zamonaviy sun'iy intellekt vositalari (LLM, ChatGPT, Claude) yordamida savdo jarayonlari, voronkalar, mijozlar bilan muloqot skriptlari va avtomatizatsiyani chuqur o'rganish.
+                </p>
+              </div>
+
+              <!-- 2. M-Factor -->
+              <div class="work__card">
+                <div class="work__data">
+                  <div>
+                    <h1 class="work__title">Sotuv Texnikalari va Psixologiyasi</h1>
+                    <h3 class="work__subtitle">M-Factor (Islombek Ibragimov)</h3>
+                  </div>
+                  <h2 class="work__year">2025</h2>
+                </div>
+
+                <p class="work__description">
+                  SPIN savdo texnikalari, e'tirozlar bilan ishlash, mijozning yashirin ehtiyojlarini aniqlash va yuqori chekli bitimlarni muvaffaqiyatli yopish san'ati.
+                </p>
+              </div>
+
+              <!-- 3. Ibrohim Gulyamov -->
+              <div class="work__card">
+                <div class="work__data">
+                  <div>
+                    <h1 class="work__title">Sotuvni Tizimlashtirish</h1>
+                    <h3 class="work__subtitle">Ibrohim Gulyamov</h3>
+                  </div>
+                  <h2 class="work__year">2025</h2>
+                </div>
+
+                <p class="work__description">
+                  Kompaniyada barqaror sotuv bo'limi tizimini qurish, KPI mexanizmlari, menejerlarni nazorat qilish va savdo aylanmasini rejali oshirish.
+                </p>
+              </div>
+
+              <!-- 4. Guliston Davlat Universiteti -->
+              <div class="work__card">
+                <div class="work__data">
+                  <div>
+                    <h1 class="work__title">Bakalavr</h1>
+                    <h3 class="work__subtitle">Guliston Davlat Universiteti</h3>
+                  </div>
+                  <h2 class="work__year">2020 — 2024</h2>
+                </div>
+
+                <p class="work__description">
+                  Oliy ma'lumot (Bakalavriat darajasi), intizom, liderlik va jamoani boshqarish ko'nikmalarini shakllantirish.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES (KO'NIKMALAR) -->
+      <section class="services section" id="services">
+        <h2 class="section__title">Mening <span>Ko'nikmalarim</span></h2>
+
+        <div class="services__container container grid">
+          <!-- Services: Sotuv va Menejment -->
+          <div class="services__card services__open">
+            <div class="blob"></div>
+
+            <div class="services__data">
+              <h2 class="services__title">Sotuv va Menejment</h2>
+              <p class="services__description">
+                AmoCRM orqali savdo jarayonlarini to'liq tizimlashtirish, yuqori chekli B2B va investitsiya bitimlarini yopish, jamoani boshqarish va KPI nazorati.
+              </p>
+            </div>
+
+            <div class="services__info" style="height: auto;">
+              <h3 class="services__subtitle">Asosiy Ko'nikmalar</h3>
+
+              <ul class="services__skills">
+                <li class="services__skill">amoCRM Tizimi</li>
+                <li class="services__skill">SPIN Savdo Texnikasi</li>
+                <li class="services__skill">Savdo Voronkasi (Sales Funnel)</li>
+                <li class="services__skill">B2B & B2C Muzokaralar</li>
+                <li class="services__skill">Yuqori Chekli Bitimlar ($10K+)</li>
+                <li class="services__skill">KPI & Jamoa Boshqaruvi</li>
+                <li class="services__skill">Mijozlar Bilan Ishlash</li>
+                <li class="services__skill">Xaridlar va Savdo Rejasi</li>
+              </ul>
+            </div>
+
+            <button class="services__button">
+              <i class="ri-arrow-down-s-line"></i>
+            </button>
+          </div>
+
+          <!-- Services: AI & Texnologiyalar -->
+          <div class="services__card services__close">
+            <div class="blob blob-2"></div>
+
+            <div class="services__data">
+              <h2 class="services__title">AI & Zamonaviy Asboblar</h2>
+              <p class="services__description">
+                Zamonaviy sun'iy intellekt va analitika vositalari orqali sotuv jarayonlarini tezlashtirish va aniq hisobotlarni yuritish.
+              </p>
+            </div>
+
+            <div class="services__info">
+              <h3 class="services__subtitle">Texnologik Vositalar</h3>
+
+              <ul class="services__skills">
+                <li class="services__skill">Prompt Engineering (Najot Ta'lim)</li>
+                <li class="services__skill">ChatGPT / Claude AI Asistentlar</li>
+                <li class="services__skill">Google Sheets & Analitika</li>
+                <li class="services__skill">MS Word & Excel</li>
+                <li class="services__skill">Internet-marketing Asoslari</li>
+                <li class="services__skill">Ishbilarmonlik Muloqoti</li>
+                <li class="services__skill">O'zbek tili (Ona tili)</li>
+                <li class="services__skill">Rus tili (B1 daraja)</li>
+              </ul>
+            </div>
+
+            <button class="services__button">
+              <i class="ri-arrow-down-s-line"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="testimonials section">
+        <h2 class="section__title">
+          <span>Hamkorlar Fikri</span>
+          <br />
+          Va Tavsiyalar
+        </h2>
+
+        <div class="testimonials__container container grid">
+          <!-- Testimonial Cards 1-->
+          <div class="testimonial__content">
+            <article class="testimonials__card">
+              <div class="blob"></div>
+
+              <div class="testimonials__data">
+                <img
+                  src="{{ url_for('static', filename='images/testimonial-1.svg') }}"
+                  alt="Islombek I."
+                  class="testimonials__img"
+                />
+
+                <h2 class="testimonials__name">Islombek I.</h2>
+
+                <div class="testimonial__rating">
+                  <div class="testimonial__stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </div>
+
+                  <h3 class="testimonials__number">5.0</h3>
+                </div>
+
+                <p>
+                  Muhammadyusuf muzokaralarda mijozning nozik nuqtalarini darhol his qiladi va yuqori chekli bitimlarni yopishda juda ishonchli yetakchi.
+                </p>
+              </div>
+            </article>
+
+            <article class="testimonials__card">
+              <div class="blob"></div>
+
+              <div class="testimonials__data">
+                <img
+                  src="{{ url_for('static', filename='images/testimonial-2.svg') }}"
+                  alt="Farrux A."
+                  class="testimonials__img"
+                />
+
+                <h2 class="testimonials__name">Farrux A.</h2>
+
+                <div class="testimonial__rating">
+                  <div class="testimonial__stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </div>
+
+                  <h3 class="testimonials__number">5.0</h3>
+                </div>
+
+                <p>
+                  AmoCRM tizimini noldan yo'lga qo'yib, jamoaning har oylik rejasini 100%+ bajarilishiga erishdi. Oyiga $30,000+ savdo aylanmasiga chiqdik.
+                </p>
+              </div>
+            </article>
+
+            <article class="testimonials__card">
+              <div class="blob"></div>
+
+              <div class="testimonials__data">
+                <img
+                  src="{{ url_for('static', filename='images/testimonial-3.svg') }}"
+                  alt="Sardor K."
+                  class="testimonials__img"
+                />
+
+                <h2 class="testimonials__name">Sardor K. (Investor)</h2>
+
+                <div class="testimonial__rating">
+                  <div class="testimonial__stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </div>
+
+                  <h3 class="testimonials__number">5.0</h3>
+                </div>
+
+                <p>
+                  Investitsiya loyihasini taqdim etishdagi aniqlik, hisob-kitoblar va ochiq muloqot bizni hamkorlikka undadi. Haqiqiy professional mutaxassis.
+                </p>
+              </div>
+            </article>
+
+            <article class="testimonials__card">
+              <div class="blob"></div>
+
+              <div class="testimonials__data">
+                <img
+                  src="{{ url_for('static', filename='images/testimonial-4.svg') }}"
+                  alt="Jamshid M."
+                  class="testimonials__img"
+                />
+
+                <h2 class="testimonials__name">Jamshid M.</h2>
+
+                <div class="testimonial__rating">
+                  <div class="testimonial__stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </div>
+
+                  <h3 class="testimonials__number">5.0</h3>
+                </div>
+
+                <p>
+                  Katta mas'uliyat va tafsilotlarga e'tibor bilan ishlaydi. Jamoada sog'lom muhit va intizomni mukammal darajada shakllantira oladi.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Testimonial Cards 2-->
+          <div class="testimonial__content testimonials__reverse">
+            <article class="testimonials__card">
+              <div class="blob"></div>
+
+              <div class="testimonials__data">
+                <img
+                  src="{{ url_for('static', filename='images/testimonial-1.svg') }}"
+                  alt="Islombek I."
+                  class="testimonials__img"
+                />
+
+                <h2 class="testimonials__name">Islombek I.</h2>
+
+                <div class="testimonial__rating">
+                  <div class="testimonial__stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </div>
+
+                  <h3 class="testimonials__number">5.0</h3>
+                </div>
+
+                <p>
+                  Muhammadyusuf muzokaralarda mijozning nozik nuqtalarini darhol his qiladi va yuqori chekli bitimlarni yopishda juda ishonchli yetakchi.
+                </p>
+              </div>
+            </article>
+
+            <article class="testimonials__card">
+              <div class="blob"></div>
+
+              <div class="testimonials__data">
+                <img
+                  src="{{ url_for('static', filename='images/testimonial-2.svg') }}"
+                  alt="Farrux A."
+                  class="testimonials__img"
+                />
+
+                <h2 class="testimonials__name">Farrux A.</h2>
+
+                <div class="testimonial__rating">
+                  <div class="testimonial__stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </div>
+
+                  <h3 class="testimonials__number">5.0</h3>
+                </div>
+
+                <p>
+                  AmoCRM tizimini noldan yo'lga qo'yib, jamoaning har oylik rejasini 100%+ bajarilishiga erishdi. Oyiga $30,000+ savdo aylanmasiga chiqdik.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <div class="contact__data">
+            <h2 class="section__title">Bog'lanish</h2>
+
+            <p class="contact__description">Keyingi loyihangiz yoki biznesingiz haqida gaplashamiz.</p>
+
+            <button class="contact__button button" id="contact-btn">
+              Telefonni Nusxalash <i class="ri-file-copy-line"></i>
+              <span class="contact__email" id="contact-copy-val">+998500534812</span>
+            </button>
+          </div>
+
+          <div class="contact__content grid">
+            <div class="contact__info grid">
+              <div>
+                <h3 class="contact__title">Telefon</h3>
+                <address class="contact__address">
+                  <a href="tel:+998500534812" style="color: inherit;">+998 (50) 053-48-12</a>
+                </address>
+              </div>
+
+              <div>
+                <h3 class="contact__title">Telegram</h3>
+                <address class="contact__address">
+                  <a href="https://t.me/muhammadyucufmm" target="_blank" style="color: inherit;">@muhammadyucufmm</a>
+                </address>
+              </div>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <address class="contact__address">
+                  <a href="mailto:muhammadyucufmahmudov@gmail.com" style="color: inherit;">muhammadyucufmahmudov@gmail.com</a>
+                </address>
+              </div>
+
+              <div>
+                <h3 class="contact__title">Manzil</h3>
+                <address class="contact__address">
+                  Toshkent, O'zbekiston
+                </address>
+              </div>
+            </div>
+
+            <div class="contact__social">
+              <h3 class="contact__title">Ijtimoiy Tarmoqlar</h3>
+
+              <div class="contact__links">
+                <a
+                  href="https://t.me/muhammadyucufmm"
+                  target="_blank"
+                  class="contact__link"
+                >
+                  Telegram Profil
+                  <i class="ri-arrow-right-up-long-line"></i>
+                </a>
+
+                <a
+                  href="tel:+998500534812"
+                  class="contact__link"
+                >
+                  Qo'ng'iroq Qilish (50-053-48-12)
+                  <i class="ri-arrow-right-up-long-line"></i>
+                </a>
+
+                <a
+                  href="mailto:muhammadyucufmahmudov@gmail.com"
+                  class="contact__link"
+                >
+                  Elektron Pochta
+                  <i class="ri-arrow-right-up-long-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact__write">
+              <h3 class="contact__title">Tezkor Muloqot</h3>
+
+              <div class="contact__links">
+                <a
+                  href="https://t.me/muhammadyucufmm"
+                  target="_blank"
+                  class="contact__link"
+                >
+                  Telegram Chat
+                  <i class="ri-arrow-right-up-long-line"></i>
+                </a>
+
+                <a
+                  href="tel:+998500534812"
+                  class="contact__link"
+                >
+                  Telefon Orqali
+                  <i class="ri-arrow-right-up-long-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct In-Page Consultation Message Form -->
+          <div class="form__container">
+            <h3 style="font-family: var(--second-font); font-size: var(--h2-font-size); color: var(--title-color); margin-bottom: 0.5rem;">
+              Konsultatsiyaga Yozilish
+            </h3>
+            <p style="font-size: var(--small-font-size); color: var(--text-color); margin-bottom: 1.5rem;">
+              Quyidagi ma'lumotlarni qoldiring, tez orada siz bilan bog'lanaman.
+            </p>
+
+            <form id="contact-form">
+              <div class="form__group">
+                <label class="form__label" for="form-name">Ismingiz *</label>
+                <input type="text" id="form-name" required placeholder="Ismingizni kiriting" class="form__input" />
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="form-contact">Telefon yoki Telegram *</label>
+                <input type="text" id="form-contact" required placeholder="+998 50 053-48-12 yoki @username" class="form__input" />
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="form-service">Qiziqtirayotgan Yo'nalish</label>
+                <select id="form-service" class="form__input" style="cursor: pointer;">
+                  <option value="Sotuv bo'limini tizimlashtirish">Sotuv bo'limini tizimlashtirish</option>
+                  <option value="AmoCRM sozlash va integratsiya">AmoCRM sozlash va integratsiya</option>
+                  <option value="Investitsiya jalb qilish ($10K+ cheklar)">Investitsiya jalb qilish ($10K+ cheklar)</option>
+                  <option value="B2B muzokaralar va yirik bitimlar">B2B muzokaralar va yirik bitimlar</option>
+                  <option value="Prompt Engineering va AI savdoda">Prompt Engineering va AI savdoda</option>
+                  <option value="Boshqa hamkorlik">Boshqa hamkorlik</option>
+                </select>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="form-message">Xabar yoki Izohingiz</label>
+                <textarea id="form-message" placeholder="Loyihangiz haqida qisqacha yozing..." class="form__textarea"></textarea>
+              </div>
+
+              <button type="submit" class="button" style="width: 100%; justify-content: center; cursor: pointer; border: none;">
+                Xabarni Jo'natish <i class="ri-send-plane-fill"></i>
+              </button>
+
+              <div id="form-status" style="margin-top: 1rem; font-size: var(--small-font-size); text-align: center;"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FLOATING TELEGRAM BUTTON -->
+    <a
+      href="https://t.me/muhammadyucufmm"
+      target="_blank"
+      class="floating-telegram"
+      title="Telegram: @muhammadyucufmm"
+    >
+      <i class="ri-telegram-fill"></i>
+      <span>Telegram</span>
+    </a>
+
+    <!-- FOOTER -->
+    <footer class="footer grid">
+      <div class="blob-animate"></div>
+
+      <div class="footer__copy">
+        All Rights Reserved By <span>Mahmudov Muhammadyusuf</span>
+      </div>
+
+      <div class="footer__year">
+        &#169;
+        <span id="footer-year">2026</span>
+      </div>
+    </footer>
+
+    <!-- SCROLLREVEAL -->
+    <script src="{{ url_for('static', filename='js/scrollreveal.min.js') }}"></script>
+
+    <!-- ANIME JS -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+
+    <!-- SWIPER JS -->
+    <script src="{{ url_for('static', filename='js/swiper-bundle.min.js') }}"></script>
+
+    <!-- MAIN JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>
