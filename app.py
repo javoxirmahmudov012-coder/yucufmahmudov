@@ -38,6 +38,8 @@ PORTFOLIO_DATA = {
         'phone_clean': '+998500534812',
         'telegram': '@muhammadyucufmm',
         'telegram_url': 'https://t.me/muhammadyucufmm',
+        'instagram': '@yucufmahmudov',
+        'instagram_url': 'https://www.instagram.com/yucufmahmudov/',
         'email': 'muhammadyucufmahmudov@gmail.com',
         'location': "Toshkent shahri, O'zbekiston",
         'age': '24 yosh (2002-yil 6-iyun)',
