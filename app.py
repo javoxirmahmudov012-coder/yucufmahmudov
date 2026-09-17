@@ -23,7 +23,7 @@ PORTFOLIO_DATA = {
     'bio_lead': "AmoCRM, tizimli savdo voronkasi, SPIN savdo texnikalari va sun'iy intellekt vositalari orqali B2B hamda investitsiya savdolarini yangi cho'qqiga olib chiquvchi yetakchi mutaxassis.",
     'bio_details': [
         "24 yoshda, Toshkent shahrida istiqomat qilaman. B2B va B2C sohasida yuqori chekli bitimlarni muvaffaqiyatli yopish va savdo jamoalarini boshqarish bo'yicha 1.5 yildan ortiq samarali tajribaga egaman.",
-        "Nurinvest kompaniyasida 30 dan ortiq investorlar bilan ishlab, kompaniyaga $250,000+ miqdorida investitsiya kirimini ta'minlaganman. HighWay avtomobil markazida sotuv jarayonlarini AmoCRM orqali tizimlashtirib, oylik savdo aylanmasini $30,000+ darajaga yetkazganmiz.",
+        "Nurinvest kompaniyasida 30 dan ortiq investorlar bilan ishlab, kompaniyaga $250,000+ miqdorida investitsiya kirimini ta'minlaganman. HighWay (chet elga o'qishga jo'natish konsaltingi) kompaniyasida sotuv bo'limini AmoCRM orqali tizimlashtirib, oylik savdo aylanmasini $30,000+ darajaga yetkazganmiz.",
         "Zamonaviy texnologiyalar bilan doimiy hamnafas holda Najot Ta'limda Prompt Engineering (Sun'iy Intellekt) yo'nalishini tamomlaganman. Savdo skriptlari, voronkalar va mijozlar tahlilida ilg'or AI vositalaridan foydalanaman."
     ],
     'stats': [
@@ -64,7 +64,7 @@ PORTFOLIO_DATA = {
         },
         {
             'company': 'HighWay',
-            'company_link': "Avtomobil biznesi va texnik xizmat ko'rsatish",
+            'company_link': "Chet elda ta'lim konsaltingi (Study Abroad)",
             'location': 'Toshkent',
             'role': "Sotuv bo'limi rahbari (Head of Sales)",
             'period': '2026-yil mart — 2026-yil iyul',
@@ -72,10 +72,10 @@ PORTFOLIO_DATA = {
             'badge': 'Muvaffaqiyatli Keys',
             'badge_class': 'bg-blue-500/20 text-blue-400 border-blue-500/30',
             'points': [
-                "Sotuv bo'limi faoliyatini boshqarish va AmoCRM orqali savdo jarayonlarini to'liq tizimlashtirish.",
+                "Chet elga o'qishga jo'natish konsalting kompaniyasida sotuv bo'limi faoliyatini boshqarish va AmoCRM orqali savdo jarayonlarini to'liq tizimlashtirish.",
                 "Sotuv menejerlarini tizimli o'qitish, rivojlantirish va sotuvga to'laqonli javobgar bo'lib ish yuritish.",
-                "Mijozlar bilan muzokara olib borib B2B / B2C va yuqori chekli bitimlarni muvaffaqiyatli yopish.",
-                "O'rtacha chek: $1,000+ | Oyiga 30+ ta sotuv amalga oshirilgan | Oylik savdo aylanmasi: $30,000+.",
+                "Mijozlar (talabalar va ota-onalar) bilan muzokara olib borib, xalqaro ta'lim dasturlari bo'yicha yuqori chekli shartnomalarni muvaffaqiyatli yopish.",
+                "O'rtacha chek: $1,000+ | Oyiga 30+ ta shartnoma | Oylik savdo aylanmasi: $30,000+.",
                 "Sotuv konversiyasini oshirish, KPI va reja asosida jamoa samaradorligini barqaror boshqarish."
             ]
         },
@@ -182,11 +182,11 @@ PORTFOLIO_DATA = {
             'title': 'AmoCRM Orqali Tizimli Savdo Qurish',
             'company': 'HighWay',
             'category': 'Tizimlashtirish',
-            'tag': 'Avtomobil Biznesi',
+            'tag': 'Chet Elda Ta\'lim (Study Abroad)',
             'metric': '$30K+ / oy',
             'metric_label': 'Oylik aylanma',
-            'desc': "Barcha kiruvchi va chiquvchi lidlar AmoCRM orqali tartibga solindi. Sotuv menejerlari qayta tayyorlanib, oylik bitimlar soni 30+ taga, umumiy oylik tushum esa $30,000+ ga yetkazildi.",
-            'tags': ['amoCRM', 'Head of Sales', 'Voronka', 'KPI Tizimi']
+            'desc': "Chet elga o'qishga jo'natish konsaltingida barcha kiruvchi lidlar AmoCRM orqali tartibga solindi. Sotuv menejerlari qayta tayyorlanib, oylik shartnomalar soni 30+ taga, umumiy oylik tushum esa $30,000+ ga yetkazildi.",
+            'tags': ['amoCRM', 'Head of Sales', 'Study Abroad', 'KPI Tizimi']
         },
         {
             'title': 'B2B Jamoa va Ish Vaqti Nazorati',
