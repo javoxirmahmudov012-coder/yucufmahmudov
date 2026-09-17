@@ -1211,14 +1211,18 @@ img {
   }
 
   .home__profile {
-    width: 360px;
-    height: 520px;
+    width: 380px;
+    height: 450px;
     object-fit: cover;
-    object-position: top center;
+    object-position: center 10%;
     border-radius: 2.5rem;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.75);
     justify-self: center;
+    transition: transform 0.4s ease;
+  }
+  .home__profile:hover {
+    transform: translateY(-6px) scale(1.01);
   }
 
   .home__image {
