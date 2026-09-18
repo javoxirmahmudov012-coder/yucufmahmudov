@@ -1211,10 +1211,10 @@ img {
   }
 
   .home__profile {
-    width: 380px;
-    height: 450px;
+    width: 360px;
+    height: 480px;
     object-fit: cover;
-    object-position: center 10%;
+    object-position: center top;
     border-radius: 2.5rem;
     border: 2px solid rgba(255, 255, 255, 0.12);
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.75);
@@ -1312,50 +1312,23 @@ img {
   }
 
   .about__container {
-    grid-template-columns: repeat(2, 500px);
-    align-items: center;
-    column-gap: 5.5rem;
+    grid-template-columns: 1fr;
+    max-width: 820px;
+    margin-inline: auto;
     padding-top: 2rem;
   }
 
   .about__data,
   .about__data .section__title {
-    text-align: initial;
+    text-align: center;
     z-index: 2;
   }
 
   .about__description {
     margin-bottom: 3rem;
+    font-size: 1.05rem;
   }
 
-  .about__profile {
-    width: 500px;
-  }
-
-  .about__image {
-    order: -1;
-  }
-
-  .about__image .blob-animate {
-    width: 200px;
-    height: 200px;
-    filter: blur(50px);
-  }
-
-  .about__image .blob-animate:nth-child(1) {
-    left: 4rem;
-    top: 4rem;
-  }
-
-  .about__image .blob-animate:nth-child(2) {
-    right: -1rem;
-    bottom: 3rem;
-  }
-
-  .about__shadow {
-    height: 600px;
-    bottom: 0;
-  }
 
   .projects {
     padding-block: 9rem 4rem;
@@ -1526,3 +1499,387 @@ img {
     display: none;
   }
 }
+
+/* ============================================
+   MOBILE-FIRST RESPONSIVE (max-width: 767px)
+   ============================================ */
+@media screen and (max-width: 767px) {
+
+  /* --- NAV: Hamburger-style bottom pill nav --- */
+  .nav {
+    align-items: center;
+    padding-block: 0.85rem;
+  }
+  .nav__logo {
+    font-size: 0.85rem;
+    letter-spacing: -0.03em;
+  }
+  .nav__menu {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: var(--z-fixed);
+    background: rgba(14, 13, 36, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 3rem;
+    padding: 0.65rem 1rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  }
+  .nav__list {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.1rem;
+  }
+  .nav__link {
+    font-size: 0.58rem;
+    padding: 0.45rem 0.7rem;
+    border-radius: 2rem;
+    white-space: nowrap;
+  }
+  .nav__link.active-link {
+    background: rgba(124, 58, 237, 0.2);
+    color: var(--first-color);
+  }
+  .nav__cta {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.7rem;
+  }
+  .nav__cta span {
+    display: none;
+  }
+
+  /* --- HERO (HOME) Section --- */
+  .home__container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .home__data {
+    position: static !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 1;
+  }
+  .home__status-badge {
+    margin: 0 auto 1rem;
+  }
+  .home__greeting {
+    font-size: 0.9rem;
+    margin-bottom: 0.35rem;
+  }
+  .home__name {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .home__buttons {
+    justify-content: center;
+    margin-top: 1.25rem;
+  }
+  .btn-primary, .btn-secondary {
+    font-size: 0.78rem;
+    padding: 0.75rem 1.2rem;
+  }
+
+  .home__image {
+    order: 2;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100%;
+    overflow: visible;
+  }
+  .home__profile {
+    width: 220px !important;
+    height: 280px !important;
+    border-radius: 1.75rem !important;
+    object-position: center 15% !important;
+  }
+  .home__image .blob-animate {
+    width: 180px;
+    height: 180px;
+  }
+
+  .home__info {
+    position: static !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 3;
+    transform: none !important;
+    text-align: center;
+  }
+  .home__split {
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+  }
+  .home__profession-1,
+  .home__profession-2 {
+    font-size: 1.1rem;
+    text-align: center !important;
+    transform: none !important;
+  }
+
+  .home__social {
+    position: static !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    column-gap: 1.25rem;
+    order: 4;
+  }
+  .home__social-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1.2rem;
+    transition: background 0.2s;
+  }
+  .home__social-link:hover {
+    background: rgba(124, 58, 237, 0.2);
+    transform: none;
+  }
+
+  .home__shadow {
+    display: none;
+  }
+  .home__cv {
+    display: none !important;
+  }
+
+  /* --- STATS STRIP --- */
+  .stats__section {
+    padding: 1rem 0 0.5rem;
+  }
+  .stats__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+  .stat__card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-radius: 1.25rem;
+  }
+  .stat__icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.3rem;
+    border-radius: 0.85rem;
+  }
+  .stat__number {
+    font-size: 1.15rem;
+  }
+  .stat__label {
+    font-size: 0.72rem;
+  }
+
+  /* --- ABOUT --- */
+  .about__container {
+    grid-template-columns: 1fr !important;
+    row-gap: 2rem;
+  }
+  .about__data .section__title,
+  .about__data {
+    text-align: center;
+  }
+  .about__description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  .about__image {
+    display: none; /* hide profile image on mobile to save space */
+  }
+  .about__shadow {
+    display: none;
+  }
+  .button {
+    font-size: 0.8rem;
+    padding: 0.85rem 1.4rem;
+  }
+
+  /* --- PROJECTS --- */
+  .projects .section__title {
+    text-align: center;
+    margin-left: 0;
+  }
+  .projects__card {
+    border-radius: 2rem;
+    padding: 1.25rem;
+  }
+  .projects__number h1 {
+    font-size: 1.5rem;
+  }
+  .projects__data {
+    margin-block: 1.25rem;
+  }
+  .projects__title {
+    font-size: 1rem;
+  }
+  .projects__description {
+    font-size: 0.78rem;
+    line-height: 1.6;
+  }
+
+  /* --- WORK TIMELINE --- */
+  .work__tabs {
+    padding: 1rem 1.25rem;
+    border-radius: 2rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .work__button {
+    font-size: 0.7rem;
+    padding: 0.35rem 0;
+  }
+  .work__data {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .work__year {
+    font-size: 0.85rem;
+    color: var(--first-color);
+  }
+  .work__title {
+    font-size: 1rem;
+  }
+  .work__subtitle {
+    font-size: 0.78rem;
+  }
+  .work__description {
+    font-size: 0.82rem;
+    line-height: 1.65;
+  }
+  .work__content {
+    row-gap: 2.5rem;
+  }
+  .work__area {
+    padding-left: 1rem;
+  }
+
+  /* --- SERVICES / KO'NIKMALAR --- */
+  .services__card {
+    border-radius: 2rem;
+    padding: 1.5rem 1.25rem;
+  }
+  .services__title {
+    font-size: 1rem;
+  }
+  .services__description {
+    font-size: 0.82rem;
+    line-height: 1.65;
+  }
+  .services__skill {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+
+  /* --- TESTIMONIALS --- */
+  .testimonials .section__title {
+    text-align: center;
+    margin-left: 0;
+  }
+  .testimonials__card {
+    width: 260px;
+  }
+
+  /* --- CONTACT --- */
+  .contact__description {
+    font-size: 0.82rem;
+  }
+  .form__container {
+    padding: 1.5rem 1.25rem;
+    border-radius: 2rem;
+  }
+  .form__input, .form__textarea {
+    font-size: 0.82rem;
+    padding: 0.85rem 1rem;
+    border-radius: 1rem;
+  }
+  .form__label {
+    font-size: 0.75rem;
+  }
+  .contact__links {
+    justify-content: center;
+    align-items: center;
+  }
+  .contact__link {
+    font-size: 0.85rem;
+    padding: 0.65rem 1.25rem;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 2rem;
+    justify-content: center;
+    margin-bottom: 0.35rem;
+  }
+
+  /* --- FLOATING TELEGRAM (mobile position) --- */
+  .floating-telegram {
+    bottom: 5.5rem;
+    right: 1rem;
+    padding: 0.7rem;
+    border-radius: 50%;
+  }
+  .floating-telegram span {
+    display: none;
+  }
+  .floating-telegram i {
+    font-size: 1.5rem;
+  }
+
+  /* --- FOOTER --- */
+  .footer {
+    padding-bottom: 6rem; /* above bottom nav */
+  }
+
+  /* --- SECTION SPACING --- */
+  .section {
+    padding-block: 3rem 1.5rem;
+  }
+  .section__title {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+  }
+
+  /* General container */
+  .container {
+    margin-inline: 1.25rem;
+  }
+}
+
+/* Very small phones (iPhone SE, Galaxy A series small) */
+@media screen and (max-width: 380px) {
+  .home__name {
+    font-size: 1.45rem;
+  }
+  .home__profile {
+    width: 180px !important;
+    height: 230px !important;
+  }
+  .stats__container {
+    grid-template-columns: 1fr;
+  }
+  .nav__link {
+    font-size: 0.52rem;
+    padding: 0.4rem 0.55rem;
+  }
+  .btn-primary, .btn-secondary {
+    font-size: 0.73rem;
+    padding: 0.7rem 1rem;
+  }
+}
+
