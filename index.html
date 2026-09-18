@@ -35,7 +35,24 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Mahmudov Muhammadyusuf — Head of Sales &amp; B2B Strategist" />
     <meta name="twitter:description" content="Head of Sales, B2B strategist. $250,000+ investitsiya jalb qilgan, AmoCRM tizimlashtirish tajribasi." />
-    <meta name="twitter:image" content="https://yucufmahmudov.uz/static/images/profile-hero.jpg" />
+    <!-- GOOGLE ANALYTICS (GA4) & YANDEX METRIKA -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SAMPLEID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SAMPLEID');
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      ym(99999999, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
+    </script>
 
     <!-- Extra subtle styling for contact form & quick links -->
     <style>
@@ -385,6 +402,9 @@
               <a href="#projects" class="btn-secondary">
                 <span data-i18n="home.btn2">Keyslar</span> <i class="ri-briefcase-line"></i>
               </a>
+              <a href="javascript:void(0)" onclick="downloadCV()" class="btn-cv" title="CV / Rezyume yuklab olish (PDF)">
+                <i class="ri-file-download-line"></i> <span data-i18n="home.btn_cv">CV (PDF)</span>
+              </a>
             </div>
           </div>
 
@@ -407,6 +427,9 @@
           <div class="home__social">
             <a href="https://t.me/muhammadyucufmm" target="_blank" class="home__social-link" title="Telegram: @muhammadyucufmm">
               <i class="ri-telegram-fill"></i>
+            </a>
+            <a href="https://linkedin.com/in/yucufmahmudov" target="_blank" class="home__social-link" title="LinkedIn: Mahmudov Muhammadyusuf">
+              <i class="ri-linkedin-fill"></i>
             </a>
             <a href="https://www.instagram.com/yucufmahmudov/" target="_blank" class="home__social-link" title="Instagram: @yucufmahmudov">
               <i class="ri-instagram-fill"></i>
@@ -458,7 +481,39 @@
             </div>
           </div>
         </div>
+      <!-- ACTIVE PROJECTS & CURRENT FOCUS -->
+      <section class="current-focus container">
+        <div class="focus__card">
+          <div class="focus__header">
+            <span class="focus__badge"><span class="status-dot"></span> Hozirgi Faoliyat &amp; Fokus (2026)</span>
+            <span class="focus__tag">Faol Bosqichda</span>
+          </div>
+          <div class="focus__grid">
+            <div class="focus__item">
+              <div class="focus__icon"><i class="ri-building-line"></i></div>
+              <div class="focus__info">
+                <h4>Yogdu Media (B2B Manager)</h4>
+                <p>Jamoa KPI nazorati, ish vaqti hisobi va korporativ B2B mijozlar bilan yangi shartnomalar tuzish.</p>
+              </div>
+            </div>
+            <div class="focus__item">
+              <div class="focus__icon"><i class="ri-flow-chart"></i></div>
+              <div class="focus__info">
+                <h4>AmoCRM Tizimlashtirish Konsaltingi</h4>
+                <p>Bizneslar uchun savdo voronkasi, menejerlarni o'qitish va konversiyani 2x oshirish strategiyalari.</p>
+              </div>
+            </div>
+            <div class="focus__item">
+              <div class="focus__icon"><i class="ri-sparkling-fill"></i></div>
+              <div class="focus__info">
+                <h4>AI Savdo Integratsiyasi</h4>
+                <p>Prompt engineering va sun'iy intellekt orqali mijozlar e'tirozlariga tezkor javob beruvchi tizimlar.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
 
       <!-- ABOUT -->
       <section class="about section" id="about">
@@ -524,6 +579,15 @@
                   <p class="projects__description" data-i18n="proj1.desc">
                     30+ yirik investorlar jalb qilingan, har biri o'rtacha $10,000 chek bilan. Jami $250,000+ to'g'ridan-to'g'ri investitsiya kiritilgan.
                   </p>
+
+                  <div class="projects__metrics">
+                    <span class="p-pill"><i class="ri-calendar-line"></i> 10 oy</span>
+                    <span class="p-pill"><i class="ri-user-star-line"></i> 30+ Investor</span>
+                    <span class="p-pill"><i class="ri-wallet-3-line"></i> $250,000+</span>
+                  </div>
+                  <button type="button" class="btn-case" onclick="openCaseModal('nurinvest')">
+                    <i class="ri-file-list-3-line"></i> <span data-i18n="proj.details">Batafsil Case Study</span>
+                  </button>
                 </div>
 
                 <div class="projects__image">
@@ -533,9 +597,10 @@
                     class="projects__img"
                   />
                   <a
-                    href="https://t.me/muhammadyucufmm"
-                    target="_blank"
+                    href="javascript:void(0)"
+                    onclick="openCaseModal('nurinvest')"
                     class="projects__button"
+                    title="Batafsil ko'rish"
                   >
                     <i class="ri-arrow-right-up-long-line"></i>
                   </a>
@@ -560,6 +625,15 @@
                   <p class="projects__description" data-i18n="proj2.desc">
                     Sotuv bo'limini 0 dan butunlay o'zim tizimlashtirganman. Sotuvchilarni o'qitish va ilg'or sotuv texnikalari bo'yicha to'liq strategiyalar joriy etilib, oyiga kamida 30 tadan 40+ tagacha muvaffaqiyatli shartnomalar va $30,000+ oylik aylanmaga erishilgan.
                   </p>
+
+                  <div class="projects__metrics">
+                    <span class="p-pill"><i class="ri-calendar-line"></i> 5 oy</span>
+                    <span class="p-pill"><i class="ri-file-text-line"></i> 40+ Shartnoma/oy</span>
+                    <span class="p-pill"><i class="ri-line-chart-line"></i> $30K+/oy</span>
+                  </div>
+                  <button type="button" class="btn-case" onclick="openCaseModal('highway')">
+                    <i class="ri-file-list-3-line"></i> <span data-i18n="proj.details">Batafsil Case Study</span>
+                  </button>
                 </div>
 
                 <div class="projects__image">
@@ -569,9 +643,10 @@
                     class="projects__img"
                   />
                   <a
-                    href="https://t.me/muhammadyucufmm"
-                    target="_blank"
+                    href="javascript:void(0)"
+                    onclick="openCaseModal('highway')"
                     class="projects__button"
+                    title="Batafsil ko'rish"
                   >
                     <i class="ri-arrow-right-up-long-line"></i>
                   </a>
@@ -596,6 +671,15 @@
                   <p class="projects__description" data-i18n="proj3.desc">
                     Xodimlar ish vaqti hisobi (overtime, otgul, mehnat ta'tillari), savdo rejalarining 100% bajarilishini nazorat qilish va korporativ shartnomalar.
                   </p>
+
+                  <div class="projects__metrics">
+                    <span class="p-pill"><i class="ri-time-line"></i> Davom etmoqda</span>
+                    <span class="p-pill"><i class="ri-pie-chart-line"></i> 100% KPI</span>
+                    <span class="p-pill"><i class="ri-team-line"></i> Jamoa nazorati</span>
+                  </div>
+                  <button type="button" class="btn-case" onclick="openCaseModal('yogdu')">
+                    <i class="ri-file-list-3-line"></i> <span data-i18n="proj.details">Batafsil Case Study</span>
+                  </button>
                 </div>
 
                 <div class="projects__image">
@@ -605,9 +689,10 @@
                     class="projects__img"
                   />
                   <a
-                    href="https://t.me/muhammadyucufmm"
-                    target="_blank"
+                    href="javascript:void(0)"
+                    onclick="openCaseModal('yogdu')"
                     class="projects__button"
+                    title="Batafsil ko'rish"
                   >
                     <i class="ri-arrow-right-up-long-line"></i>
                   </a>
@@ -632,6 +717,15 @@
                   <p class="projects__description" data-i18n="proj4.desc">
                     Najot Ta'lim Markazida Samandar Sultonov kursi. CRM skriptlar, mijozlar e'tirozlariga avtomatlashtirilgan javoblar va jarayonlarni 2x tezlashtirish.
                   </p>
+
+                  <div class="projects__metrics">
+                    <span class="p-pill"><i class="ri-flashlight-line"></i> 2x Tezlik</span>
+                    <span class="p-pill"><i class="ri-brain-line"></i> LLM + CRM</span>
+                    <span class="p-pill"><i class="ri-checkbox-circle-line"></i> 100% Avtomat</span>
+                  </div>
+                  <button type="button" class="btn-case" onclick="openCaseModal('ai')">
+                    <i class="ri-file-list-3-line"></i> <span data-i18n="proj.details">Batafsil Case Study</span>
+                  </button>
                 </div>
 
                 <div class="projects__image">
@@ -641,9 +735,10 @@
                     class="projects__img"
                   />
                   <a
-                    href="https://t.me/muhammadyucufmm"
-                    target="_blank"
+                    href="javascript:void(0)"
+                    onclick="openCaseModal('ai')"
                     class="projects__button"
+                    title="Batafsil ko'rish"
                   >
                     <i class="ri-arrow-right-up-long-line"></i>
                   </a>
@@ -756,6 +851,12 @@
                 <p class="work__description" data-i18n="edu.najot.desc">
                   Zamonaviy sun'iy intellekt vositalari (LLM, ChatGPT, Claude) yordamida savdo jarayonlari, voronkalar, mijozlar bilan muloqot skriptlari va avtomatizatsiyani chuqur o'rganish.
                 </p>
+
+                <!-- Certificate Visual Preview -->
+                <div class="cert__preview" onclick="openCertModal('static/images/cert-1.svg', 'Najot Ta\'lim — Prompt Engineering Sertifikati')">
+                  <img src="static/images/cert-1.svg" alt="Najot Ta'lim Sertifikati" class="cert__img" />
+                  <div class="cert__overlay"><i class="ri-zoom-in-line"></i> Sertifikatni ko'rish</div>
+                </div>
               </div>
 
               <!-- 2. M-Factor -->
@@ -771,6 +872,12 @@
                 <p class="work__description" data-i18n="edu.mfactor.desc">
                   SPIN savdo texnikalari, e'tirozlar bilan ishlash, mijozning yashirin ehtiyojlarini aniqlash va yuqori chekli bitimlarni muvaffaqiyatli yopish san'ati.
                 </p>
+
+                <!-- Certificate Visual Preview -->
+                <div class="cert__preview" onclick="openCertModal('static/images/cert-2.svg', 'M-Factor — Sotuv Texnikalari Sertifikati')">
+                  <img src="static/images/cert-2.svg" alt="M-Factor Sertifikati" class="cert__img" />
+                  <div class="cert__overlay"><i class="ri-zoom-in-line"></i> Sertifikatni ko'rish</div>
+                </div>
               </div>
 
               <!-- 3. Ibrohim Gulyamov -->
@@ -786,6 +893,12 @@
                 <p class="work__description" data-i18n="edu.ibrahim.desc">
                   Kompaniyada barqaror sotuv bo'limi tizimini qurish, KPI mexanizmlari, menejerlarni nazorat qilish va savdo aylanmasini rejali oshirish.
                 </p>
+
+                <!-- Certificate Visual Preview -->
+                <div class="cert__preview" onclick="openCertModal('static/images/cert-3.svg', 'Ibrohim Gulyamov — Sotuvni Tizimlashtirish Sertifikati')">
+                  <img src="static/images/cert-3.svg" alt="Ibrohim Gulyamov Sertifikati" class="cert__img" />
+                  <div class="cert__overlay"><i class="ri-zoom-in-line"></i> Sertifikatni ko'rish</div>
+                </div>
               </div>
 
               <!-- 4. Guliston Davlat Universiteti -->
@@ -801,6 +914,12 @@
                 <p class="work__description" data-i18n="edu.uni.desc">
                   Oliy ma'lumot (Bakalavriat darajasi), intizom, liderlik va jamoani boshqarish ko'nikmalarini shakllantirish.
                 </p>
+
+                <!-- Certificate Visual Preview -->
+                <div class="cert__preview" onclick="openCertModal('static/images/cert-4.svg', 'Guliston Davlat Universiteti — Bakalavr Diplomi')">
+                  <img src="static/images/cert-4.svg" alt="Bakalavr Diplomi" class="cert__img" />
+                  <div class="cert__overlay"><i class="ri-zoom-in-line"></i> Diplomni ko'rish</div>
+                </div>
               </div>
 
             </div>
@@ -1070,6 +1189,15 @@
                 </a>
 
                 <a
+                  href="https://linkedin.com/in/yucufmahmudov"
+                  target="_blank"
+                  class="contact__link"
+                >
+                  LinkedIn (yucufmahmudov)
+                  <i class="ri-arrow-right-up-long-line"></i>
+                </a>
+
+                <a
                   href="https://t.me/muhammadyucufmm"
                   target="_blank"
                   class="contact__link"
@@ -1215,6 +1343,23 @@
     <!-- I18N & THEME JS -->
     <script src="static/js/i18n.js"></script>
 
+    <!-- CASE STUDY MODAL -->
+    <div id="case-modal" class="modal-backdrop">
+      <div class="modal-card">
+        <button class="modal-close" onclick="closeCaseModal()"><i class="ri-close-line"></i></button>
+        <div id="case-modal-content"></div>
+      </div>
+    </div>
+
+    <!-- CERTIFICATE LIGHTBOX MODAL -->
+    <div id="cert-modal" class="modal-backdrop">
+      <div class="modal-card cert-modal-card">
+        <button class="modal-close" onclick="closeCertModal()"><i class="ri-close-line"></i></button>
+        <h3 id="cert-modal-title" style="margin-bottom: 1rem; color: #fff; font-size: 1.1rem; text-align: center;"></h3>
+        <img id="cert-modal-img" src="" alt="Sertifikat" style="width: 100%; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.15);" />
+      </div>
+    </div>
+
     <!-- TOAST NOTIFICATION & QUICK ACTIONS -->
     <div id="toast" class="toast">Telefon raqami nusxalandi! 📋</div>
     <script>
@@ -1241,6 +1386,225 @@
           setTimeout(() => t.classList.remove('show'), 2500);
         }
       }
+
+      /* CASE STUDY DATA & MODAL LOGIC */
+      const CASE_STUDIES = {
+        nurinvest: {
+          tag: "INVESTITSIYA KONSALTINGI",
+          title: "Nurinvest: $250,000+ Investitsiya Jalb Qilish",
+          period: "Fevral 2025 — Dekabr 2025 (10 oy)",
+          role: "Sotuv Bo'limi Rahbari & Investitsion Maslahatchi",
+          problem: "Kompaniyada yirik investitsion loyihalar bo'yicha mijozlar bilan tizimli muzokaralar olib borish va yuqori chekli ($10,000+) bitimlarni tezkor yopish mexanizmi yo'lga qo'yilmagan edi.",
+          solution: "Mijozlar bilan ishonchga asoslangan muloqot strategiyasi, investitsiya daromadlilik hisob-kitoblarining shaffof taqdimotlari va e'tirozlar bilan professional ishlash tizimi ishlab chiqildi. Har bir investor bilan shaxsiy portfel rejalashtirildi.",
+          results: [
+            "$250,000+ to'g'ridan-to'g'ri jalb qilingan investitsiya hajmi",
+            "30+ dan ortiq yirik ishonchli investorlar portfeli",
+            "O'rtacha chek: $10,000 / investor",
+            "100% investitsion shartnomalar muvaffaqiyatli rasmiylashtirildi"
+          ]
+        },
+        highway: {
+          tag: "CHET ELDA TA'LIM KONSALTINGI",
+          title: "HighWay: Sotuv Bo'limini 0 dan Tizimlashtirish & 40+ Shartnoma",
+          period: "Mart 2026 — Iyul 2026 (5 oy)",
+          role: "Sotuv Bo'limi Rahbari",
+          problem: "Kompaniyada sotuvchilar tizimsiz ishlar, mijozlar lidi yo'qotilar, konversiya past va barqaror oylik shartnoma ko'rsatkichi mavjud emas edi.",
+          solution: "Sotuv bo'limi 0 dan to'liq qayta qurildi. AmoCRM voronkasi joriy qilindi, sotuvchilar uchun SPIN savdo texnikalari, skriptlar va kunlik KPI nazorati o'rnatildi. Natijada lidlar bilan ishlash tezligi 3 baravarga oshdi.",
+          results: [
+            "Oyiga kamida 30 tadan 40+ tagacha muvaffaqiyatli shartnomalar",
+            "$30,000+ dan $40,000+ gacha oylik savdo aylanmasiga erishildi",
+            "Sotuv jamoasi noldan professional darajada o'qitildi",
+            "Talabalarni xorijiy OTMlarga qabul qilish va viza ko'rsatkichi 98% ga yetdi"
+          ]
+        },
+        yogdu: {
+          tag: "B2B MENEJMENT & OPERATSIYA",
+          title: "Yogdu Media: Jamoa KPI va B2B Shartnomalar",
+          period: "Iyun 2026 — Hozirgacha",
+          role: "B2B Manager",
+          problem: "Katta jamoada xodimlarning ish vaqti hisobi (overtime, otgul, mehnat ta'tillari) va savdo rejalarining izchil nazoratini markazlashtirish zarurati bor edi.",
+          solution: "Ish vaqti monitoringi va savdo samaradorligini o'lchovchi KPI tizimi joriy qilindi. Korporativ B2B mijozlar bilan muzokaralar strategiyasi yangilandi.",
+          results: [
+            "Savdo rejalarining 100% bajarilish intizomi ta'minlandi",
+            "Xodimlar ish vaqti va vazifalar bajarilishi to'liq raqamlashtirildi",
+            "Yirik korporativ hamkorlar bilan uzoq muddatli shartnomalar tuzildi"
+          ]
+        },
+        ai: {
+          tag: "PROMPT ENGINEERING & AI",
+          title: "AI Savdo Integratsiyasi: 2x Tezlik va Avtomatizatsiya",
+          period: "2026",
+          role: "Prompt Engineer & AI Integrator",
+          problem: "Mijozlarning e'tirozlariga javob berish va CRM kartochkalarini to'ldirishda xodimlar ko'p vaqt yo'qotar, standart javoblar konversiyani tushirar edi.",
+          solution: "Najot Ta'lim (Samandar Sultonov) kursida olingan ilg'or Prompt Engineering bilimlari asosida maxsus AI tizimlar (Claude / ChatGPT) savdo voronkasiga ulandi.",
+          results: [
+            "Menejerlar faoliyati va skriptlar bilan ishlash tezligi 2 barobar oshdi",
+            "Mijozlarning har qanday murakkab e'tiroziga 3 soniyada javob variantlari",
+            "CRM tahlillari va xabarlar avtomatlashtirildi"
+          ]
+        }
+      };
+
+      function openCaseModal(caseKey) {
+        const data = CASE_STUDIES[caseKey];
+        if (!data) return;
+        const html = `
+          <span class="modal-badge">${data.tag}</span>
+          <h2 class="modal-title">${data.title}</h2>
+          <div class="modal-meta">
+            <span><i class="ri-calendar-line"></i> ${data.period}</span>
+            <span><i class="ri-user-star-line"></i> ${data.role}</span>
+          </div>
+          <div class="modal-section">
+            <h4><i class="ri-error-warning-line"></i> Muammo / Boshlang'ich Holat</h4>
+            <p>${data.problem}</p>
+          </div>
+          <div class="modal-section">
+            <h4><i class="ri-lightbulb-line"></i> Qo'llangan Yechim &amp; Strategiya</h4>
+            <p>${data.solution}</p>
+          </div>
+          <div class="modal-section">
+            <h4><i class="ri-checkbox-circle-line"></i> Erishilgan Aniq Natijalar</h4>
+            <ul>
+              ${data.results.map(r => `<li><i class="ri-check-line"></i> ${r}</li>`).join('')}
+            </ul>
+          </div>
+          <div style="margin-top: 1.5rem; text-align: center;">
+            <a href="https://t.me/muhammadyucufmm" target="_blank" class="btn-primary" style="display: inline-flex;">
+              Shunday natija haqida maslahat olish <i class="ri-arrow-right-up-line"></i>
+            </a>
+          </div>
+        `;
+        document.getElementById('case-modal-content').innerHTML = html;
+        document.getElementById('case-modal').classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeCaseModal() {
+        document.getElementById('case-modal').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      function openCertModal(src, title) {
+        document.getElementById('cert-modal-img').src = src;
+        document.getElementById('cert-modal-title').textContent = title;
+        document.getElementById('cert-modal').classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeCertModal() {
+        document.getElementById('cert-modal').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      // Close modal on backdrop click
+      document.querySelectorAll('.modal-backdrop').forEach(modal => {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            closeCaseModal();
+            closeCertModal();
+          }
+        });
+      });
+
+      /* CV YUKLAB OLISH FUNKSIYASI */
+      function downloadCV() {
+        // Professional CV HTML ni yangi oynada ochib, PDF formatida yuklash yoki chop etish
+        const cvWindow = window.open('', '_blank');
+        cvWindow.document.write(`
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <title>Mahmudov Muhammadyusuf — CV</title>
+            <style>
+              @page { size: A4; margin: 20mm; }
+              body { font-family: 'Segoe UI', Tahoma, sans-serif; color: #1e293b; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+              h1 { color: #0f172a; margin-bottom: 4px; font-size: 26px; }
+              .role { color: #6366f1; font-weight: bold; font-size: 16px; margin-bottom: 12px; }
+              .contact { font-size: 13px; color: #64748b; margin-bottom: 20px; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px; }
+              h2 { color: #0f172a; font-size: 18px; border-bottom: 2px solid #6366f1; padding-bottom: 4px; margin-top: 20px; }
+              .job { margin-bottom: 14px; }
+              .job-title { font-weight: bold; font-size: 15px; color: #1e293b; }
+              .job-meta { font-size: 12px; color: #64748b; margin-bottom: 4px; }
+              ul { margin: 6px 0; padding-left: 20px; font-size: 13px; }
+              .skills-grid { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+              .skill-tag { background: #e0e7ff; color: #4338ca; padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: 600; }
+              @media print { .no-print { display: none; } }
+            </style>
+          </head>
+          <body>
+            <div class="no-print" style="margin-bottom: 20px; text-align: right;">
+              <button onclick="window.print()" style="background: #4f46e5; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; font-size: 14px; cursor: pointer;">PDF qilib saqlash (Print)</button>
+            </div>
+            <h1>Mahmudov Muhammadyusuf O'tkirjon o'g'li</h1>
+            <div class="role">Head of Sales | B2B Strategist | Investment Consultant</div>
+            <div class="contact">
+              Telefon: +998 (50) 053-48-12 &bull; Telegram: @muhammadyucufmm &bull; Email: muhammadyucufmahmudov@gmail.com &bull; Toshkent, O'zbekiston &bull; https://yucufmahmudov.uz
+            </div>
+
+            <h2>QISQACHA MA'LUMOT (PROFILE)</h2>
+            <p style="font-size: 13px;">
+              B2B va investitsiya sohasida $250,000+ jalb qilingan sarmoya hamda chet elda ta'lim yo'nalishida oyiga 40+ muvaffaqiyatli shartnomalar natijasiga ega Sotuv bo'limi rahbari. AmoCRM tizimini 0 dan qurish, voronkani avtomatlashtirish, jamoani o'qitish va zamonaviy Prompt Engineering (AI) texnologiyalarini tadbiq etish mutaxassisi.
+            </p>
+
+            <h2>ISH TAJRIBASI (WORK EXPERIENCE)</h2>
+            <div class="job">
+              <div class="job-title">B2B Manager &bull; Yogdu Media (yogdu_agency)</div>
+              <div class="job-meta">Iyun 2026 — Hozirgacha | Toshkent</div>
+              <ul>
+                <li>Xodimlar ish vaqtini aniq hisobga olish (overtime, otgul, mehnat ta'tillari).</li>
+                <li>Savdo rejalari bajarilishi va sotuv samaradorligi (KPI) ko'rsatkichlarini 100% nazorat qilish.</li>
+                <li>Yirik korporativ B2B bitimlarni tuzish va muzokaralar olib borish.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="job-title">Sotuv Bo'limi Rahbari &bull; HighWay (Chet elda ta'lim konsaltingi)</div>
+              <div class="job-meta">Mart 2026 — Iyul 2026 | Toshkent</div>
+              <ul>
+                <li>Sotuv bo'limini 0 dan butunlay o'zim tizimlashtirganman va jamoani noldan shakllantirganman.</li>
+                <li>Sotuvchilarni o'qitish va ilg'or sotuv texnikalari bo'yicha to'liq strategiyalar tuzildi.</li>
+                <li>Natija: Oyiga kamida 30 tadan 40+ tagacha muvaffaqiyatli shartnomalar, oylik $30,000+ dan $40,000+ aylanma.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="job-title">Sotuv Bo'limi Rahbari &amp; Investitsion Maslahatchi &bull; Nurinvest</div>
+              <div class="job-meta">Fevral 2025 — Dekabr 2025 | Toshkent</div>
+              <ul>
+                <li>Jami $250,000+ to'g'ridan-to'g'ri investitsiya kirimini ta'minlaganman.</li>
+                <li>30+ yirik investorlar bilan muvaffaqiyatli bitimlar (o'rtacha chek: $10,000 / investor).</li>
+                <li>Investitsion portfel va risklarni boshqarish bo'yicha professional maslahatlar.</li>
+              </ul>
+            </div>
+
+            <h2>TA'LIM VA SERTIFIKATLAR</h2>
+            <ul>
+              <li><b>Guliston Davlat Universiteti</b> — Bakalavr darajasi (2020 — 2024)</li>
+              <li><b>Najot Ta'lim Markazi</b> — Prompt Engineering &amp; Sun'iy Intellekt (Samandar Sultonov, 2026)</li>
+              <li><b>M-Factor</b> — Sotuv Texnikalari va Psixologiyasi (Islombek Ibragimov, 2025)</li>
+              <li><b>Ibrohim Gulyamov</b> — Sotuvni Tizimlashtirish &amp; KPI (2025)</li>
+            </ul>
+
+            <h2>ASOSIY KO'NIKMALAR (SKILLS)</h2>
+            <div class="skills-grid">
+              <span class="skill-tag">AmoCRM &amp; Voronka</span>
+              <span class="skill-tag">SPIN Selling</span>
+              <span class="skill-tag">B2B Muzokaralar</span>
+              <span class="skill-tag">Yuqori Chekli Bitimlar ($10K+)</span>
+              <span class="skill-tag">Investitsiya Jalb Qilish</span>
+              <span class="skill-tag">Prompt Engineering (LLM)</span>
+              <span class="skill-tag">KPI &amp; Jamoa Boshqaruvi</span>
+              <span class="skill-tag">O'zbek tili (Ona tili)</span>
+              <span class="skill-tag">Rus tili (B1)</span>
+            </div>
+          </body>
+          </html>
+        `);
+        cvWindow.document.close();
+        showToast('CV oynasi ochildi! 📄');
+      }
     </script>
   </body>
 </html>
+

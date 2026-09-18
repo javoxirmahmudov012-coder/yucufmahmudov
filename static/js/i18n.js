@@ -17,9 +17,11 @@ const translations = {
     'home.greeting':    "Salom, men",
     'home.btn1':        "Konsultatsiya",
     'home.btn2':        "Keyslar",
+    'home.btn_cv':      "CV (PDF)",
     'home.profession1': "Head of Sales",
     'home.profession2': "B2B Strategist",
     'home.prof.label':  "Professional",
+    'proj.details':     "Batafsil Case Study",
 
     /* STATS */
     'stat.invest.label':   "Jalb qilingan investitsiya (Nurinvest)",
@@ -157,9 +159,11 @@ const translations = {
     'home.greeting':    "Привет, я",
     'home.btn1':        "Консультация",
     'home.btn2':        "Кейсы",
+    'home.btn_cv':      "Резюме (PDF)",
     'home.profession1': "Руководитель продаж",
     'home.profession2': "B2B Стратег",
     'home.prof.label':  "Профессионал",
+    'proj.details':     "Подробнее Case Study",
 
     'stat.invest.label':    "Привлечённые инвестиции (Nurinvest)",
     'stat.contracts.num':   "40+ / мес",
@@ -287,9 +291,11 @@ const translations = {
     'home.greeting':    "Hello, I'm",
     'home.btn1':        "Consultation",
     'home.btn2':        "Cases",
+    'home.btn_cv':      "CV (PDF)",
     'home.profession1': "Head of Sales",
     'home.profession2': "B2B Strategist",
     'home.prof.label':  "Professional",
+    'proj.details':     "View Case Study",
 
     'stat.invest.label':    "Investment Attracted (Nurinvest)",
     'stat.contracts.num':   "40+ / mo",

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="certBg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1a24"/>
+      <stop offset="100%" stop-color="#163832"/>
+    </linearGradient>
+    <linearGradient id="emrGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="500" height="320" rx="16" fill="url(#certBg4)"/>
+  <rect x="8" y="8" width="484" height="304" rx="12" fill="none" stroke="url(#emrGrad)" stroke-width="1.5" stroke-dasharray="8 4"/>
+  <rect x="16" y="16" width="468" height="288" rx="8" fill="rgba(255,255,255,0.02)"/>
+
+  <!-- Badge -->
+  <circle cx="250" cy="65" r="28" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="1.5"/>
+  <path d="M250 48 L254 58 L265 59 L257 66 L259 77 L250 71 L241 77 L243 66 L235 59 L246 58 Z" fill="#34d399"/>
+
+  <text x="250" y="115" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" fill="#a7f3d0" letter-spacing="3" text-anchor="middle">OLIY MA'LUMOT DIPLOMI</text>
+  <text x="250" y="145" font-family="'Unbounded', sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="middle">BAKALAVR DARAJASI</text>
+  <text x="250" y="168" font-family="'Montserrat', sans-serif" font-size="12" fill="#34d399" text-anchor="middle">Guliston Davlat Universiteti</text>
+
+  <line x1="100" y1="185" x2="400" y2="185" stroke="rgba(255,255,255,0.1)"/>
+
+  <text x="250" y="210" font-family="'Montserrat', sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Bitiruvchi:</text>
+  <text x="250" y="235" font-family="'Unbounded', sans-serif" font-size="15" font-weight="700" fill="#fbbf24" text-anchor="middle">Mahmudov Muhammadyusuf</text>
+
+  <text x="50" y="280" font-family="'Montserrat', sans-serif" font-size="10" fill="#64748b">Davr: <tspan fill="#e2e8f0" font-weight="600">2020 — 2024</tspan></text>
+  <text x="50" y="295" font-family="'Montserrat', sans-serif" font-size="10" fill="#64748b">Daraja: <tspan fill="#e2e8f0" font-weight="600">Bakalavriat (Davlat Namunasidagi Diplom)</tspan></text>
+  <text x="450" y="285" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" fill="#34d399" text-anchor="end">&#10003; Tasdiqlangan</text>
+  <text x="450" y="298" font-family="'Montserrat', sans-serif" font-size="9" fill="#64748b" text-anchor="end">O'zbekiston Respublikasi</text>
+</svg>
