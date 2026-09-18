@@ -249,23 +249,35 @@ def save_message(msg):
     with open(MESSAGES_FILE, 'w', encoding='utf-8') as f:
         json.dump(messages, f, ensure_ascii=False, indent=2)
 
+from flask import Flask, render_template, request, jsonify, redirect, url_for, send_file, Response
+
 @app.route('/')
 def index():
     return render_template('index.html', data=PORTFOLIO_DATA)
 
 @app.route('/robots.txt')
 def robots():
-    robots_path = os.path.join(BASE_DIR, 'public', 'robots.txt')
-    if not os.path.exists(robots_path):
-        robots_path = os.path.join(BASE_DIR, 'robots.txt')
-    return send_file(robots_path, mimetype='text/plain')
+    content = "User-agent: *\nAllow: /\n\nSitemap: https://yucufmahmudov.uz/sitemap.xml\nSitemap: https://yucufmahmudovv.vercel.app/sitemap.xml\n"
+    return Response(content, mimetype='text/plain')
 
 @app.route('/sitemap.xml')
 def sitemap():
-    sitemap_path = os.path.join(BASE_DIR, 'public', 'sitemap.xml')
-    if not os.path.exists(sitemap_path):
-        sitemap_path = os.path.join(BASE_DIR, 'sitemap.xml')
-    return send_file(sitemap_path, mimetype='application/xml')
+    content = """<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://yucufmahmudov.uz/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://yucufmahmudovv.vercel.app/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>"""
+    return Response(content, mimetype='application/xml')
 
 @app.route('/api/contact', methods=['POST'])
 def contact():
