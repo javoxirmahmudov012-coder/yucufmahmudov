@@ -1,20 +1,81 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
   <defs>
-    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#082f49"/>
-      <stop offset="50%" stop-color="#0c4a6e"/>
-      <stop offset="100%" stop-color="#0369a1"/>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="60%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1e1338"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
     </linearGradient>
   </defs>
-  <rect width="600" height="380" rx="24" fill="url(#grad4)"/>
-  <circle cx="480" cy="80" r="120" fill="#38bdf8" opacity="0.2"/>
-  <rect x="40" y="40" width="140" height="32" rx="16" fill="rgba(255,255,255,0.1)"/>
-  <text x="110" y="61" font-family="sans-serif" font-size="14" font-weight="bold" fill="#7dd3fc" text-anchor="middle">NAJOT TA'LIM</text>
-  <text x="40" y="140" font-family="sans-serif" font-size="36" font-weight="900" fill="#ffffff">Prompt Engineering &amp; AI</text>
-  <text x="40" y="175" font-family="sans-serif" font-size="18" font-weight="600" fill="#bae6fd">Sun'iy Intellekt Savdo Integratsiyasi</text>
-  <rect x="40" y="225" width="520" height="55" rx="12" fill="rgba(0,0,0,0.3)"/>
-  <text x="60" y="248" font-family="monospace" font-size="13" fill="#38bdf8">&gt; AI Prompt: CRM skript va e'tirozlar tahlili</text>
-  <text x="60" y="268" font-family="monospace" font-size="12" fill="#94a3b8">Natija: Menejerlar vaqti 2 baravar tejandi</text>
-  <rect x="40" y="310" width="200" height="36" rx="10" fill="rgba(0,0,0,0.4)"/>
-  <text x="55" y="333" font-family="sans-serif" font-size="13" fill="#e2e8f0">Samandar Sultonov kursi</text>
+
+  <!-- Background -->
+  <rect width="600" height="380" rx="20" fill="url(#bgGrad4)"/>
+  <rect x="1" y="1" width="598" height="378" rx="19" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+
+  <!-- Top App Header -->
+  <rect x="25" y="22" width="550" height="42" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)"/>
+  <circle cx="45" cy="43" r="5" fill="#ef4444"/>
+  <circle cx="62" cy="43" r="5" fill="#f59e0b"/>
+  <circle cx="79" cy="43" r="5" fill="#10b981"/>
+  
+  <text x="110" y="48" font-family="'Montserrat', sans-serif" font-size="12" font-weight="700" fill="#a78bfa" letter-spacing="1">AI ENGINE // PROMPT &amp; SALES AUTOMATION</text>
+  <rect x="465" y="30" width="95" height="26" rx="8" fill="rgba(168,85,247,0.15)" stroke="rgba(168,85,247,0.4)"/>
+  <text x="512" y="47" font-family="'Montserrat', sans-serif" font-size="11" font-weight="600" fill="#c084fc" text-anchor="middle">LLM ACTIVE</text>
+
+  <!-- Left Side: Prompt Pipeline / Architecture -->
+  <rect x="25" y="78" width="285" height="280" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)"/>
+  <text x="45" y="106" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" fill="#94a3b8">Savdo Avtomatizatsiyasi Sxemasi</text>
+
+  <!-- Step 1: Customer Input -->
+  <rect x="45" y="124" width="245" height="42" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)"/>
+  <circle cx="65" cy="145" r="8" fill="#38bdf8"/>
+  <text x="82" y="141" font-family="'Montserrat', sans-serif" font-size="11" font-weight="600" fill="#f1f5f9">Mijoz E'tirozi / Savoli</text>
+  <text x="82" y="157" font-family="'Montserrat', sans-serif" font-size="10" fill="#64748b">Telegram / Instagram / Qo'ng'iroq</text>
+
+  <!-- Arrow down -->
+  <text x="167" y="180" font-family="'Montserrat', sans-serif" font-size="14" fill="#a78bfa" text-anchor="middle">&#8595;</text>
+
+  <!-- Step 2: Prompt Processing -->
+  <rect x="45" y="190" width="245" height="50" rx="10" fill="url(#purpleGrad)"/>
+  <circle cx="65" cy="215" r="8" fill="#ffffff"/>
+  <text x="82" y="209" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" fill="#ffffff">AI Prompt Engineering</text>
+  <text x="82" y="227" font-family="'Montserrat', sans-serif" font-size="10" fill="#e0e7ff">Konversiyani oshiruvchi aniq skript</text>
+
+  <!-- Arrow down -->
+  <text x="167" y="255" font-family="'Montserrat', sans-serif" font-size="14" fill="#a78bfa" text-anchor="middle">&#8595;</text>
+
+  <!-- Step 3: CRM & Response -->
+  <rect x="45" y="265" width="245" height="42" rx="8" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.3)"/>
+  <circle cx="65" cy="286" r="8" fill="#10b981"/>
+  <text x="82" y="282" font-family="'Montserrat', sans-serif" font-size="11" font-weight="600" fill="#34d399">AmoCRM Avto-yozuv</text>
+  <text x="82" y="298" font-family="'Montserrat', sans-serif" font-size="10" fill="#64748b">Menejerga tayyor yechim (2x tezlik)</text>
+
+  <text x="45" y="338" font-family="'Montserrat', sans-serif" font-size="11" fill="#cbd5e1">Natija: <tspan font-weight="700" fill="#34d399">0 soniya kutish | 2x samaradorlik</tspan></text>
+
+  <!-- Right Side: AI Speed & Skills Badges -->
+  <rect x="325" y="78" width="250" height="280" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)"/>
+  
+  <text x="345" y="106" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" fill="#94a3b8">Integratsiya Ko'rsatkichlari</text>
+
+  <!-- Speed KPI Card -->
+  <rect x="345" y="125" width="210" height="90" rx="12" fill="rgba(124,58,237,0.12)" stroke="rgba(124,58,237,0.3)"/>
+  <text x="362" y="152" font-family="'Montserrat', sans-serif" font-size="11" fill="#c084fc">Jarayonlar Tezligi</text>
+  <text x="362" y="190" font-family="'Unbounded', sans-serif" font-size="32" font-weight="800" fill="#ffffff">2X</text>
+  <text x="415" y="186" font-family="'Montserrat', sans-serif" font-size="11" font-weight="600" fill="#34d399">&#9650; 200% unum</text>
+
+  <!-- Tech tags -->
+  <rect x="345" y="230" width="100" height="30" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="395" y="250" font-family="'Montserrat', sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Claude 3.5</text>
+
+  <rect x="455" y="230" width="100" height="30" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="505" y="250" font-family="'Montserrat', sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">ChatGPT 4o</text>
+
+  <rect x="345" y="270" width="210" height="30" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="450" y="290" font-family="'Montserrat', sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">AmoCRM Webhooks</text>
+
+  <rect x="345" y="310" width="210" height="30" rx="8" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.3)"/>
+  <text x="450" y="330" font-family="'Montserrat', sans-serif" font-size="11" font-weight="600" fill="#34d399" text-anchor="middle">Najot Ta'lim Sertifikati</text>
 </svg>

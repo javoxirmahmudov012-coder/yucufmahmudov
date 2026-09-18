@@ -19,8 +19,23 @@
     <!-- STYLES CSS (Original Habib / Panda Coders Style) -->
     <link rel="stylesheet" href="static/css/styles.css?v=3" />
 
-    <title>yucufmahmudov — Shaxsiy Portfolio</title>
-    <meta name="description" content="yucufmahmudov (Mahmudov Muhammadyusuf) — Head of Sales, B2B Sotuv Boshqaruvchisi va Investitsion Konsultant. $250,000+ jalb qilingan investitsiya, AmoCRM tizimi va yuqori chekli bitimlar." />
+    <title>yucufmahmudov — Head of Sales &amp; B2B Strategist</title>
+    <meta name="description" content="Head of Sales, B2B strategist. $250,000+ investitsiya jalb qilgan, AmoCRM tizimlashtirish tajribasi." />
+
+    <!-- OPEN GRAPH / FACEBOOK / TELEGRAM PREVIEW -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yucufmahmudov.uz/" />
+    <meta property="og:title" content="Mahmudov Muhammadyusuf — Head of Sales &amp; B2B Strategist" />
+    <meta property="og:description" content="Head of Sales, B2B strategist. $250,000+ investitsiya jalb qilgan, AmoCRM tizimlashtirish tajribasi." />
+    <meta property="og:image" content="https://yucufmahmudov.uz/static/images/profile-hero.jpg" />
+    <meta property="og:image:alt" content="Mahmudov Muhammadyusuf — Head of Sales" />
+    <meta property="og:site_name" content="yucufmahmudov" />
+
+    <!-- TWITTER CARDS -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mahmudov Muhammadyusuf — Head of Sales &amp; B2B Strategist" />
+    <meta name="twitter:description" content="Head of Sales, B2B strategist. $250,000+ investitsiya jalb qilgan, AmoCRM tizimlashtirish tajribasi." />
+    <meta name="twitter:image" content="https://yucufmahmudov.uz/static/images/profile-hero.jpg" />
 
     <!-- Extra subtle styling for contact form & quick links -->
     <style>
@@ -321,26 +336,28 @@
 
         <div class="nav__menu">
           <ul class="nav__list">
-            <li>
-              <a href="#about" class="nav__link">Men Haqimda</a>
-            </li>
-            <li>
-              <a href="#projects" class="nav__link">Keyslar</a>
-            </li>
-            <li>
-              <a href="#work" class="nav__link">Tajriba</a>
-            </li>
-            <li>
-              <a href="#services" class="nav__link">Ko'nikmalar</a>
-            </li>
-            <li>
-              <a href="#contact" class="nav__link">Bog'lanish</a>
-            </li>
+            <li><a href="#about"    class="nav__link" data-i18n="nav.about">Men Haqimda</a></li>
+            <li><a href="#projects" class="nav__link" data-i18n="nav.projects">Keyslar</a></li>
+            <li><a href="#work"     class="nav__link" data-i18n="nav.work">Tajriba</a></li>
+            <li><a href="#services" class="nav__link" data-i18n="nav.skills">Ko'nikmalar</a></li>
+            <li><a href="#contact"  class="nav__link" data-i18n="nav.contact">Bog'lanish</a></li>
           </ul>
         </div>
 
+        <!-- Tema va Til tugmalari -->
+        <div class="nav__controls">
+          <button id="theme-toggle" class="nav__theme-btn" title="Tema">
+            <i class="ri-sun-line"></i>
+          </button>
+          <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="uz">UZ</button>
+            <button class="lang-btn" data-lang="ru">RU</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
+        </div>
       </nav>
     </header>
+
 
     <!-- MAIN -->
     <main class="main">
@@ -354,19 +371,19 @@
           <div class="home__data">
             <div class="home__status-badge">
               <span class="status-dot"></span>
-              <span>B2B &amp; Savdo Konsaltingiga Ochiq</span>
+              <span data-i18n="home.badge">B2B &amp; Savdo Konsaltingiga Ochiq</span>
             </div>
-            <h3 class="home__greeting">Salom, men</h3>
+            <h3 class="home__greeting" data-i18n="home.greeting">Salom, men</h3>
             <h1 class="home__name">
               Mahmudov <br />
               Muhammadyusuf
             </h1>
             <div class="home__buttons">
               <a href="#contact" class="btn-primary">
-                Konsultatsiya <i class="ri-arrow-right-up-line"></i>
+                <span data-i18n="home.btn1">Konsultatsiya</span> <i class="ri-arrow-right-up-line"></i>
               </a>
               <a href="#projects" class="btn-secondary">
-                Keyslar <i class="ri-briefcase-line"></i>
+                <span data-i18n="home.btn2">Keyslar</span> <i class="ri-briefcase-line"></i>
               </a>
             </div>
           </div>
@@ -381,50 +398,28 @@
           </div>
 
           <div class="home__info">
-            <h3 class="home__split">Professional</h3>
-            <h2 class="home__profession-1">Head of Sales</h2>
-            <h2 class="home__profession-2">B2B Strategist</h2>
+            <h3 class="home__split" data-i18n="home.prof.label">Professional</h3>
+            <h2 class="home__profession-1" data-i18n="home.profession1">Head of Sales</h2>
+            <h2 class="home__profession-2" data-i18n="home.profession2">B2B Strategist</h2>
           </div>
 
-          <!-- Social links — always visible on mobile (below image) -->
+          <!-- Social links -->
           <div class="home__social">
-            <a
-              href="https://t.me/muhammadyucufmm"
-              target="_blank"
-              class="home__social-link"
-              title="Telegram: @muhammadyucufmm"
-            >
+            <a href="https://t.me/muhammadyucufmm" target="_blank" class="home__social-link" title="Telegram: @muhammadyucufmm">
               <i class="ri-telegram-fill"></i>
             </a>
-            <a
-              href="https://www.instagram.com/yucufmahmudov/"
-              target="_blank"
-              class="home__social-link"
-              title="Instagram: @yucufmahmudov"
-            >
+            <a href="https://www.instagram.com/yucufmahmudov/" target="_blank" class="home__social-link" title="Instagram: @yucufmahmudov">
               <i class="ri-instagram-fill"></i>
             </a>
-            <a
-              href="tel:+998500534812"
-              class="home__social-link"
-              title="Telefon: +998 (50) 053-48-12"
-            >
+            <a href="tel:+998500534812" class="home__social-link" title="Telefon: +998 (50) 053-48-12">
               <i class="ri-phone-fill"></i>
             </a>
-            <a
-              href="mailto:muhammadyucufmahmudov@gmail.com"
-              class="home__social-link"
-              title="Email: muhammadyucufmahmudov@gmail.com"
-            >
+            <a href="mailto:muhammadyucufmahmudov@gmail.com" class="home__social-link" title="Email: muhammadyucufmahmudov@gmail.com">
               <i class="ri-mail-fill"></i>
             </a>
           </div>
 
-          <a
-            href="#contact"
-            class="home__cv"
-            >Bog'lanish <i class="ri-arrow-right-up-line"></i
-          ></a>
+          <a href="#contact" class="home__cv">Bog'lanish <i class="ri-arrow-right-up-line"></i></a>
         </div>
       </section>
 
@@ -435,15 +430,15 @@
             <div class="stat__icon"><i class="ri-money-dollar-circle-line"></i></div>
             <div class="stat__content">
               <h3 class="stat__number">$250,000+</h3>
-              <p class="stat__label">Jalb qilingan investitsiya (Nurinvest)</p>
+              <p class="stat__label" data-i18n="stat.invest.label">Jalb qilingan investitsiya (Nurinvest)</p>
             </div>
           </div>
 
           <div class="stat__card">
             <div class="stat__icon"><i class="ri-graduation-cap-line"></i></div>
             <div class="stat__content">
-              <h3 class="stat__number">40+ / oy</h3>
-              <p class="stat__label">Chet elda ta'lim shartnomalari (HighWay)</p>
+              <h3 class="stat__number" data-i18n="stat.contracts.num">40+ / oy</h3>
+              <p class="stat__label" data-i18n="stat.contracts.label">Chet elda ta'lim shartnomalari (HighWay)</p>
             </div>
           </div>
 
@@ -451,15 +446,15 @@
             <div class="stat__icon"><i class="ri-line-chart-line"></i></div>
             <div class="stat__content">
               <h3 class="stat__number">100% KPI</h3>
-              <p class="stat__label">0 dan tizimli AmoCRM & Voronka</p>
+              <p class="stat__label" data-i18n="stat.kpi.label">0 dan tizimli AmoCRM &amp; Voronka</p>
             </div>
           </div>
 
           <div class="stat__card">
             <div class="stat__icon"><i class="ri-brain-line"></i></div>
             <div class="stat__content">
-              <h3 class="stat__number">2x Tezlik</h3>
-              <p class="stat__label">Prompt Engineering & AI Integratsiyasi</p>
+              <h3 class="stat__number" data-i18n="stat.speed.num">2x Tezlik</h3>
+              <p class="stat__label" data-i18n="stat.speed.label">Prompt Engineering &amp; AI Integratsiyasi</p>
             </div>
           </div>
         </div>
@@ -472,11 +467,11 @@
         <div class="about__container container grid">
           <div class="about__data">
             <h2 class="section__title">
-              <span>Natijadorlik</span>
+              <span data-i18n="about.title.span">Natijadorlik</span>
               <br />
-              Va Tizimli Yondashuv
+              <span data-i18n="about.title.rest">Va Tizimli Yondashuv</span>
             </h2>
-            <p class="about__description">
+            <p class="about__description" data-i18n="about.desc">
               Men <b>Sotuv bo'limi rahbari va investitsion maslahatchi</b> sifatida B2B va B2C savdolarni tizimlashtirish, <b>AmoCRM</b> orqali savdo voronkasini yo'lga qo'yish hamda <b>yuqori chekli bitimlarni yopish</b> bo'yicha samarali tajribaga egaman.
               <br /><br />
               <b>Nurinvest</b> kompaniyasida jami <b>$250,000+</b> miqdorida investitsiya kirimini ta'minlaganman. <b>HighWay</b> (chet elga o'qishga jo'natish konsaltingi) kompaniyasida sotuv bo'limini <b>0 dan butunlay o'zim tizimlashtirib</b>, sotuvchilarni o'qitish va ilg'or sotuv strategiyalarini joriy etish orqali <b>oyiga kamida 30 tadan 40+ tagacha shartnomalar</b> imzolanishiga erishganman. Zamonaviy <b>Prompt Engineering (AI)</b> texnologiyalarini savdoga tadbiq etib, jamoa mahsuldorligini 2 baravar oshiraman.
@@ -503,8 +498,8 @@
       <!-- PROJECTS (KEYSLAR) -->
       <section class="projects section" id="projects">
         <h2 class="section__title">
-          Mening Muvaffaqiyatli <br />
-          <span>Keyslarim</span>
+          <span data-i18n="projects.title.prefix">Mening Muvaffaqiyatli</span> <br />
+          <span data-i18n="projects.title.span">Keyslarim</span>
         </h2>
 
         <div class="projects__container container grid">
@@ -516,17 +511,17 @@
                 <div class="blob"></div>
 
                 <div class="projects__number">
-                  <h1>01</h1>
+                  <span class="projects__num">01</span>
                   <h3>Invest</h3>
                 </div>
 
                 <div class="projects__data">
-                  <h1 class="projects__title">
+                  <h3 class="projects__title">
                     Nurinvest: <br />
                     $250,000+ Investitsiya
-                  </h1>
-                  <p class="projects__subtitle">Yo'nalish va Yutuq</p>
-                  <p class="projects__description">
+                  </h3>
+                  <p class="projects__subtitle" data-i18n="proj1.subtitle">Yo'nalish va Yutuq</p>
+                  <p class="projects__description" data-i18n="proj1.desc">
                     30+ yirik investorlar jalb qilingan, har biri o'rtacha $10,000 chek bilan. Jami $250,000+ to'g'ridan-to'g'ri investitsiya kiritilgan.
                   </p>
                 </div>
@@ -552,17 +547,17 @@
                 <div class="blob"></div>
 
                 <div class="projects__number">
-                  <h1>02</h1>
+                  <span class="projects__num">02</span>
                   <h3>Study</h3>
                 </div>
 
                 <div class="projects__data">
-                  <h1 class="projects__title">
+                  <h3 class="projects__title" data-i18n="proj2.title">
                     HighWay: 0 dan Tizim, <br />
                     Oyiga 40+ Shartnoma
-                  </h1>
-                  <p class="projects__subtitle">Chet Elda Ta'lim Konsaltingi</p>
-                  <p class="projects__description">
+                  </h3>
+                  <p class="projects__subtitle" data-i18n="proj2.subtitle">Chet Elda Ta'lim Konsaltingi</p>
+                  <p class="projects__description" data-i18n="proj2.desc">
                     Sotuv bo'limini 0 dan butunlay o'zim tizimlashtirganman. Sotuvchilarni o'qitish va ilg'or sotuv texnikalari bo'yicha to'liq strategiyalar joriy etilib, oyiga kamida 30 tadan 40+ tagacha muvaffaqiyatli shartnomalar va $30,000+ oylik aylanmaga erishilgan.
                   </p>
                 </div>
@@ -588,17 +583,17 @@
                 <div class="blob"></div>
 
                 <div class="projects__number">
-                  <h1>03</h1>
+                  <span class="projects__num">03</span>
                   <h3>B2B</h3>
                 </div>
 
                 <div class="projects__data">
-                  <h1 class="projects__title">
+                  <h3 class="projects__title">
                     Yogdu Media: <br />
-                    B2B Menejment & KPI
-                  </h1>
-                  <p class="projects__subtitle">Yo'nalish va Yutuq</p>
-                  <p class="projects__description">
+                    B2B Menejment &amp; KPI
+                  </h3>
+                  <p class="projects__subtitle" data-i18n="proj3.subtitle">Yo'nalish va Yutuq</p>
+                  <p class="projects__description" data-i18n="proj3.desc">
                     Xodimlar ish vaqti hisobi (overtime, otgul, mehnat ta'tillari), savdo rejalarining 100% bajarilishini nazorat qilish va korporativ shartnomalar.
                   </p>
                 </div>
@@ -624,17 +619,17 @@
                 <div class="blob"></div>
 
                 <div class="projects__number">
-                  <h1>04</h1>
+                  <span class="projects__num">04</span>
                   <h3>AI</h3>
                 </div>
 
                 <div class="projects__data">
-                  <h1 class="projects__title">
+                  <h3 class="projects__title" data-i18n="proj4.title">
                     Prompt Engineering: <br />
                     AI Savdo Integratsiyasi
-                  </h1>
-                  <p class="projects__subtitle">Yo'nalish va Yutuq</p>
-                  <p class="projects__description">
+                  </h3>
+                  <p class="projects__subtitle" data-i18n="proj4.subtitle">Yo'nalish va Yutuq</p>
+                  <p class="projects__description" data-i18n="proj4.desc">
                     Najot Ta'lim Markazida Samandar Sultonov kursi. CRM skriptlar, mijozlar e'tirozlariga avtomatlashtirilgan javoblar va jarayonlarni 2x tezlashtirish.
                   </p>
                 </div>
@@ -665,7 +660,7 @@
       <!-- WORK (EXPERIENCE & EDUCATION) -->
       <section class="work section" id="work">
         <h2 class="section__title">
-          <span>Mening Ish</span>
+          <span data-i18n="work.title.span">Mening Ish</span>
           <br />
           Tajribam & Ta'lim
         </h2>
@@ -674,7 +669,7 @@
           <div class="work__tabs">
             <!-- Button Experience -->
             <button class="work__button work-active" data-target="#experience">
-              Tajriba <i class="ri-briefcase-3-line"></i>
+              <span data-i18n="work.tab.exp">Tajriba</span> <i class="ri-briefcase-3-line"></i>
             </button>
 
             <!-- Button Education -->
@@ -693,16 +688,16 @@
               <div class="work__card">
                 <div class="work__data">
                   <div>
-                    <h1 class="work__title">B2B Manager</h1>
-                    <h3 class="work__subtitle">Yogdu Media (yogdu_agency)</h3>
+                    <h3 class="work__title" data-i18n="work.yogdu.title">B2B Manager</h3>
+                    <h4 class="work__subtitle">Yogdu Media (yogdu_agency)</h4>
                   </div>
-                  <h2 class="work__year">
+                  <h2 class="work__year" data-i18n="work.yogdu.time">
                     Iyun 2026 —<br />
                     Hozirgacha
                   </h2>
                 </div>
 
-                <p class="work__description">
+                <p class="work__description" data-i18n="work.yogdu.desc">
                   Xodimlar ish vaqtini aniq hisobga olish (ish soatlari, overtime, otgul va mehnat ta'tillari). Savdo rejalari bajarilishi va sotuv samaradorligi (KPI) ko'rsatkichlarini qat'iy nazorat qilish va B2B bitimlarni tuzish.
                 </p>
               </div>
@@ -711,16 +706,16 @@
               <div class="work__card">
                 <div class="work__data">
                   <div>
-                    <h1 class="work__title">Sotuv Bo'limi Rahbari</h1>
-                    <h3 class="work__subtitle">HighWay (Chet elda ta'lim konsaltingi)</h3>
+                    <h3 class="work__title" data-i18n="work.highway.title">Sotuv Bo'limi Rahbari</h3>
+                    <h4 class="work__subtitle" data-i18n="work.highway.sub">HighWay (Chet elda ta'lim konsaltingi)</h4>
                   </div>
-                  <h2 class="work__year">
+                  <h2 class="work__year" data-i18n="work.highway.time">
                     Mart 2026 —<br />
                     Iyul 2026
                   </h2>
                 </div>
 
-                <p class="work__description">
+                <p class="work__description" data-i18n="work.highway.desc">
                   Chet elga o'qishga jo'natish konsalting kompaniyasida sotuv bo'limini 0 dan butunlay o'zim tizimlashtirganman. Sotuvchilarni noldan o'qitish va ilg'or sotuv texnikalari ustida ishlash bo'yicha to'liq strategiyalar tuzilgan. Shu tizim samarasi o'laroq, chet elda ta'lim bo'yicha oyiga kamida 30 tadan 40+ tagacha muvaffaqiyatli shartnomalar imzolangan (O'rtacha chek: $1,000+ | Oylik savdo aylanmasi: $30,000+ dan $40,000+ gacha).
                 </p>
               </div>
@@ -729,16 +724,16 @@
               <div class="work__card">
                 <div class="work__data">
                   <div>
-                    <h1 class="work__title">Sotuv Bo'limi Rahbari & Konsultant</h1>
-                    <h3 class="work__subtitle">Nurinvest (Investment Consultant)</h3>
+                    <h3 class="work__title" data-i18n="work.nurinvest.title">Sotuv Bo'limi Rahbari &amp; Konsultant</h3>
+                    <h4 class="work__subtitle" data-i18n="work.nurinvest.sub">Nurinvest (Investment Consultant)</h4>
                   </div>
-                  <h2 class="work__year">
+                  <h2 class="work__year" data-i18n="work.nurinvest.time">
                     Fevral 2025 —<br />
                     Dekabr 2025
                   </h2>
                 </div>
 
-                <p class="work__description">
+                <p class="work__description" data-i18n="work.nurinvest.desc">
                   Mijozlarga investitsiya produktlari bo'yicha professional maslahatlar va muzokaralar. Oyiga o'rtacha 5 ta yirik investor (chek $10,000). Umumiy 30+ investor jalb qilinib, kompaniyaga $250,000+ investitsiya kirimi ta'minlangan.
                 </p>
               </div>
@@ -752,13 +747,13 @@
               <div class="work__card">
                 <div class="work__data">
                   <div>
-                    <h1 class="work__title">Prompt Engineering (Sun'iy Intellekt)</h1>
-                    <h3 class="work__subtitle">Najot Ta'lim Markazi (Samandar Sultonov)</h3>
+                    <h3 class="work__title" data-i18n="edu.najot.title">Prompt Engineering (Sun'iy Intellekt)</h3>
+                    <h4 class="work__subtitle" data-i18n="edu.najot.sub">Najot Ta'lim Markazi (Samandar Sultonov)</h4>
                   </div>
                   <h2 class="work__year">2026</h2>
                 </div>
 
-                <p class="work__description">
+                <p class="work__description" data-i18n="edu.najot.desc">
                   Zamonaviy sun'iy intellekt vositalari (LLM, ChatGPT, Claude) yordamida savdo jarayonlari, voronkalar, mijozlar bilan muloqot skriptlari va avtomatizatsiyani chuqur o'rganish.
                 </p>
               </div>
@@ -767,13 +762,13 @@
               <div class="work__card">
                 <div class="work__data">
                   <div>
-                    <h1 class="work__title">Sotuv Texnikalari va Psixologiyasi</h1>
-                    <h3 class="work__subtitle">M-Factor (Islombek Ibragimov)</h3>
+                    <h3 class="work__title" data-i18n="edu.mfactor.title">Sotuv Texnikalari va Psixologiyasi</h3>
+                    <h4 class="work__subtitle" data-i18n="edu.mfactor.sub">M-Factor (Islombek Ibragimov)</h4>
                   </div>
                   <h2 class="work__year">2025</h2>
                 </div>
 
-                <p class="work__description">
+                <p class="work__description" data-i18n="edu.mfactor.desc">
                   SPIN savdo texnikalari, e'tirozlar bilan ishlash, mijozning yashirin ehtiyojlarini aniqlash va yuqori chekli bitimlarni muvaffaqiyatli yopish san'ati.
                 </p>
               </div>
@@ -782,13 +777,13 @@
               <div class="work__card">
                 <div class="work__data">
                   <div>
-                    <h1 class="work__title">Sotuvni Tizimlashtirish</h1>
-                    <h3 class="work__subtitle">Ibrohim Gulyamov</h3>
+                    <h3 class="work__title" data-i18n="edu.ibrahim.title">Sotuvni Tizimlashtirish</h3>
+                    <h4 class="work__subtitle" data-i18n="edu.ibrahim.sub">Ibrohim Gulyamov</h4>
                   </div>
                   <h2 class="work__year">2025</h2>
                 </div>
 
-                <p class="work__description">
+                <p class="work__description" data-i18n="edu.ibrahim.desc">
                   Kompaniyada barqaror sotuv bo'limi tizimini qurish, KPI mexanizmlari, menejerlarni nazorat qilish va savdo aylanmasini rejali oshirish.
                 </p>
               </div>
@@ -797,13 +792,13 @@
               <div class="work__card">
                 <div class="work__data">
                   <div>
-                    <h1 class="work__title">Bakalavr</h1>
-                    <h3 class="work__subtitle">Guliston Davlat Universiteti</h3>
+                    <h3 class="work__title" data-i18n="edu.uni.title">Bakalavr</h3>
+                    <h4 class="work__subtitle" data-i18n="edu.uni.sub">Guliston Davlat Universiteti</h4>
                   </div>
-                  <h2 class="work__year">2020 — 2024</h2>
+                  <h2 class="work__year" data-i18n="edu.uni.time">2020 — 2024</h2>
                 </div>
 
-                <p class="work__description">
+                <p class="work__description" data-i18n="edu.uni.desc">
                   Oliy ma'lumot (Bakalavriat darajasi), intizom, liderlik va jamoani boshqarish ko'nikmalarini shakllantirish.
                 </p>
               </div>
@@ -815,7 +810,7 @@
 
       <!-- SERVICES (KO'NIKMALAR) -->
       <section class="services section" id="services">
-        <h2 class="section__title">Mening <span>Ko'nikmalarim</span></h2>
+        <h2 class="section__title"><span data-i18n="skills.title.prefix">Mening</span> <span data-i18n="skills.title.span">Ko'nikmalarim</span></h2>
 
         <div class="services__container container grid">
           <!-- Services: Sotuv va Menejment -->
@@ -885,7 +880,7 @@
       <!-- TESTIMONIALS -->
       <section class="testimonials section">
         <h2 class="section__title">
-          <span>Hamkorlar Fikri</span>
+          <span data-i18n="test.title.span">Hamkorlar Fikri</span>
           <br />
           Va Tavsiyalar
         </h2>
@@ -1013,69 +1008,6 @@
               </div>
             </article>
           </div>
-
-          <!-- Testimonial Cards 2-->
-          <div class="testimonial__content testimonials__reverse">
-            <article class="testimonials__card">
-              <div class="blob"></div>
-
-              <div class="testimonials__data">
-                <img
-                  src="static/images/testimonial-1.svg"
-                  alt="Islombek I."
-                  class="testimonials__img"
-                />
-
-                <h2 class="testimonials__name">Islombek I.</h2>
-
-                <div class="testimonial__rating">
-                  <div class="testimonial__stars">
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                  </div>
-
-                  <h3 class="testimonials__number">5.0</h3>
-                </div>
-
-                <p>
-                  Muhammadyusuf muzokaralarda mijozning nozik nuqtalarini darhol his qiladi va yuqori chekli bitimlarni yopishda juda ishonchli yetakchi.
-                </p>
-              </div>
-            </article>
-
-            <article class="testimonials__card">
-              <div class="blob"></div>
-
-              <div class="testimonials__data">
-                <img
-                  src="static/images/testimonial-2.svg"
-                  alt="Farrux A."
-                  class="testimonials__img"
-                />
-
-                <h2 class="testimonials__name">Farrux A.</h2>
-
-                <div class="testimonial__rating">
-                  <div class="testimonial__stars">
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                  </div>
-
-                  <h3 class="testimonials__number">5.0</h3>
-                </div>
-
-                <p>
-                  AmoCRM tizimini noldan yo'lga qo'yib, jamoaning har oylik rejasini 100%+ bajarilishiga erishdi. Oyiga $30,000+ savdo aylanmasiga chiqdik.
-                </p>
-              </div>
-            </article>
-          </div>
         </div>
       </section>
 
@@ -1083,9 +1015,9 @@
       <section class="contact section" id="contact">
         <div class="contact__container container grid">
           <div class="contact__data">
-            <h2 class="section__title">Bog'lanish</h2>
+            <h2 class="section__title" data-i18n="contact.title">Bog'lanish</h2>
 
-            <p class="contact__description">Keyingi loyihangiz yoki biznesingiz haqida gaplashamiz.</p>
+            <p class="contact__description" data-i18n="contact.desc">Keyingi loyihangiz yoki biznesingiz haqida gaplashamiz.</p>
 
             <button class="contact__button button" id="contact-btn">
               Telefonni Nusxalash <i class="ri-file-copy-line"></i>
@@ -1096,36 +1028,36 @@
           <div class="contact__content grid">
             <div class="contact__info grid">
               <div>
-                <h3 class="contact__title">Telefon</h3>
+                <h3 class="contact__title"><span data-i18n="contact.phone.title">Telefon</span></h3>
                 <address class="contact__address">
                   <a href="tel:+998500534812" style="color: inherit;">+998 (50) 053-48-12</a>
                 </address>
               </div>
 
               <div>
-                <h3 class="contact__title">Telegram</h3>
+                <h3 class="contact__title"><span data-i18n="contact.telegram.title">Telegram</span></h3>
                 <address class="contact__address">
                   <a href="https://t.me/muhammadyucufmm" target="_blank" style="color: inherit;">@muhammadyucufmm</a>
                 </address>
               </div>
 
               <div>
-                <h3 class="contact__title">Email</h3>
+                <h3 class="contact__title"><span data-i18n="contact.email.title">Email</span></h3>
                 <address class="contact__address">
                   <a href="mailto:muhammadyucufmahmudov@gmail.com" style="color: inherit;">muhammadyucufmahmudov@gmail.com</a>
                 </address>
               </div>
 
               <div>
-                <h3 class="contact__title">Manzil</h3>
+                <h3 class="contact__title"><span data-i18n="contact.location.title">Manzil</span></h3>
                 <address class="contact__address">
-                  Toshkent, O'zbekiston
+                  <span data-i18n="contact.location.val">Toshkent, O'zbekiston</span>
                 </address>
               </div>
             </div>
 
             <div class="contact__social">
-              <h3 class="contact__title">Ijtimoiy Tarmoqlar</h3>
+              <h3 class="contact__title"><span data-i18n="contact.social.title">Ijtimoiy Tarmoqlar</span></h3>
 
               <div class="contact__links">
                 <a
@@ -1165,7 +1097,7 @@
             </div>
 
             <div class="contact__write">
-              <h3 class="contact__title">Tezkor Muloqot</h3>
+              <h3 class="contact__title"><span data-i18n="contact.quick.title">Tezkor Muloqot</span></h3>
 
               <div class="contact__links">
                 <a
@@ -1199,43 +1131,41 @@
 
           <!-- Direct In-Page Consultation Message Form -->
           <div class="form__container">
-            <h3 style="font-family: var(--second-font); font-size: var(--h2-font-size); color: var(--title-color); margin-bottom: 0.5rem;">
-              Konsultatsiyaga Yozilish
-            </h3>
+            <h3 style="font-family: var(--second-font); font-size: var(--h2-font-size); color: var(--title-color); margin-bottom: 0.5rem;"><span data-i18n="form.title">Konsultatsiyaga Yozilish</span></h3>
             <p style="font-size: var(--small-font-size); color: var(--text-color); margin-bottom: 1.5rem;">
               Quyidagi ma'lumotlarni qoldiring, tez orada siz bilan bog'lanaman.
             </p>
 
             <form id="contact-form">
               <div class="form__group">
-                <label class="form__label" for="form-name">Ismingiz *</label>
-                <input type="text" id="form-name" required placeholder="Ismingizni kiriting" class="form__input" />
+                <label class="form__label" for="form-name" data-i18n="form.name.lbl">Ismingiz *</label>
+                <input type="text" id="form-name" name="name" required autocomplete="name" data-i18n="form.name.ph" data-i18n-attr="placeholder" placeholder="Ismingizni kiriting" class="form__input" />
               </div>
 
               <div class="form__group">
-                <label class="form__label" for="form-contact">Telefon yoki Telegram *</label>
-                <input type="text" id="form-contact" required placeholder="+998 50 053-48-12 yoki @username" class="form__input" />
+                <label class="form__label" for="form-contact" data-i18n="form.contact.lbl">Telefon yoki Telegram *</label>
+                <input type="text" id="form-contact" name="contact" required autocomplete="tel" data-i18n="form.contact.ph" data-i18n-attr="placeholder" placeholder="+998 50 053-48-12 yoki @username" class="form__input" />
               </div>
 
               <div class="form__group">
-                <label class="form__label" for="form-service">Qiziqtirayotgan Yo'nalish</label>
-                <select id="form-service" class="form__input" style="cursor: pointer;">
-                  <option value="Sotuv bo'limini tizimlashtirish">Sotuv bo'limini tizimlashtirish</option>
-                  <option value="AmoCRM sozlash va integratsiya">AmoCRM sozlash va integratsiya</option>
-                  <option value="Investitsiya jalb qilish ($10K+ cheklar)">Investitsiya jalb qilish ($10K+ cheklar)</option>
-                  <option value="B2B muzokaralar va yirik bitimlar">B2B muzokaralar va yirik bitimlar</option>
-                  <option value="Prompt Engineering va AI savdoda">Prompt Engineering va AI savdoda</option>
-                  <option value="Boshqa hamkorlik">Boshqa hamkorlik</option>
+                <label class="form__label" for="form-service" data-i18n="form.service.lbl">Qiziqtirayotgan Yo'nalish</label>
+                <select id="form-service" name="service" class="form__input" style="cursor: pointer;">
+                  <option value="Sotuv bo'limini tizimlashtirish" data-i18n="form.opt1">Sotuv bo'limini tizimlashtirish</option>
+                  <option value="AmoCRM sozlash va integratsiya" data-i18n="form.opt2">AmoCRM sozlash va integratsiya</option>
+                  <option value="Investitsiya jalb qilish ($10K+ cheklar)" data-i18n="form.opt3">Investitsiya jalb qilish ($10K+ cheklar)</option>
+                  <option value="B2B muzokaralar va yirik bitimlar" data-i18n="form.opt4">B2B muzokaralar va yirik bitimlar</option>
+                  <option value="Prompt Engineering va AI savdoda" data-i18n="form.opt5">Prompt Engineering va AI savdoda</option>
+                  <option value="Boshqa hamkorlik" data-i18n="form.opt6">Boshqa hamkorlik</option>
                 </select>
               </div>
 
               <div class="form__group">
-                <label class="form__label" for="form-message">Xabar yoki Izohingiz</label>
-                <textarea id="form-message" placeholder="Loyihangiz haqida qisqacha yozing..." class="form__textarea"></textarea>
+                <label class="form__label" for="form-message" data-i18n="form.msg.lbl">Xabar yoki Izohingiz</label>
+                <textarea id="form-message" name="message" data-i18n="form.msg.ph" data-i18n-attr="placeholder" placeholder="Loyihangiz haqida qisqacha yozing..." class="form__textarea"></textarea>
               </div>
 
               <button type="submit" class="button" style="width: 100%; justify-content: center; cursor: pointer; border: none;">
-                Xabarni Jo'natish <i class="ri-send-plane-fill"></i>
+                <span data-i18n="form.submit">Xabarni Jo'natish</span> <i class="ri-send-plane-fill"></i>
               </button>
 
               <div id="form-status" style="margin-top: 1rem; font-size: var(--small-font-size); text-align: center;"></div>
@@ -1261,7 +1191,7 @@
       <div class="blob-animate"></div>
 
       <div class="footer__copy">
-        All Rights Reserved By <span>yucufmahmudov</span>
+        <span data-i18n="footer.copy">All Rights Reserved By</span> <span>yucufmahmudov</span>
       </div>
 
       <div class="footer__year">
@@ -1281,6 +1211,9 @@
 
     <!-- MAIN JS -->
     <script src="static/js/main.js"></script>
+
+    <!-- I18N & THEME JS -->
+    <script src="static/js/i18n.js"></script>
 
     <!-- TOAST NOTIFICATION & QUICK ACTIONS -->
     <div id="toast" class="toast">Telefon raqami nusxalandi! 📋</div>

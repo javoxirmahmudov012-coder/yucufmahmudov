@@ -52,7 +52,173 @@
   --z-fixed: 100;
 }
 
+/* ============================================
+   LIGHT THEME
+   ============================================ */
+body.light-theme {
+  --title-color:      hsl(240, 20%, 10%);
+  --text-color:       hsl(240, 10%, 35%);
+  --text-color-light: hsl(240, 10%, 55%);
+  --body-color:       hsl(240, 20%, 96%);
+  --container-color:  hsl(240, 20%, 90%);
+}
+
+body.light-theme .header {
+  background: rgba(240, 240, 255, 0.88) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+body.light-theme .nav__logo {
+  color: hsl(240, 20%, 12%);
+}
+
+body.light-theme .nav__link {
+  color: hsl(240, 20%, 20%);
+}
+
+body.light-theme .nav__menu {
+  background: rgba(230, 230, 248, 0.97) !important;
+  border-color: rgba(124, 58, 237, 0.25) !important;
+}
+
+body.light-theme .nav__theme-btn,
+body.light-theme .lang-btn {
+  color: hsl(240, 20%, 20%);
+  border-color: rgba(0,0,0,0.12);
+  background: rgba(0,0,0,0.04);
+}
+
+body.light-theme .lang-btn.active {
+  background: rgba(124, 58, 237, 0.15);
+  color: hsl(255, 60%, 40%);
+  border-color: rgba(124, 58, 237, 0.4);
+}
+
+body.light-theme .home__name,
+body.light-theme .home__profession-1,
+body.light-theme .home__profession-2,
+body.light-theme h1, body.light-theme h2,
+body.light-theme h3, body.light-theme h4 {
+  color: hsl(240, 20%, 10%);
+}
+
+body.light-theme .home__status-badge {
+  background: rgba(34, 197, 94, 0.08);
+  border-color: rgba(34, 197, 94, 0.25);
+}
+
+body.light-theme .btn-secondary {
+  background: rgba(0,0,0,0.06);
+  border-color: rgba(0,0,0,0.15);
+  color: hsl(240,20%,15%) !important;
+}
+
+body.light-theme .stat__card {
+  background: rgba(255,255,255,0.65);
+  border-color: rgba(0,0,0,0.08);
+}
+
+body.light-theme .stat__icon {
+  background: rgba(124, 58, 237, 0.1);
+  border-color: rgba(124, 58, 237, 0.2);
+}
+
+body.light-theme .stat__number {
+  color: hsl(240, 20%, 10%);
+}
+
+body.light-theme .projects__card,
+body.light-theme .services__card,
+body.light-theme .testimonials__card {
+  background: rgba(255,255,255,0.8);
+}
+
+body.light-theme .form__container {
+  background: rgba(255,255,255,0.7);
+  border-color: rgba(0,0,0,0.07);
+}
+
+body.light-theme .form__input,
+body.light-theme .form__textarea {
+  background: rgba(255,255,255,0.9);
+  color: hsl(240,20%,10%);
+  border-color: rgba(0,0,0,0.12);
+}
+
+body.light-theme .floating-telegram {
+  box-shadow: 0 10px 25px rgba(0,136,204,0.25);
+}
+
+body.light-theme .blob-animate {
+  opacity: 0.4;
+}
+
+/* ============================================
+   NAV CONTROLS: Theme Toggle & Lang Switcher
+   ============================================ */
+.nav__controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav__theme-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: var(--title-color);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  flex-shrink: 0;
+}
+
+.nav__theme-btn:hover {
+  background: rgba(124,58,237,0.2);
+  transform: rotate(20deg);
+}
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 2rem;
+  padding: 2px;
+  gap: 1px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  font-family: var(--second-font);
+  font-size: 0.62rem;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  letter-spacing: 0.03em;
+}
+
+.lang-btn.active {
+  background: rgba(124,58,237,0.3);
+  color: #fff;
+}
+
+.lang-btn:hover:not(.active) {
+  background: rgba(255,255,255,0.08);
+  color: var(--title-color);
+}
+
 /*========== Responsive typography ==========*/
+
 @media screen and (min-width: 1150px) {
   :root {
     --biggest-font-size: 3rem;
@@ -532,8 +698,12 @@ img {
   justify-content: space-between;
 }
 
-.projects__number h1 {
+.projects__number h1,
+.projects__number .projects__num {
   font-size: var(--biggest-font-size);
+  font-family: var(--second-font);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
 }
 
 .projects__number h3 {

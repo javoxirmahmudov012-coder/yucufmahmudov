@@ -1,21 +1,74 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
   <defs>
-    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2e1065"/>
-      <stop offset="60%" stop-color="#4c1d95"/>
-      <stop offset="100%" stop-color="#701a75"/>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1128"/>
+      <stop offset="60%" stop-color="#101f42"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
     </linearGradient>
   </defs>
-  <rect width="600" height="380" rx="24" fill="url(#grad3)"/>
-  <circle cx="500" cy="120" r="140" fill="#d946ef" opacity="0.2"/>
-  <rect x="40" y="40" width="140" height="32" rx="16" fill="rgba(255,255,255,0.1)"/>
-  <text x="110" y="61" font-family="sans-serif" font-size="14" font-weight="bold" fill="#f0abfc" text-anchor="middle">YOGDU MEDIA</text>
-  <text x="40" y="140" font-family="sans-serif" font-size="38" font-weight="900" fill="#ffffff">B2B Menejment &amp; KPI</text>
-  <text x="40" y="175" font-family="sans-serif" font-size="18" font-weight="600" fill="#e9d5ff">Xodimlar Ish Vaqti va Reja Nazorati</text>
-  <circle cx="75" cy="245" r="32" fill="none" stroke="#a855f7" stroke-width="7" stroke-dasharray="160" stroke-dashoffset="25"/>
-  <text x="75" y="251" font-family="sans-serif" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">100%</text>
-  <text x="125" y="242" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff">KPI &amp; Reja Ijrosi</text>
-  <text x="125" y="263" font-family="sans-serif" font-size="13" fill="#c084fc">Overtime, otgul va sotuv nazorati</text>
-  <rect x="40" y="310" width="220" height="36" rx="10" fill="rgba(0,0,0,0.4)"/>
-  <text x="55" y="333" font-family="sans-serif" font-size="13" fill="#e2e8f0">B2B Korporativ Shartnomalar</text>
+
+  <!-- Background -->
+  <rect width="600" height="380" rx="20" fill="url(#bgGrad3)"/>
+  <rect x="1" y="1" width="598" height="378" rx="19" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+
+  <!-- Top App Header -->
+  <rect x="25" y="22" width="550" height="42" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)"/>
+  <circle cx="45" cy="43" r="5" fill="#ef4444"/>
+  <circle cx="62" cy="43" r="5" fill="#f59e0b"/>
+  <circle cx="79" cy="43" r="5" fill="#10b981"/>
+  
+  <text x="110" y="48" font-family="'Montserrat', sans-serif" font-size="12" font-weight="700" fill="#38bdf8" letter-spacing="1">YOGDU MEDIA // B2B OPS &amp; KPI MANAGER</text>
+  <rect x="470" y="30" width="90" height="26" rx="8" fill="rgba(56,189,248,0.15)" stroke="rgba(56,189,248,0.4)"/>
+  <text x="515" y="47" font-family="'Montserrat', sans-serif" font-size="11" font-weight="600" fill="#38bdf8" text-anchor="middle">100% KPI</text>
+
+  <!-- 3 Top Metric Cards -->
+  <!-- Metric 1: KPI -->
+  <rect x="25" y="78" width="170" height="85" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="40" y="102" font-family="'Montserrat', sans-serif" font-size="11" fill="#94a3b8">Savdo Rejasi (KPI)</text>
+  <text x="40" y="134" font-family="'Unbounded', sans-serif" font-size="22" font-weight="800" fill="#34d399">100%</text>
+  <text x="40" y="152" font-family="'Montserrat', sans-serif" font-size="10" fill="#10b981">To'liq bajarilish</text>
+
+  <!-- Metric 2: Attendance -->
+  <rect x="215" y="78" width="170" height="85" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="230" y="102" font-family="'Montserrat', sans-serif" font-size="11" fill="#94a3b8">Ish Vaqti &amp; Nazorat</text>
+  <text x="230" y="134" font-family="'Unbounded', sans-serif" font-size="22" font-weight="800" fill="#38bdf8">99.4%</text>
+  <text x="230" y="152" font-family="'Montserrat', sans-serif" font-size="10" fill="#0284c7">Intizom va overtime</text>
+
+  <!-- Metric 3: B2B Contracts -->
+  <rect x="405" y="78" width="170" height="85" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="420" y="102" font-family="'Montserrat', sans-serif" font-size="11" fill="#94a3b8">B2B Shartnomalar</text>
+  <text x="420" y="134" font-family="'Unbounded', sans-serif" font-size="22" font-weight="800" fill="#a78bfa">Faol</text>
+  <text x="420" y="152" font-family="'Montserrat', sans-serif" font-size="10" fill="#818cf8">Korporativ hamkorlar</text>
+
+  <!-- Bottom Table: Team Monitoring & Task Completion -->
+  <rect x="25" y="180" width="550" height="175" rx="14" fill="rgba(15,23,42,0.6)" stroke="rgba(255,255,255,0.06)"/>
+  <text x="45" y="208" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" fill="#cbd5e1">Boshqaruv va Xodimlar Monitori</text>
+
+  <!-- Table Row 1 -->
+  <rect x="45" y="222" width="510" height="34" rx="8" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="62" cy="239" r="6" fill="#10b981"/>
+  <text x="78" y="243" font-family="'Montserrat', sans-serif" font-size="12" fill="#f1f5f9">Savdo jamoasi KPI bajarilishi</text>
+  <rect x="360" y="231" width="100" height="16" rx="8" fill="rgba(255,255,255,0.08)"/>
+  <rect x="360" y="231" width="100" height="16" rx="8" fill="#10b981"/>
+  <text x="495" y="243" font-family="'Unbounded', sans-serif" font-size="11" font-weight="700" fill="#34d399">100%</text>
+
+  <!-- Table Row 2 -->
+  <rect x="45" y="264" width="510" height="34" rx="8" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="62" cy="281" r="6" fill="#38bdf8"/>
+  <text x="78" y="285" font-family="'Montserrat', sans-serif" font-size="12" fill="#f1f5f9">Ish soatlari, overtime va mehnat ta'tili</text>
+  <rect x="360" y="273" width="100" height="16" rx="8" fill="rgba(255,255,255,0.08)"/>
+  <rect x="360" y="273" width="95" height="16" rx="8" fill="#38bdf8"/>
+  <text x="495" y="285" font-family="'Unbounded', sans-serif" font-size="11" font-weight="700" fill="#38bdf8">95%</text>
+
+  <!-- Table Row 3 -->
+  <rect x="45" y="306" width="510" height="34" rx="8" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="62" cy="323" r="6" fill="#a78bfa"/>
+  <text x="78" y="327" font-family="'Montserrat', sans-serif" font-size="12" fill="#f1f5f9">B2B korporativ loyihalar koordinatsiyasi</text>
+  <rect x="360" y="315" width="100" height="16" rx="8" fill="rgba(255,255,255,0.08)"/>
+  <rect x="360" y="315" width="100" height="16" rx="8" fill="#a78bfa"/>
+  <text x="495" y="327" font-family="'Unbounded', sans-serif" font-size="11" font-weight="700" fill="#a78bfa">100%</text>
 </svg>

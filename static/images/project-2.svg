@@ -1,25 +1,81 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
   <defs>
-    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="50%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#1d4ed8"/>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e0f26"/>
+      <stop offset="60%" stop-color="#191338"/>
+      <stop offset="100%" stop-color="#2d103b"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="funnelGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#ec4899"/>
     </linearGradient>
   </defs>
-  <rect width="600" height="380" rx="24" fill="url(#grad2)"/>
-  <circle cx="480" cy="100" r="120" fill="#3b82f6" opacity="0.2"/>
-  <rect x="40" y="40" width="110" height="32" rx="16" fill="rgba(255,255,255,0.1)"/>
-  <text x="95" y="61" font-family="sans-serif" font-size="14" font-weight="bold" fill="#60a5fa" text-anchor="middle">HIGHWAY</text>
-  <text x="40" y="140" font-family="sans-serif" font-size="42" font-weight="900" fill="#ffffff">40+ Shartnoma / oy</text>
-  <text x="40" y="175" font-family="sans-serif" font-size="18" font-weight="600" fill="#93c5fd">0 dan Tizimlashtirish</text>
-  <rect x="40" y="220" width="55" height="55" rx="12" fill="rgba(59,130,246,0.3)"/>
-  <text x="67" y="255" font-family="sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">CRM</text>
-  <rect x="110" y="235" width="420" height="10" rx="5" fill="rgba(255,255,255,0.1)"/>
-  <rect x="110" y="235" width="340" height="10" rx="5" fill="#3b82f6"/>
-  <rect x="110" y="255" width="420" height="10" rx="5" fill="rgba(255,255,255,0.1)"/>
-  <rect x="110" y="255" width="290" height="10" rx="5" fill="#60a5fa"/>
-  <rect x="40" y="310" width="180" height="36" rx="10" fill="rgba(0,0,0,0.4)"/>
-  <text x="55" y="333" font-family="sans-serif" font-size="13" fill="#e2e8f0">Sotuvchilar Treningi</text>
-  <rect x="235" y="310" width="170" height="36" rx="10" fill="rgba(0,0,0,0.4)"/>
-  <text x="250" y="333" font-family="sans-serif" font-size="13" fill="#e2e8f0">Kamida 30-40+ Ta/oy</text>
+
+  <!-- Background -->
+  <rect width="600" height="380" rx="20" fill="url(#bgGrad2)"/>
+  <rect x="1" y="1" width="598" height="378" rx="19" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+
+  <!-- Top App Header -->
+  <rect x="25" y="22" width="550" height="42" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)"/>
+  <circle cx="45" cy="43" r="5" fill="#ef4444"/>
+  <circle cx="62" cy="43" r="5" fill="#f59e0b"/>
+  <circle cx="79" cy="43" r="5" fill="#10b981"/>
+  
+  <text x="110" y="48" font-family="'Montserrat', sans-serif" font-size="12" font-weight="700" fill="#f472b6" letter-spacing="1">HIGHWAY // SALES FUNNEL &amp; SYSTEM</text>
+  <rect x="460" y="30" width="100" height="26" rx="8" fill="rgba(236,72,153,0.15)" stroke="rgba(236,72,153,0.4)"/>
+  <text x="510" y="47" font-family="'Montserrat', sans-serif" font-size="11" font-weight="600" fill="#f472b6" text-anchor="middle">CHET ELDA TA'LIM</text>
+
+  <!-- Left: Sales Funnel Steps -->
+  <rect x="25" y="78" width="280" height="280" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)"/>
+  <text x="45" y="106" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" fill="#94a3b8">Sotuv Voronkasi (Funnel)</text>
+
+  <!-- Step 1: Leads -->
+  <rect x="45" y="125" width="240" height="36" rx="8" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)"/>
+  <text x="58" y="148" font-family="'Montserrat', sans-serif" font-size="12" fill="#cbd5e1">1. Qiziqish bildirganlar</text>
+  <text x="270" y="148" font-family="'Unbounded', sans-serif" font-size="12" font-weight="700" fill="#a78bfa" text-anchor="end">450+ lid</text>
+
+  <!-- Step 2: Consultation -->
+  <rect x="55" y="172" width="220" height="36" rx="8" fill="rgba(168,85,247,0.2)" stroke="rgba(168,85,247,0.4)"/>
+  <text x="68" y="195" font-family="'Montserrat', sans-serif" font-size="12" fill="#cbd5e1">2. Chuqur konsultatsiya</text>
+  <text x="260" y="195" font-family="'Unbounded', sans-serif" font-size="12" font-weight="700" fill="#c084fc" text-anchor="end">180+ ta</text>
+
+  <!-- Step 3: Contracts / Shartnomalar -->
+  <rect x="65" y="219" width="200" height="42" rx="10" fill="url(#funnelGrad)"/>
+  <text x="78" y="245" font-family="'Montserrat', sans-serif" font-size="12" font-weight="700" fill="#ffffff">3. Imzolangan shartnoma</text>
+  <text x="250" y="245" font-family="'Unbounded', sans-serif" font-size="13" font-weight="800" fill="#ffffff" text-anchor="end">40+ / oy</text>
+
+  <!-- Step 4: Visa Success -->
+  <rect x="75" y="272" width="180" height="36" rx="8" fill="rgba(16,185,129,0.2)" stroke="rgba(16,185,129,0.4)"/>
+  <text x="88" y="295" font-family="'Montserrat', sans-serif" font-size="11" font-weight="600" fill="#34d399">4. Viza &amp; Jo'natish</text>
+  <text x="240" y="295" font-family="'Unbounded', sans-serif" font-size="12" font-weight="700" fill="#34d399" text-anchor="end">98% Natija</text>
+
+  <text x="45" y="340" font-family="'Montserrat', sans-serif" font-size="11" fill="#94a3b8">Oylik aylanma: <tspan font-weight="700" fill="#34d399">$30,000+ dan $40,000+ gacha</tspan></text>
+
+  <!-- Right: Month-over-Month Growth Bars -->
+  <rect x="320" y="78" width="255" height="280" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)"/>
+  <text x="338" y="106" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" fill="#94a3b8">Oylik Shartnomalar Dinamikasi</text>
+
+  <!-- Bar 1: Mart (12) -->
+  <rect x="345" y="260" width="36" height="60" rx="6" fill="rgba(255,255,255,0.1)"/>
+  <text x="363" y="252" font-family="'Unbounded', sans-serif" font-size="11" font-weight="700" fill="#cbd5e1" text-anchor="middle">12</text>
+  <text x="363" y="335" font-family="'Montserrat', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Mart</text>
+
+  <!-- Bar 2: Aprel (22) -->
+  <rect x="398" y="210" width="36" height="110" rx="6" fill="rgba(124,58,237,0.4)"/>
+  <text x="416" y="202" font-family="'Unbounded', sans-serif" font-size="11" font-weight="700" fill="#c084fc" text-anchor="middle">22</text>
+  <text x="416" y="335" font-family="'Montserrat', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Apr</text>
+
+  <!-- Bar 3: May (33) -->
+  <rect x="451" y="160" width="36" height="160" rx="6" fill="rgba(168,85,247,0.7)"/>
+  <text x="469" y="152" font-family="'Unbounded', sans-serif" font-size="11" font-weight="700" fill="#e879f9" text-anchor="middle">33</text>
+  <text x="469" y="335" font-family="'Montserrat', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">May</text>
+
+  <!-- Bar 4: Iyun (40+) HIGHLIGHT -->
+  <rect x="504" y="125" width="38" height="195" rx="8" fill="url(#funnelGrad)"/>
+  <text x="523" y="117" font-family="'Unbounded', sans-serif" font-size="13" font-weight="800" fill="#ffffff" text-anchor="middle">42+</text>
+  <text x="523" y="335" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" fill="#f472b6" text-anchor="middle">Iyun</text>
 </svg>
