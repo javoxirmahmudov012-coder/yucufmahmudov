@@ -334,13 +334,40 @@
           margin-left: auto;
         }
       }
-      @media screen and (max-width: 767px) {
-        .home__buttons {
-          justify-content: center;
-        }
-        .home__status-badge {
-          margin: 0 auto 1rem;
-        }
+      /* MAXIMUM TEXT CLARITY & READABILITY OVERRIDES */
+      body {
+        color: #e2e8f0;
+      }
+      p, .about__description, .work__description, .projects__description, .services__description {
+        color: #e2e8f0 !important;
+        font-weight: 400;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+      }
+      .about__description {
+        font-size: 1.12rem !important;
+        line-height: 1.85 !important;
+      }
+      .about__description b, .work__description b, p b, strong {
+        color: #ffffff !important;
+        font-weight: 700;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+      }
+      .section__title {
+        color: #ffffff !important;
+        font-weight: 800;
+      }
+      .section__title span {
+        color: #a78bfa !important;
+      }
+      .work__title, .projects__title, .services__title {
+        color: #ffffff !important;
+      }
+      .work__year {
+        color: #cbd5e1 !important;
+      }
+      /* Ensure cursor is a delicate non-obscuring ring */
+      .cursor {
+        display: none !important; /* Hide intrusive purple cursor blob on all devices to ensure 100% text clarity */
       }
     </style>
   </head>
