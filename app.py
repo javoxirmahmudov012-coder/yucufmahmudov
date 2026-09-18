@@ -213,22 +213,29 @@ PORTFOLIO_DATA = {
         {
             'name': 'Islombek I.',
             'role': 'Biznes Asoschi & Hamkor',
-            'avatar': 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
+            'avatar': '/static/images/testimonial-1.svg',
             'text': "Muhammadyusuf muzokaralarda mijozning nozik nuqtalarini darhol his qiladi. Eng qiyin B2B bitimlarni ham o'zaro ishonch bilan yakunlaydi.",
             'rating': 5
         },
         {
             'name': 'Farrux A.',
             'role': 'Kompaniya Rahbari',
-            'avatar': 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80',
+            'avatar': '/static/images/testimonial-2.svg',
             'text': "AmoCRM tizimini noldan yo'lga qo'yib, jamoaning har oylik rejasini 100%+ bajarilishiga erishdi. Natijaga yo'naltirilgan yetakchi.",
             'rating': 5
         },
         {
             'name': 'Sardor K.',
             'role': 'Investor',
-            'avatar': 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80',
+            'avatar': '/static/images/testimonial-3.svg',
             'text': "Investitsiya loyihalarini taqdim etishdagi aniqlik va hisob-kitoblar bizni hamkorlikka undadi. Har bir so'zida mas'uliyat seziladi.",
+            'rating': 5
+        },
+        {
+            'name': 'Jamshid M.',
+            'role': 'B2B Hamkor',
+            'avatar': '/static/images/testimonial-4.svg',
+            'text': "Katta mas'uliyat va tafsilotlarga e'tibor bilan ishlaydi. Jamoada sog'lom muhit va intizomni mukammal darajada shakllantira oladi.",
             'rating': 5
         }
     ]

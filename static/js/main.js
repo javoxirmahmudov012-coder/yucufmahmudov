@@ -107,14 +107,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* 5. Testimonials Infinite Duplicate */
-  const tracks = document.querySelectorAll(".testimonials__content");
-  tracks.forEach((track) => {
-    const cards = [...track.children];
-    for (const card of cards) {
-      track.appendChild(card.cloneNode(true));
-    }
-  });
+  /* 5. Testimonials (Clean singular display without duplication) */
+
 
   /* 6. Copy Phone / Email Button */
   const copyBtn = document.getElementById("contact-btn");
