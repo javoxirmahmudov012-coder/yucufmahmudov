@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="static/images/profile.jpg" type="image/jpeg" />
+    <link rel="icon" href="static/images/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="static/images/profile.jpg" type="image/jpeg" />
 
     <!-- REMIXICONS -->
     <link
@@ -19,8 +20,55 @@
     <!-- STYLES CSS (Original Habib / Panda Coders Style) -->
     <link rel="stylesheet" href="static/css/styles.css?v=3" />
 
-    <title>yucufmahmudov — Head of Sales &amp; B2B Strategist</title>
+    <title>Mahmudov Muhammadyusuf | B2B Sotuv va Investitsiya Konsultanti</title>
     <meta name="description" content="Head of Sales, B2B strategist. $250,000+ investitsiya jalb qilgan, AmoCRM tizimlashtirish tajribasi." />
+
+    <!-- STRUCTURED DATA (JSON-LD) FOR GOOGLE SEARCH -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://yucufmahmudov.uz/#person",
+          "name": "Mahmudov Muhammadyusuf",
+          "alternateName": "yucufmahmudov",
+          "jobTitle": "Head of Sales & B2B Investment Consultant",
+          "description": "B2B Sotuv bo'limi rahbari, investitsiya konsultanti va AmoCRM tizimlashtirish bo'yicha mutaxassis.",
+          "url": "https://yucufmahmudov.uz",
+          "image": "https://yucufmahmudov.uz/static/images/profile-hero.jpg",
+          "telephone": "+998500534812",
+          "email": "muhammadyucufmahmudov@gmail.com",
+          "sameAs": [
+            "https://t.me/muhammadyucufmm",
+            "https://www.instagram.com/yucufmahmudov/",
+            "https://linkedin.com/in/yucufmahmudov"
+          ],
+          "knowsAbout": [
+            "B2B Sales",
+            "Investment Consulting",
+            "AmoCRM",
+            "Prompt Engineering",
+            "Sales Funnel Optimization",
+            "Team Management"
+          ]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://yucufmahmudov.uz/#service",
+          "name": "Mahmudov Muhammadyusuf — B2B Sotuv Konsaltingi",
+          "url": "https://yucufmahmudov.uz",
+          "telephone": "+998500534812",
+          "priceRange": "$$",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "4"
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- OPEN GRAPH / FACEBOOK / TELEGRAM PREVIEW -->
     <meta property="og:type" content="website" />
@@ -376,7 +424,10 @@
     <header class="header" id="header">
       <div class="blob-animate"></div>
       <nav class="nav container">
-        <a href="#" class="nav__logo">yucufmahmudov</a>
+        <a href="#" class="nav__logo">
+          <span class="nav__logo-badge">YM</span>
+          <span class="nav__logo-text">yucuf<span class="nav__logo-accent">mahmudov</span></span>
+        </a>
 
         <div class="nav__menu">
           <ul class="nav__list">
@@ -437,11 +488,17 @@
 
           <div class="home__image">
             <div class="blob-animate"></div>
-            <img
-              src="static/images/profile-hero.jpg?v=7"
-              alt="Mahmudov Muhammadyusuf"
-              class="home__profile"
-            />
+            <picture>
+              <source srcset="static/images/profile-hero.webp?v=8" type="image/webp" />
+              <img
+                src="static/images/profile-hero.jpg?v=8"
+                alt="Mahmudov Muhammadyusuf"
+                class="home__profile"
+                width="320"
+                height="380"
+                fetchpriority="high"
+              />
+            </picture>
           </div>
 
           <div class="home__info">
@@ -475,11 +532,10 @@
 
       <!-- STATS STRIP -->
       <section class="stats__section">
-        <div class="stats__container container">
           <div class="stat__card">
             <div class="stat__icon"><i class="ri-money-dollar-circle-line"></i></div>
             <div class="stat__content">
-              <h3 class="stat__number">$250,000+</h3>
+              <h3 class="stat__number counter" data-target="250000" data-prefix="$" data-suffix="+">$250,000+</h3>
               <p class="stat__label" data-i18n="stat.invest.label">Jalb qilingan investitsiya (Nurinvest)</p>
             </div>
           </div>
@@ -487,7 +543,7 @@
           <div class="stat__card">
             <div class="stat__icon"><i class="ri-graduation-cap-line"></i></div>
             <div class="stat__content">
-              <h3 class="stat__number" data-i18n="stat.contracts.num">40+ / oy</h3>
+              <h3 class="stat__number counter" data-target="40" data-suffix="+ / oy" data-i18n="stat.contracts.num">40+ / oy</h3>
               <p class="stat__label" data-i18n="stat.contracts.label">Chet elda ta'lim shartnomalari (HighWay)</p>
             </div>
           </div>
@@ -495,7 +551,7 @@
           <div class="stat__card">
             <div class="stat__icon"><i class="ri-line-chart-line"></i></div>
             <div class="stat__content">
-              <h3 class="stat__number">100% KPI</h3>
+              <h3 class="stat__number counter" data-target="100" data-suffix="% KPI">100% KPI</h3>
               <p class="stat__label" data-i18n="stat.kpi.label">0 dan tizimli AmoCRM &amp; Voronka</p>
             </div>
           </div>
@@ -503,12 +559,12 @@
           <div class="stat__card">
             <div class="stat__icon"><i class="ri-brain-line"></i></div>
             <div class="stat__content">
-              <h3 class="stat__number" data-i18n="stat.speed.num">2x Tezlik</h3>
+              <h3 class="stat__number counter" data-target="2" data-suffix="x Tezlik" data-i18n="stat.speed.num">2x Tezlik</h3>
               <p class="stat__label" data-i18n="stat.speed.label">Prompt Engineering &amp; AI Integratsiyasi</p>
             </div>
           </div>
         </div>
-      <!-- ACTIVE PROJECTS & CURRENT FOCUS -->
+      </section>
       <section class="current-focus container">
         <div class="focus__card">
           <div class="focus__header">
@@ -1496,7 +1552,10 @@
               ${data.results.map(r => `<li><i class="ri-check-line"></i> ${r}</li>`).join('')}
             </ul>
           </div>
-          <div style="margin-top: 1.5rem; text-align: center;">
+          <div style="margin-top: 1.75rem; display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center;">
+            <button onclick="downloadCasePDF('${caseKey}')" class="btn-cv" style="background: rgba(99,102,241,0.15); border-color: rgba(99,102,241,0.4); color: #818cf8 !important;">
+              <i class="ri-file-pdf-2-line"></i> Case Study Hisobotini Saqlash (PDF)
+            </button>
             <a href="https://t.me/muhammadyucufmm" target="_blank" class="btn-primary" style="display: inline-flex;">
               Shunday natija haqida maslahat olish <i class="ri-arrow-right-up-line"></i>
             </a>
@@ -1505,6 +1564,54 @@
         document.getElementById('case-modal-content').innerHTML = html;
         document.getElementById('case-modal').classList.add('active');
         document.body.style.overflow = 'hidden';
+      }
+
+      function downloadCasePDF(caseKey) {
+        const data = CASE_STUDIES[caseKey];
+        if (!data) return;
+        const pdfWin = window.open('', '_blank');
+        pdfWin.document.write(`
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <title>Case Study: ${data.title}</title>
+            <style>
+              body { font-family: 'Segoe UI', Arial, sans-serif; color: #1e293b; line-height: 1.6; max-width: 750px; margin: 0 auto; padding: 30px 20px; }
+              .header { border-bottom: 3px solid #6366f1; padding-bottom: 12px; margin-bottom: 20px; }
+              .tag { color: #6366f1; font-weight: bold; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; }
+              h1 { color: #0f172a; margin: 6px 0 10px; font-size: 24px; }
+              .meta { font-size: 13px; color: #64748b; margin-bottom: 20px; }
+              h3 { color: #1e293b; font-size: 16px; margin-top: 20px; border-left: 3px solid #6366f1; padding-left: 8px; }
+              p { font-size: 14px; }
+              ul { padding-left: 20px; font-size: 14px; }
+              li { margin-bottom: 6px; }
+              .footer { margin-top: 30px; border-top: 1px solid #e2e8f0; padding-top: 12px; font-size: 12px; color: #64748b; display: flex; justify-content: space-between; }
+              @media print { .no-print { display: none; } }
+            </style>
+          </head>
+          <body>
+            <div class="no-print" style="text-align: right; margin-bottom: 15px;">
+              <button onclick="window.print()" style="background: #4f46e5; color: #fff; border: none; padding: 8px 18px; border-radius: 6px; cursor: pointer; font-weight: bold;">PDF Qilib Saqlash (Print)</button>
+            </div>
+            <div class="header">
+              <div class="tag">${data.tag}</div>
+              <h1>${data.title}</h1>
+              <div class="meta"><b>Muallif:</b> Mahmudov Muhammadyusuf | <b>Davr:</b> ${data.period} | <b>Rol:</b> ${data.role}</div>
+            </div>
+            <h3>1. Muammo va Boshlang'ich Holat</h3>
+            <p>${data.problem}</p>
+            <h3>2. Qo'llangan Yechim va Tizimlashtirish Strategiyasi</h3>
+            <p>${data.solution}</p>
+            <h3>3. Erishilgan Aniq Ko'rsatkichlar va Natijalar</h3>
+            <ul>${data.results.map(r => `<li>${r}</li>`).join('')}</ul>
+            <div class="footer">
+              <div>Aloqa: +998 (50) 053-48-12 | @muhammadyucufmm</div>
+              <div>Portfolio: https://yucufmahmudov.uz</div>
+            </div>
+          </body>
+          </html>
+        `);
+        pdfWin.document.close();
       }
 
       function closeCaseModal() {

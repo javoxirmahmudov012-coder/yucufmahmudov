@@ -719,15 +719,38 @@ img {
 }
 
 .nav__logo {
-  font-size: var(--second-font);
-  font-weight: var(--font-semi-bold);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--second-font);
+  font-weight: 700;
+  font-size: 0.95rem;
   color: var(--title-color);
-  align-self: flex-start;
-  transition: color 0.4s;
+  text-decoration: none;
+  transition: transform 0.2s;
 }
 
 .nav__logo:hover {
-  color: var(--first-color);
+  transform: translateY(-1px);
+}
+
+.nav__logo-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #7c3aed, #4f46e5, #06b6d4);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 900;
+  border-radius: 0.6rem;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav__logo-accent {
+  color: #a78bfa;
 }
 
 .nav__list {

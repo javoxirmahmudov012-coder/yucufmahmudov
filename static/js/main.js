@@ -213,7 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  /* 11. Interactive Contact Form Submission */
+  /* 11. Interactive Contact Form Submission with Rich Success Message */
   const contactForm = document.getElementById("contact-form");
   const formStatus = document.getElementById("form-status");
 
@@ -233,6 +233,28 @@ document.addEventListener("DOMContentLoaded", () => {
         message: document.getElementById("form-message").value.trim()
       };
 
+      const showSuccessUI = (clientName) => {
+        if (formStatus) {
+          formStatus.innerHTML = `
+            <div style="background: rgba(34, 197, 94, 0.12); border: 1px solid rgba(34, 197, 94, 0.4); border-radius: 1.25rem; padding: 1.25rem; margin-top: 1rem; text-align: center; animation: fadeIn 0.3s ease;">
+              <div style="font-size: 2rem; color: #4ade80; margin-bottom: 0.3rem;"><i class="ri-checkbox-circle-fill"></i></div>
+              <h4 style="color: #ffffff; font-size: 1.05rem; margin-bottom: 0.3rem;">Rahmat, ${clientName || "hurmatli mijoz"}!</h4>
+              <p style="color: #cbd5e1; font-size: 0.85rem; line-height: 1.5;">
+                Murojaatingiz qabul qilindi. Tez orada <b>${formData.contact}</b> orqali siz bilan bog'lanaman!
+              </p>
+              <div style="margin-top: 0.75rem;">
+                <a href="https://t.me/muhammadyucufmm" target="_blank" style="display: inline-flex; align-items: center; gap: 0.4rem; background: #0088cc; color: #fff; padding: 6px 14px; border-radius: 2rem; font-size: 0.78rem; text-decoration: none; font-weight: 600;">
+                  <i class="ri-telegram-fill"></i> Telegramdan tezroq javob olish
+                </a>
+              </div>
+            </div>
+          `;
+        }
+        if (typeof showToast === "function") {
+          showToast("Xabaringiz qabul qilindi! Rahmat 🚀");
+        }
+      };
+
       try {
         const response = await fetch("/api/contact", {
           method: "POST",
@@ -243,30 +265,81 @@ document.addEventListener("DOMContentLoaded", () => {
         if (response.ok) {
           const res = await response.json();
           if (res.success) {
-            if (formStatus) {
-              formStatus.innerHTML = `<span style="color: #4ade80;">✔ ${res.message}</span>`;
-            }
+            showSuccessUI(formData.name);
             contactForm.reset();
             return;
           }
         }
-        throw new Error("Fallback to direct contact");
+        throw new Error("Static fallback");
       } catch (err) {
-        // Fallback for static hosting (Vercel / GitHub Pages): open Telegram directly with pre-filled message
+        // Fallback for static GitHub Pages / Vercel
+        showSuccessUI(formData.name);
         const tgText = `Assalomu alaykum Muhammadyusuf!\n\nIsmim: ${formData.name}\nKontakt: ${formData.contact}\nYo'nalish: ${formData.service}\nXabar: ${formData.message || "Konsultatsiya kerak"}`;
         const tgUrl = `https://t.me/muhammadyucufmm?text=${encodeURIComponent(tgText)}`;
-        if (formStatus) {
-          formStatus.innerHTML = `<span style="color: #4ade80;">✔ Xabar tayyorlandi! Telegram ochilmoqda...</span>`;
-        }
-        window.open(tgUrl, "_blank");
+        setTimeout(() => {
+          window.open(tgUrl, "_blank");
+        }, 1200);
         contactForm.reset();
       } finally {
         btn.disabled = false;
         btn.innerHTML = origBtnHtml;
-        setTimeout(() => {
-          if (formStatus) formStatus.innerHTML = "";
-        }, 7000);
       }
     });
+  }
+
+  /* 12. Animated Number Counter for Stats ($250,000+, 40+/oy, etc.) */
+  const counters = document.querySelectorAll(".counter");
+  let animated = false;
+
+  const animateCounters = () => {
+    counters.forEach((counter) => {
+      const target = +counter.getAttribute("data-target");
+      const prefix = counter.getAttribute("data-prefix") || "";
+      const suffix = counter.getAttribute("data-suffix") || "";
+      const duration = 1800; // ms
+      const startTime = performance.now();
+
+      const updateCount = (currentTime) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        // Easing out cubic
+        const easeOut = 1 - Math.pow(1 - progress, 3);
+        const currentVal = Math.floor(easeOut * target);
+
+        if (target >= 1000) {
+          counter.textContent = prefix + currentVal.toLocaleString("en-US") + suffix;
+        } else {
+          counter.textContent = prefix + currentVal + suffix;
+        }
+
+        if (progress < 1) {
+          requestAnimationFrame(updateCount);
+        } else {
+          // Final exact formatted string
+          if (target >= 1000) {
+            counter.textContent = prefix + target.toLocaleString("en-US") + suffix;
+          } else {
+            counter.textContent = prefix + target + suffix;
+          }
+        }
+      };
+
+      requestAnimationFrame(updateCount);
+    });
+  };
+
+  const statsSection = document.querySelector(".stats__section");
+  if (statsSection && "IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !animated) {
+          animated = true;
+          animateCounters();
+        }
+      });
+    }, { threshold: 0.25 });
+    observer.observe(statsSection);
+  } else if (counters.length) {
+    animateCounters();
   }
 });
