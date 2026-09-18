@@ -253,6 +253,20 @@ def save_message(msg):
 def index():
     return render_template('index.html', data=PORTFOLIO_DATA)
 
+@app.route('/robots.txt')
+def robots():
+    robots_path = os.path.join(BASE_DIR, 'public', 'robots.txt')
+    if not os.path.exists(robots_path):
+        robots_path = os.path.join(BASE_DIR, 'robots.txt')
+    return send_file(robots_path, mimetype='text/plain')
+
+@app.route('/sitemap.xml')
+def sitemap():
+    sitemap_path = os.path.join(BASE_DIR, 'public', 'sitemap.xml')
+    if not os.path.exists(sitemap_path):
+        sitemap_path = os.path.join(BASE_DIR, 'sitemap.xml')
+    return send_file(sitemap_path, mimetype='application/xml')
+
 @app.route('/api/contact', methods=['POST'])
 def contact():
     data = request.get_json() if request.is_json else request.form.to_dict()

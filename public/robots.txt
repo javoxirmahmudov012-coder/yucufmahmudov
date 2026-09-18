@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yucufmahmudov.uz/sitemap.xml
+Sitemap: https://yucufmahmudovv.vercel.app/sitemap.xml
