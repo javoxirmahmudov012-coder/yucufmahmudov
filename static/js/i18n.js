@@ -13,13 +13,13 @@ const translations = {
     'nav.contact':  "Bog'lanish",
 
     /* HERO */
-    'home.badge':       "B2B & Savdo Konsaltingiga Ochiq",
+    'home.badge':       "Yangi B2B Loyihalar uchun Ochiq",
     'home.greeting':    "Salom, men",
-    'home.btn1':        "Konsultatsiya",
+    'home.btn1':        "Loyiha haqida gaplashish",
     'home.btn2':        "Keyslar",
-    'home.btn_cv':      "CV (PDF)",
-    'home.profession1': "Head of Sales",
-    'home.profession2': "B2B Strategist",
+    'home.btn_cv':      "CV Yuklab Olish (PDF)",
+    'home.profession1': "B2B Sotuv Rahbari",
+    'home.profession2': "Tizimlashtirish & AmoCRM",
     'home.prof.label':  "Professional",
     'proj.details':     "Batafsil Case Study",
 
@@ -36,7 +36,7 @@ const translations = {
     /* ABOUT */
     'about.title.span': "Natijadorlik",
     'about.title.rest': "Va Tizimli Yondashuv",
-    'about.desc': `Men <b>Sotuv bo'limi rahbari va investitsion maslahatchi</b> sifatida B2B va B2C savdolarni tizimlashtirish, <b>AmoCRM</b> orqali savdo voronkasini yo'lga qo'yish hamda <b>yuqori chekli bitimlarni yopish</b> bo'yicha samarali tajribaga egaman.<br><br><b>Nurinvest</b> kompaniyasida jami <b>$250,000+</b> miqdorida investitsiya kirimini ta'minlaganman. <b>HighWay</b> (chet elga o'qishga jo'natish konsaltingi) kompaniyasida sotuv bo'limini <b>0 dan butunlay o'zim tizimlashtirib</b>, sotuvchilarni o'qitish va ilg'or sotuv strategiyalarini joriy etish orqali <b>oyiga kamida 30 tadan 40+ tagacha shartnomalar</b> imzolanishiga erishganman. Zamonaviy <b>Prompt Engineering (AI)</b> texnologiyalarini savdoga tadbiq etib, jamoa mahsuldorligini 2 baravar oshiraman.`,
+    'about.desc': `AmoCRM, tizimli voronka va yuqori chekli muzokaralar orqali biznesingiz savdo aylanmasini yangi bosqichga olib chiqaman.<br><br><b>Nurinvest</b> kompaniyasida <b>$250,000+</b> to'g'ridan-to'g'ri investitsiya jalb qilganman (30 nafar investor). <b>HighWay</b> (chet elga o'qishga jo'natish konsaltingi) loyihasida sotuv bo'limini <b>0 dan butunlay o'zim tizimlashtirib</b>, <b>oyiga 40 ta xalqaro shartnoma</b> va <b>$40,000+ oylik aylanmaga</b> erishganman. Zamonaviy <b>AI va Prompt Engineering</b> texnologiyalari yordamida jamoa tezligi va konversiyasini oshiraman.`,
     'about.copy.title': "Raqamni nusxalash",
 
     /* PROJECTS */
@@ -157,13 +157,13 @@ const translations = {
     'nav.skills':   "Навыки",
     'nav.contact':  "Контакт",
 
-    'home.badge':       "Открыт к B2B Консалтингу",
+    'home.badge':       \"Открыт к новым B2B проектам\",
     'home.greeting':    "Привет, я",
-    'home.btn1':        "Консультация",
+    'home.btn1':        \"Обсудить проект\",
     'home.btn2':        "Кейсы",
-    'home.btn_cv':      "Резюме (PDF)",
-    'home.profession1': "Руководитель продаж",
-    'home.profession2': "B2B Стратег",
+    'home.btn_cv':      \"Скачать резюме (PDF)\",
+    'home.profession1': \"Руководитель B2B Продаж\",
+    'home.profession2': \"Систематизация & AmoCRM\",
     'home.prof.label':  "Профессионал",
     'proj.details':     "Подробнее Case Study",
 
@@ -178,7 +178,7 @@ const translations = {
 
     'about.title.span': "Результативность",
     'about.title.rest': "И Системный Подход",
-    'about.desc': `Я как <b>руководитель отдела продаж и инвестиционный консультант</b> имею богатый опыт в систематизации B2B и B2C продаж, построении воронки через <b>AmoCRM</b> и закрытии <b>крупных сделок</b>.<br><br>В компании <b>Nurinvest</b> обеспечил привлечение инвестиций на сумму <b>$250 000+</b>. В компании <b>HighWay</b> выстроил отдел продаж <b>с нуля</b>, внедрил системы обучения и передовые стратегии продаж, достигнув <b>от 30 до 40+ успешных договоров в месяц</b>. Применяю технологии <b>Prompt Engineering (AI)</b> для ускорения работы команды в 2 раза.`,
+    'about.desc': `Масштабирую выручку бизнеса через AmoCRM, прозрачные воронки и техники закрытия крупных сделок.<br><br>В компании <b>Nurinvest</b> обеспечил привлечение <b>$250,000+</b> прямых инвестиций (30 инвесторов). В проекте <b>HighWay</b> выстроил отдел продаж <b>с нуля</b>, достигнув <b>40 договоров в месяц</b> и ежемесячного оборота <b>$40,000+</b>. Применяю инструменты <b>AI и Prompt Engineering</b> для ускорения работы команды и роста конверсии.`,
     'about.copy.title': "Скопировать номер",
 
     'projects.title.prefix': "Мои Успешные",
@@ -291,13 +291,13 @@ const translations = {
     'nav.skills':   "Skills",
     'nav.contact':  "Contact",
 
-    'home.badge':       "Open to B2B Consulting",
+    'home.badge':       \"Available for B2B Leadership Roles\",
     'home.greeting':    "Hello, I'm",
-    'home.btn1':        "Consultation",
+    'home.btn1':        \"Discuss Your Project\",
     'home.btn2':        "Cases",
-    'home.btn_cv':      "CV (PDF)",
-    'home.profession1': "Head of Sales",
-    'home.profession2': "B2B Strategist",
+    'home.btn_cv':      \"Download CV (PDF)\",
+    'home.profession1': \"Head of B2B Sales\",
+    'home.profession2': \"Sales Operations & AmoCRM\",
     'home.prof.label':  "Professional",
     'proj.details':     "View Case Study",
 
@@ -312,7 +312,7 @@ const translations = {
 
     'about.title.span': "Results-Driven",
     'about.title.rest': "& Systematic Approach",
-    'about.desc': `As a <b>Head of Sales and Investment Consultant</b>, I have extensive experience in systematising B2B and B2C sales, building sales funnels via <b>AmoCRM</b>, and closing <b>high-ticket deals</b>.<br><br>At <b>Nurinvest</b>, I secured <b>$250,000+</b> in direct investments. At <b>HighWay</b> (overseas education consulting), I built the sales department <b>from scratch</b>, trained sales teams, and implemented advanced strategies — achieving <b>30 to 40+ signed contracts per month</b>. I leverage <b>Prompt Engineering (AI)</b> to double team productivity.`,
+    'about.desc': `Driving revenue growth through structured AmoCRM pipelines, high-ticket deal negotiation, and disciplined sales management.<br><br>Secured <b>$250,000+</b> in direct investment at <b>Nurinvest</b> (30 investors). At <b>HighWay</b>, built the sales department <b>from scratch</b>, scaling to <b>40 contracts per month</b> and <b>$40,000+ monthly turnover</b>. Leveraging modern <b>AI and Prompt Engineering</b> to accelerate team workflows and boost conversions.`,
     'about.copy.title': "Copy number",
 
     'projects.title.prefix': "My Successful",
