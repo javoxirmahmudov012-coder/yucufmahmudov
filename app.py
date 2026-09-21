@@ -47,21 +47,7 @@ PORTFOLIO_DATA = {
         'employment': "To'liq bandlik, joyida ishlash va xizmat safarlariga tayyor"
     },
     'experiences': [
-        {
-            'company': 'Yogdu Media',
-            'company_link': 'yogdu_agency',
-            'location': 'Toshkent',
-            'role': 'B2B Manager',
-            'period': '2026-yil iyun — Hozirgacha',
-            'duration': 'Hozirgi faoliyat',
-            'badge': 'Faol ish joyi',
-            'badge_class': 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30',
-            'points': [
-                "Xodimlarning ish vaqtini tizimli hisobga olish (ish soatlari, overtime, otgul va mehnat ta'tillari).",
-                "Savdo rejalari bajarilishi va sotuv samaradorligi (KPI) ko'rsatkichlarini qat'iy nazorat qilish va rag'batlantirish.",
-                "B2B korporativ mijozlar bilan uzoq muddatli shartnomalar tuzish va savdo jarayonlarini muvofiqlashtirish."
-            ]
-        },
+        
         {
             'company': 'HighWay',
             'company_link': "Chet elda ta'lim konsaltingi (Study Abroad)",
@@ -188,16 +174,7 @@ PORTFOLIO_DATA = {
             'desc': "HighWay chet elga o'qishga jo'natish konsaltingida sotuv bo'limi 0 dan to'liq tizimlashtirildi. Sotuvchilarni o'qitish va ilg'or sotuv texnikalari bo'yicha to'liq strategiyalar joriy etilib, oyiga kamida 30 tadan 40+ tagacha shartnomalar imzolanishiga erishildi.",
             'tags': ['0 dan Tizimlashtirish', 'Sotuvchilarni O\'qitish', 'Kamida 30-40+ Shartnoma/oy', 'AmoCRM & Skriptlar']
         },
-        {
-            'title': 'B2B Jamoa va Ish Vaqti Nazorati',
-            'company': 'Yogdu Media',
-            'category': 'Menejment',
-            'tag': 'Media Agency',
-            'metric': '100% KPI',
-            'metric_label': 'Reja nazorati',
-            'desc': "Xodimlar vaqtini qat'iy nazorat qilish va sotuv KPI ko'rsatkichlarini muvofiqlashtirish orqali jamoa mahsuldorligi oshirildi. Korporativ B2B mijozlar bilan barqaror kelishuvlar ta'minlandi.",
-            'tags': ['B2B Menejment', 'Jamoa', 'KPI', 'Rejalashtirish']
-        },
+        
         {
             'title': 'Prompt Engineering Savdo Integratsiyasi',
             'company': 'Najot Ta\'lim & Shaxsiy Tajriba',

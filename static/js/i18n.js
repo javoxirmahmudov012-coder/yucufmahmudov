@@ -51,9 +51,9 @@ const translations = {
     'proj3.subtitle': "Yo'nalish va Yutuq",
     'proj3.desc':     "Xodimlar ish vaqti hisobi (overtime, otgul, mehnat ta'tillari), savdo rejalarining 100% bajarilishini nazorat qilish va korporativ shartnomalar.",
 
-    'proj4.title':    "Prompt Engineering:<br>AI Savdo Integratsiyasi",
-    'proj4.subtitle': "Yo'nalish va Yutuq",
-    'proj4.desc':     "Najot Ta'lim Markazida Samandar Sultonov kursi. CRM skriptlar, mijozlar e'tirozlariga avtomatlashtirilgan javoblar va jarayonlarni 2x tezlashtirish.",
+    'proj3.title':    "Prompt Engineering:<br>AI Savdo Integratsiyasi",
+    'proj3.subtitle': "Yo'nalish va Yutuq",
+    'proj3.desc':     "Najot Ta'lim Markazida Samandar Sultonov kursi. CRM skriptlar, mijozlar e'tirozlariga avtomatlashtirilgan javoblar va jarayonlarni 2x tezlashtirish.",
 
     /* WORK */
     'work.title.span': "Mening Ish",
@@ -190,9 +190,9 @@ const translations = {
     'proj3.subtitle': "Направление и Результат",
     'proj3.desc':     "Учёт рабочего времени сотрудников (переработки, отгулы, отпуска), контроль 100% выполнения планов продаж и корпоративные договоры.",
 
-    'proj4.title':    "Prompt Engineering:<br>AI в продажах",
-    'proj4.subtitle': "Направление и Результат",
-    'proj4.desc':     "Курс Samandar Sultonov в Najot Ta'lim. CRM-скрипты, автоматизированные ответы на возражения клиентов и ускорение процессов в 2 раза.",
+    'proj3.title':    "Prompt Engineering:<br>AI в продажах",
+    'proj3.subtitle': "Направление и Результат",
+    'proj3.desc':     "Курс Samandar Sultonov в Najot Ta'lim. CRM-скрипты, автоматизированные ответы на возражения клиентов и ускорение процессов в 2 раза.",
 
     'work.title.span': "Мой Опыт",
     'work.title.rest': "Работы & Образование",
@@ -322,9 +322,9 @@ const translations = {
     'proj3.subtitle': "Direction & Achievement",
     'proj3.desc':     "Employee time tracking (overtime, time-off, leave), monitoring 100% sales plan completion, and corporate contracts.",
 
-    'proj4.title':    "Prompt Engineering:<br>AI in Sales",
-    'proj4.subtitle': "Direction & Achievement",
-    'proj4.desc':     "Samandar Sultonov's course at Najot Ta'lim. CRM scripts, automated objection handling, and 2x process acceleration.",
+    'proj3.title':    "Prompt Engineering:<br>AI in Sales",
+    'proj3.subtitle': "Direction & Achievement",
+    'proj3.desc':     "Samandar Sultonov's course at Najot Ta'lim. CRM scripts, automated objection handling, and 2x process acceleration.",
 
     'work.title.span': "My Work",
     'work.title.rest': "Experience & Education",

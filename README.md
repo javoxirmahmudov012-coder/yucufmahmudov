@@ -25,7 +25,7 @@ Kelib tushgan xabarlar boshqaruvi: **http://127.0.0.1:5000/messages**
 - **Jonli Metrikalar:** $250,000+ jalb qilingan investitsiya, 30+ investorlar, $30,000+ oylik aylanma va 30+ yirik oylik bitimlar.
 - **Interaktiv Keyslar:** Loyihalarni yo'nalishlar bo'yicha saralash (Investitsiya, Tizimlashtirish, Menejment, AI).
 - **Ko'nikmalar va AI Stack:** AmoCRM, SPIN savdo texnikasi, Prompt Engineering (Najot Ta'lim), Google Sheets tahlili.
-- **Karyera Vaqti (Timeline):** Yogdu Media, HighWay, Nurinvest kompaniyalaridagi aniq erishilgan natijalar.
+- **Karyera Vaqti (Timeline):** HighWay, Nurinvest kompaniyalaridagi aniq erishilgan natijalar.
 - **Ta'lim va Sertifikatlar:** GulDU, Samandar Sultonov, Islombek Ibragimov, Ibrohim Gulyamov kurslari.
 - **Konsultatsiya Formasi:** AJAX orqali ishlovchi xabar qoldirish tizimi (xabarlar `messages.json` faylida xavfsiz saqlanadi).
 
