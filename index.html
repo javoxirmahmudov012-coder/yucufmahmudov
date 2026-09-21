@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/static/css/swiper-bundle.min.css" />
 
     <!-- STYLES CSS (Original Habib / Panda Coders Style) -->
-    <link rel="stylesheet" href="/static/css/styles.css?v=18" />
+    <link rel="stylesheet" href="/static/css/styles.css?v=19" />
 
     <title>Mahmudov Muhammadyusuf | B2B Sotuv va Investitsiya Konsultanti</title>
     <meta name="description" content="Head of Sales, B2B strategist. $250,000+ investitsiya jalb qilgan, AmoCRM tizimlashtirish tajribasi." />
@@ -489,7 +489,7 @@
           <div class="home__image">
             <div class="blob-animate"></div>
             <picture>
-              <source srcset="/static/images/profile-hero.webp?v=18" type="image/webp" />
+              <source srcset="/static/images/profile-hero.webp?v=19" type="image/webp" />
               <img
                 src="/static/images/profile-hero.jpg?v=12"
                 alt="Mahmudov Muhammadyusuf"
@@ -814,7 +814,7 @@
 
             </div>
 
-            <!-- Content Education -->
+                        <!-- Content Education -->
             <div class="work__content" data-content id="education">
               
               <!-- 1. Najot Ta'lim -->
@@ -830,12 +830,6 @@
                 <p class="work__description" data-i18n="edu.najot.desc">
                   Zamonaviy sun'iy intellekt vositalari (LLM, ChatGPT, Claude) yordamida savdo jarayonlari, voronkalar, mijozlar bilan muloqot skriptlari va avtomatizatsiyani chuqur o'rganish.
                 </p>
-
-                <!-- Certificate Visual Preview -->
-                <div class="cert__preview" onclick="openCertModal('/static/images/cert-1.svg', 'Najot Ta\'lim — Prompt Engineering Sertifikati')">
-                  <img src="/static/images/cert-1.svg" alt="Najot Ta'lim Sertifikati" class="cert__img" />
-                  <div class="cert__overlay"><i class="ri-zoom-in-line"></i> Sertifikatni ko'rish</div>
-                </div>
               </div>
 
               <!-- 2. M-Factor -->
@@ -851,12 +845,6 @@
                 <p class="work__description" data-i18n="edu.mfactor.desc">
                   SPIN savdo texnikalari, e'tirozlar bilan ishlash, mijozning yashirin ehtiyojlarini aniqlash va yuqori chekli bitimlarni muvaffaqiyatli yopish san'ati.
                 </p>
-
-                <!-- Certificate Visual Preview -->
-                <div class="cert__preview" onclick="openCertModal('/static/images/cert-2.svg', 'M-Factor — Sotuv Texnikalari Sertifikati')">
-                  <img src="/static/images/cert-2.svg" alt="M-Factor Sertifikati" class="cert__img" />
-                  <div class="cert__overlay"><i class="ri-zoom-in-line"></i> Sertifikatni ko'rish</div>
-                </div>
               </div>
 
               <!-- 3. Ibrohim Gulyamov -->
@@ -872,12 +860,6 @@
                 <p class="work__description" data-i18n="edu.ibrahim.desc">
                   Kompaniyada barqaror sotuv bo'limi tizimini qurish, KPI mexanizmlari, menejerlarni nazorat qilish va savdo aylanmasini rejali oshirish.
                 </p>
-
-                <!-- Certificate Visual Preview -->
-                <div class="cert__preview" onclick="openCertModal('/static/images/cert-3.svg', 'Ibrohim Gulyamov — Sotuvni Tizimlashtirish Sertifikati')">
-                  <img src="/static/images/cert-3.svg" alt="Ibrohim Gulyamov Sertifikati" class="cert__img" />
-                  <div class="cert__overlay"><i class="ri-zoom-in-line"></i> Sertifikatni ko'rish</div>
-                </div>
               </div>
 
               <!-- 4. Guliston Davlat Universiteti -->
@@ -893,12 +875,6 @@
                 <p class="work__description" data-i18n="edu.uni.desc">
                   Oliy ma'lumot (Bakalavriat darajasi), intizom, liderlik va jamoani boshqarish ko'nikmalarini shakllantirish.
                 </p>
-
-                <!-- Certificate Visual Preview -->
-                <div class="cert__preview" onclick="openCertModal('/static/images/cert-4.svg', 'Guliston Davlat Universiteti — Bakalavr Diplomi')">
-                  <img src="/static/images/cert-4.svg" alt="Bakalavr Diplomi" class="cert__img" />
-                  <div class="cert__overlay"><i class="ri-zoom-in-line"></i> Diplomni ko'rish</div>
-                </div>
               </div>
 
             </div>
@@ -1185,10 +1161,10 @@
     <script src="/static/js/swiper-bundle.min.js"></script>
 
     <!-- MAIN JS -->
-    <script src="/static/js/main.js?v=18"></script>
+    <script src="/static/js/main.js?v=19"></script>
 
     <!-- I18N & THEME JS -->
-    <script src="/static/js/i18n.js?v=18"></script>
+    <script src="/static/js/i18n.js?v=19"></script>
 
     <!-- CASE STUDY MODAL -->
     <div id="case-modal" class="modal-backdrop">
@@ -1198,14 +1174,7 @@
       </div>
     </div>
 
-    <!-- CERTIFICATE LIGHTBOX MODAL -->
-    <div id="cert-modal" class="modal-backdrop">
-      <div class="modal-card cert-modal-card">
-        <button class="modal-close" onclick="closeCertModal()"><i class="ri-close-line"></i></button>
-        <h3 id="cert-modal-title" style="margin-bottom: 1rem; color: #fff; font-size: 1.1rem; text-align: center;"></h3>
-        <img id="cert-modal-img" src="" alt="Sertifikat" style="width: 100%; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.15);" />
-      </div>
-    </div>
+
 
     <!-- TOAST NOTIFICATION & QUICK ACTIONS -->
     <div id="toast" class="toast">Telefon raqami nusxalandi! 📋</div>
@@ -1357,24 +1326,14 @@
         document.body.style.overflow = '';
       }
 
-      function openCertModal(src, title) {
-        document.getElementById('cert-modal-img').src = src;
-        document.getElementById('cert-modal-title').textContent = title;
-        document.getElementById('cert-modal').classList.add('active');
-        document.body.style.overflow = 'hidden';
-      }
 
-      function closeCertModal() {
-        document.getElementById('cert-modal').classList.remove('active');
-        document.body.style.overflow = '';
-      }
 
       // Close modal on backdrop click
       document.querySelectorAll('.modal-backdrop').forEach(modal => {
         modal.addEventListener('click', (e) => {
           if (e.target === modal) {
             closeCaseModal();
-            closeCertModal();
+            
           }
         });
       });
