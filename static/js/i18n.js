@@ -25,7 +25,9 @@ const translations = {
 
     /* STATS */
     'stat.invest.label':   "Jalb qilingan investitsiya (Nurinvest)",
-    'stat.contracts.num':  "40+ / oy",
+    'stat.contracts.num':  "40 / oy",
+    'stat.investors.label':"Yirik investorlar portfeli (Nurinvest)",
+    'stat.revenue.label':  "Oylik savdo aylanmasi (HighWay)",
     'stat.contracts.label':"Chet elda ta'lim shartnomalari (HighWay)",
     'stat.kpi.label':      "0 dan tizimli AmoCRM & Voronka",
     'stat.speed.num':      "2x Tezlik",
@@ -42,11 +44,11 @@ const translations = {
     'projects.title.span':   "Keyslarim",
 
     'proj1.subtitle': "Yo'nalish va Yutuq",
-    'proj1.desc':     "30+ yirik investorlar jalb qilingan, har biri o'rtacha $10,000 chek bilan. Jami $250,000+ to'g'ridan-to'g'ri investitsiya kiritilgan.",
+    'proj1.desc':     "30 nafar yirik investor jalb qilinib, kompaniyaga jami $250,000+ to'g'ridan-to'g'ri investitsiya kirimi ta'minlandi.",
 
-    'proj2.title':    "HighWay: 0 dan Tizim,<br>Oyiga 40+ Shartnoma",
+    'proj2.title':    "HighWay: 0 dan Tizim,<br>Oyiga 40 ta Shartnoma",
     'proj2.subtitle': "Chet Elda Ta'lim Konsaltingi",
-    'proj2.desc':     "Sotuv bo'limini 0 dan butunlay o'zim tizimlashtirganman. Sotuvchilarni noldan o'qitish va ilg'or sotuv texnikalari bo'yicha to'liq strategiyalar joriy etilib, oyiga kamida 30 tadan 40+ tagacha muvaffaqiyatli shartnomalar va $30,000+ oylik aylanmaga erishilgan.",
+    'proj2.desc':     "Sotuv bo'limi 0 dan to'liq tizimlashtirilib, oyiga 40 ta xalqaro shartnoma va $40,000+ oylik savdo aylanmasiga erishildi.",
 
     'proj3.subtitle': "Yo'nalish va Yutuq",
     'proj3.desc':     "Xodimlar ish vaqti hisobi (overtime, otgul, mehnat ta'tillari), savdo rejalarining 100% bajarilishini nazorat qilish va korporativ shartnomalar.",
@@ -166,7 +168,9 @@ const translations = {
     'proj.details':     "Подробнее Case Study",
 
     'stat.invest.label':    "Привлечённые инвестиции (Nurinvest)",
-    'stat.contracts.num':   "40+ / мес",
+    'stat.contracts.num':   "40 / мес",
+    'stat.investors.label':"Портфель крупных инвесторов (Nurinvest)",
+    'stat.revenue.label':  "Ежемесячный оборот продаж (HighWay)",
     'stat.contracts.label': "Договоры зарубежного образования (HighWay)",
     'stat.kpi.label':       "AmoCRM & Воронка с нуля",
     'stat.speed.num':       "2x Скорость",
@@ -181,11 +185,11 @@ const translations = {
     'projects.title.span':   "Кейсы",
 
     'proj1.subtitle': "Направление и Результат",
-    'proj1.desc':     "Привлечено 30+ крупных инвесторов со средним чеком $10 000. Итого $250 000+ прямых инвестиций.",
+    'proj1.desc':     "Привлечено 30 крупных инвесторов, компании обеспечено $250 000+ прямых инвестиций.",
 
-    'proj2.title':    "HighWay: Система с нуля,<br>40+ договоров в месяц",
+    'proj2.title':    "HighWay: Система с нуля,<br>40 договоров в месяц",
     'proj2.subtitle': "Консалтинг зарубежного образования",
-    'proj2.desc':     "Построил отдел продаж с нуля. Внедрил обучение менеджеров и передовые техники продаж, достигнув 30–40+ успешных договоров в месяц с оборотом $30 000+.",
+    'proj2.desc':     "Отдел продаж выстроен с нуля. Достигнуто 40 успешных договоров в месяц с ежемесячным оборотом $40 000+.",
 
     'proj3.subtitle': "Направление и Результат",
     'proj3.desc':     "Учёт рабочего времени сотрудников (переработки, отгулы, отпуска), контроль 100% выполнения планов продаж и корпоративные договоры.",
@@ -298,7 +302,9 @@ const translations = {
     'proj.details':     "View Case Study",
 
     'stat.invest.label':    "Investment Attracted (Nurinvest)",
-    'stat.contracts.num':   "40+ / mo",
+    'stat.contracts.num':   "40 / mo",
+    'stat.investors.label':"Major Investors Portfolio (Nurinvest)",
+    'stat.revenue.label':  "Monthly Sales Turnover (HighWay)",
     'stat.contracts.label': "Overseas Education Contracts (HighWay)",
     'stat.kpi.label':       "AmoCRM & Sales Funnel from scratch",
     'stat.speed.num':       "2x Speed",
@@ -313,11 +319,11 @@ const translations = {
     'projects.title.span':   "Cases",
 
     'proj1.subtitle': "Direction & Achievement",
-    'proj1.desc':     "30+ major investors attracted, each with an average ticket of $10,000. Total $250,000+ in direct investment.",
+    'proj1.desc':     "30 major investors secured, generating $250,000+ in direct investment capital for the company.",
 
-    'proj2.title':    "HighWay: System from Zero,<br>40+ Contracts/Month",
+    'proj2.title':    "HighWay: System from Zero,<br>40 Contracts/Month",
     'proj2.subtitle': "Overseas Education Consulting",
-    'proj2.desc':     "Built the sales department from scratch. Trained sales managers and implemented advanced techniques, achieving 30–40+ successful contracts per month with $30,000+ monthly turnover.",
+    'proj2.desc':     "Built the sales department from scratch. Achieved 40 successful contracts per month and $40,000+ in monthly sales revenue.",
 
     'proj3.subtitle': "Direction & Achievement",
     'proj3.desc':     "Employee time tracking (overtime, time-off, leave), monitoring 100% sales plan completion, and corporate contracts.",

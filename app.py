@@ -26,11 +26,11 @@ PORTFOLIO_DATA = {
         "Nurinvest kompaniyasida 30 dan ortiq investorlar bilan ishlab, kompaniyaga $250,000+ miqdorida investitsiya kirimini ta'minlaganman. HighWay (chet elga o'qishga jo'natish konsaltingi) kompaniyasida sotuv bo'limini 0 dan butunlay o'zim tizimlashtirib, sotuvchilarni o'qitish va ilg'or sotuv texnikalari bo'yicha to'liq strategiyalar ishlab chiqqanman — natijada oyiga kamida 30 tadan 40+ tagacha xalqaro shartnomalar muvaffaqiyatli imzolangan.",
         "Zamonaviy texnologiyalar bilan doimiy hamnafas holda Najot Ta'limda Prompt Engineering (Sun'iy Intellekt) yo'nalishini tamomlaganman. Savdo skriptlari, voronkalar va mijozlar tahlilida ilg'or AI vositalaridan foydalanaman."
     ],
-    'stats': [
+        'stats': [
         {'value': 250, 'suffix': 'K$+', 'label': 'Jalb qilingan investitsiya', 'icon': 'fa-sack-dollar', 'desc': 'Nurinvest loyihasida'},
-        {'value': 30, 'suffix': '+', 'label': 'Yirik investorlar', 'icon': 'fa-handshake', 'desc': "O'rtacha chek: $10,000"},
-        {'value': 30, 'suffix': 'K$+', 'label': 'Oylik savdo aylanmasi', 'icon': 'fa-chart-line', 'desc': 'HighWay savdo natijasi'},
-        {'value': 30, 'suffix': '+ /oy', 'label': 'Muvaffaqiyatli bitimlar', 'icon': 'fa-trophy', 'desc': "O'rtacha chek: $1,000+"}
+        {'value': 30, 'suffix': ' ta', 'label': 'Yirik investorlar', 'icon': 'fa-handshake', 'desc': "O'rtacha chek: $10,000"},
+        {'value': 40, 'suffix': ' /oy', 'label': 'Xalqaro shartnomalar', 'icon': 'fa-trophy', 'desc': 'HighWay savdo natijasi'},
+        {'value': 40, 'suffix': 'K$+', 'label': 'Oylik savdo aylanmasi', 'icon': 'fa-chart-line', 'desc': "HighWay oylik ko'rsatkichi"}
     ],
     'contact': {
         'phone': '+998 (50) 053-48-12',
@@ -153,37 +153,26 @@ PORTFOLIO_DATA = {
         {'name': "O'zbek tili", 'level': 'Ona tili (Mukammal)', 'percent': 100, 'badge': 'Native'},
         {'name': 'Rus tili', 'level': 'B1 — Erkin muloqot va muzokaralar', 'percent': 75, 'badge': 'Professional'}
     ],
-    'cases': [
+        'cases': [
         {
-            'title': '$250,000+ Investitsiya Kirimi',
+            'title': 'Nurinvest: $250,000+ Investitsiya Kirimi',
             'company': 'Nurinvest',
             'category': 'Investitsiya',
             'tag': 'B2B Investment',
             'metric': '$250K+',
             'metric_label': 'Jalb qilingan investitsiya',
-            'desc': "30 dan ortiq yirik investorlar bilan tizimli muzokaralar olib borildi. O'rtacha $10,000 lik cheklar bilan kompaniyaga chorak million dollardan ortiq to'g'ridan-to'g'ri investitsiya kirimi ta'minlandi.",
-            'tags': ['Investitsiya', 'B2B Muzokaralar', 'VIP Mijozlar', 'Konsalting']
+            'desc': "30 nafar yirik investor bilan tizimli muzokaralar olib borildi. Kompaniyaga jami $250,000+ miqdorida to'g'ridan-to'g'ri investitsiya kirimi ta'minlandi.",
+            'tags': ['Investitsiya', 'B2B Muzokaralar', '30 ta Investor', 'Konsalting']
         },
         {
-            'title': 'HighWay: 0 dan Tizim va Oyiga 40+ Shartnoma',
+            'title': 'HighWay: 0 dan Tizim va Oyiga 40 ta Shartnoma',
             'company': 'HighWay',
             'category': 'Tizimlashtirish',
-            'tag': 'Chet Elda Ta\'lim (Study Abroad)',
-            'metric': '40+ / oy',
+            'tag': "Chet Elda Ta'lim (Study Abroad)",
+            'metric': '40 / oy',
             'metric_label': 'Xalqaro shartnomalar',
-            'desc': "HighWay chet elga o'qishga jo'natish konsaltingida sotuv bo'limi 0 dan to'liq tizimlashtirildi. Sotuvchilarni o'qitish va ilg'or sotuv texnikalari bo'yicha to'liq strategiyalar joriy etilib, oyiga kamida 30 tadan 40+ tagacha shartnomalar imzolanishiga erishildi.",
-            'tags': ['0 dan Tizimlashtirish', 'Sotuvchilarni O\'qitish', 'Kamida 30-40+ Shartnoma/oy', 'AmoCRM & Skriptlar']
-        },
-        
-        {
-            'title': 'Prompt Engineering Savdo Integratsiyasi',
-            'company': 'Najot Ta\'lim & Shaxsiy Tajriba',
-            'category': 'Sun\'iy Intellekt',
-            'tag': 'AI & CRM',
-            'metric': '2x Samaradorlik',
-            'metric_label': 'Jarayonlar tezligi',
-            'desc': "Mijozlar bilan yozishmalar skriptlari, e'tirozlarga javoblar bazasi va CRM tahlillarida sun'iy intellektdan (Prompt Engineering) foydalanib, menejerlar vaqti 2 baravargacha tejaldi.",
-            'tags': ['Prompt Engineering', 'AI Integrator', 'Avtomatlashtirish']
+            'desc': "HighWay chet elga o'qishga jo'natish konsaltingida sotuv bo'limi 0 dan to'liq tizimlashtirildi. Oyiga barqaror 40 ta xalqaro shartnoma va $40,000+ oylik savdo aylanmasiga erishildi.",
+            'tags': ['0 dan Tizimlashtirish', "Sotuvchilarni O'qitish", '40 Shartnoma/oy', 'AmoCRM & Skriptlar']
         }
     ]
 }
