@@ -57,11 +57,11 @@
    LIGHT THEME
    ============================================ */
 body.light-theme {
-  --title-color:      hsl(240, 20%, 10%);
-  --text-color:       hsl(240, 10%, 35%);
-  --text-color-light: hsl(240, 10%, 55%);
-  --body-color:       hsl(240, 20%, 96%);
-  --container-color:  hsl(240, 20%, 90%);
+  --title-color:      #0f172a;
+  --text-color:       #1e293b;
+  --text-color-light: #475569;
+  --body-color:       #f8fafc;
+  --container-color:  #ffffff;
 }
 
 body.light-theme .header {
