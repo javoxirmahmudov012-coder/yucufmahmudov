@@ -23,7 +23,7 @@ PORTFOLIO_DATA = {
     'bio_lead': "B2B va xizmat ko'rsatish kompaniyalarida sotuv bo'limini 0 dan tizimlashtirib, barqaror shartnomalar va yuqori chekli investitsiya kirimini ta'minlovchi Sotuv Rahbari.",
     'bio_details': [
         "24 yoshda, Toshkent shahrida istiqomat qilaman. B2B va B2C sohasida yuqori chekli bitimlarni muvaffaqiyatli yopish va savdo jamoalarini boshqarish bo'yicha 1.5 yildan ortiq samarali tajribaga egaman.",
-        "Nurinvest kompaniyasida 30 dan ortiq investorlar bilan ishlab, kompaniyaga $250,000+ miqdorida investitsiya kirimini ta'minlaganman. HighWay (chet elga o'qishga jo'natish konsaltingi) kompaniyasida sotuv bo'limini 0 dan butunlay o'zim tizimlashtirib, sotuvchilarni o'qitish va ilg'or sotuv texnikalari bo'yicha to'liq strategiyalar ishlab chiqqanman — natijada oyiga kamida 30 tadan 40+ tagacha xalqaro shartnomalar muvaffaqiyatli imzolangan.",
+        "Nurinvest kompaniyasida 30 dan ortiq investorlar bilan ishlab, kompaniyaga $250,000+ miqdorida investitsiya kirimini ta'minlaganman. HighWay (chet elga o'qishga jo'natish konsaltingi) kompaniyasida sotuv bo'limini 0 dan butunlay o'zim tizimlashtirib, sotuvchilarni o'qitish va ilg'or sotuv texnikalari bo'yicha to'liq strategiyalar ishlab chiqqanman — natijada oyiga 40 ta xalqaro shartnoma va $40,000+ oylik aylanmaga erishilgan.",
         "Zamonaviy texnologiyalar bilan doimiy hamnafas holda Najot Ta'limda Prompt Engineering (Sun'iy Intellekt) yo'nalishini tamomlaganman. Savdo skriptlari, voronkalar va mijozlar tahlilida ilg'or AI vositalaridan foydalanaman."
     ],
         'stats': [
@@ -60,8 +60,8 @@ PORTFOLIO_DATA = {
             'points': [
                 "Chet elga o'qishga jo'natish konsalting kompaniyasida sotuv bo'limini 0 dan butunlay o'zim tizimlashtirganman.",
                 "Sotuvchilarni noldan o'qitish, ilg'or savdo psixologiyasi va muzokara texnikalari ustida ishlash bo'yicha to'liq strategiyalar ishlab chiqqanman.",
-                "Ushbu tizimli strategiya samarasi bilan oyiga kamida 30 tadan 40+ tagacha muvaffaqiyatli xalqaro shartnomalar tuzilishiga erishilgan.",
-                "O'rtacha chek: $1,000+ | Oylik savdo aylanmasi barqaror $30,000+ dan $40,000+ gacha yetkazilgan.",
+                "Ushbu tizimli strategiya samarasi bilan oyiga 40 ta muvaffaqiyatli xalqaro shartnomalar tuzilishiga erishilgan.",
+                "O'rtacha chek: $1,000+ | Oylik savdo aylanmasi barqaror $40,000+ ga yetkazilgan.",
                 "AmoCRM orqali lidlar oqimi, savdo voronkasi bosqichlari va menejerlar KPI ko'rsatkichlari to'liq nazoratga olingan."
             ]
         },
@@ -71,7 +71,7 @@ PORTFOLIO_DATA = {
             'location': 'Toshkent',
             'role': "Sotuv Bo'limi Rahbari | B2B Savdo Tizimlashtirish | Investitsion Konsultant",
             'period': '2025-yil fevral — 2025-yil dekabr',
-            'duration': '11 oy',
+            'duration': '10 oy',
             'badge': 'Investitsiya Yutug\'i',
             'badge_class': 'bg-purple-500/20 text-purple-400 border-purple-500/30',
             'points': [

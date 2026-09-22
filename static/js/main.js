@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
         reset: false,
       });
 
-      sr.reveal(".home__image, .projects__container, .work__container, .testimonials__container, .contact__container");
+      sr.reveal(".home__image, .projects__container, .work__container, .contact__container");
       sr.reveal(".home__data", { delay: 400, origin: "bottom" });
       sr.reveal(".home__info", { delay: 600, origin: "bottom" });
       sr.reveal(".home__social, .home__cv", { delay: 700 });

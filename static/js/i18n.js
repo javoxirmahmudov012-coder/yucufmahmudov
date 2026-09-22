@@ -43,19 +43,13 @@ const translations = {
     'projects.title.prefix': "Mening Muvaffaqiyatli",
     'projects.title.span':   "Keyslarim",
 
-    'proj1.subtitle': "Yo'nalish va Yutuq",
+    'proj1.title':    "Nurinvest: <br />$250,000+ Investitsiya",
+    'proj1.subtitle': "B2B Investitsiya Konsaltingi",
     'proj1.desc':     "30 nafar yirik investor jalb qilinib, kompaniyaga jami $250,000+ to'g'ridan-to'g'ri investitsiya kirimi ta'minlandi.",
 
     'proj2.title':    "HighWay: 0 dan Tizim,<br>Oyiga 40 ta Shartnoma",
     'proj2.subtitle': "Chet Elda Ta'lim Konsaltingi",
     'proj2.desc':     "Sotuv bo'limi 0 dan to'liq tizimlashtirilib, oyiga 40 ta xalqaro shartnoma va $40,000+ oylik savdo aylanmasiga erishildi.",
-
-    'proj3.subtitle': "Yo'nalish va Yutuq",
-    'proj3.desc':     "Xodimlar ish vaqti hisobi (overtime, otgul, mehnat ta'tillari), savdo rejalarining 100% bajarilishini nazorat qilish va korporativ shartnomalar.",
-
-    'proj3.title':    "Prompt Engineering:<br>AI Savdo Integratsiyasi",
-    'proj3.subtitle': "Yo'nalish va Yutuq",
-    'proj3.desc':     "Najot Ta'lim Markazida Samandar Sultonov kursi. CRM skriptlar, mijozlar e'tirozlariga avtomatlashtirilgan javoblar va jarayonlarni 2x tezlashtirish.",
 
     /* WORK */
     'work.title.span': "Mening Ish",
@@ -63,19 +57,15 @@ const translations = {
     'work.tab.exp':    "Tajriba",
     'work.tab.edu':    "Ta'lim & Kurslar",
 
-    'work.yogdu.title': "B2B Manager",
-    'work.yogdu.time':  "Iyun 2026 —<br>Hozirgacha",
-    'work.yogdu.desc':  "Xodimlar ish vaqtini aniq hisobga olish (ish soatlari, overtime, otgul va mehnat ta'tillari). Savdo rejalari bajarilishi va sotuv samaradorligi (KPI) ko'rsatkichlarini qat'iy nazorat qilish va B2B bitimlarni tuzish.",
-
     'work.highway.title':  "Sotuv Bo'limi Rahbari",
     'work.highway.sub':    "HighWay (Chet elda ta'lim konsaltingi)",
     'work.highway.time':   "Mart 2026 —<br>Iyul 2026",
-    'work.highway.desc':   "Chet elga o'qishga jo'natish konsalting kompaniyasida sotuv bo'limini 0 dan butunlay o'zim tizimlashtirganman. Sotuvchilarni noldan o'qitish va ilg'or sotuv texnikalari ustida ishlash bo'yicha to'liq strategiyalar tuzilgan. Shu tizim samarasi o'laroq, chet elda ta'lim bo'yicha oyiga kamida 30 tadan 40+ tagacha muvaffaqiyatli shartnomalar imzolangan.",
+    'work.highway.desc':   "Chet elga o'qishga jo'natish konsalting kompaniyasida sotuv bo'limini 0 dan butunlay o'zim tizimlashtirganman. Sotuvchilarni noldan o'qitish va ilg'or sotuv texnikalari bo'yicha to'liq strategiyalar joriy etilib, oyiga 40 ta muvaffaqiyatli xalqaro shartnoma va $40,000+ oylik savdo aylanmasiga erishildi.",
 
     'work.nurinvest.title': "Sotuv Bo'limi Rahbari & Konsultant",
     'work.nurinvest.sub':   "Nurinvest (Investment Consultant)",
     'work.nurinvest.time':  "Fevral 2025 —<br>Dekabr 2025",
-    'work.nurinvest.desc':  "Mijozlarga investitsiya produktlari bo'yicha professional maslahatlar va muzokaralar. Oyiga o'rtacha 5 ta yirik investor (chek $10,000). Umumiy 30+ investor jalb qilinib, kompaniyaga $250,000+ investitsiya kirimi ta'minlangan.",
+    'work.nurinvest.desc':  "Mijozlarga investitsiya produktlari bo'yicha professional maslahatlar va muzokaralar olib borish. 10 oy davomida 30 nafar yirik investor jalb qilinib, kompaniyaga jami $250,000+ to'g'ridan-to'g'ri investitsiya kirimi ta'minlandi.",
 
     'edu.najot.title': "Prompt Engineering (Sun'iy Intellekt)",
     'edu.najot.sub':   "Najot Ta'lim Markazi (Samandar Sultonov)",
@@ -103,14 +93,6 @@ const translations = {
     'skills.s2.title': "AI & Zamonaviy Asboblar",
     'skills.s2.desc':  "Zamonaviy sun'iy intellekt va analitika vositalari orqali sotuv jarayonlarini tezlashtirish va aniq hisobotlarni yuritish.",
     'skills.s2.sub':   "Texnologik Vositalar",
-
-    /* TESTIMONIALS */
-    'test.title.span': "Hamkorlar Fikri",
-    'test.title.rest': "Va Tavsiyalar",
-    'test1.text': "Muhammadyusuf muzokaralarda mijozning nozik nuqtalarini darhol his qiladi va yuqori chekli bitimlarni yopishda juda ishonchli yetakchi.",
-    'test2.text': "AmoCRM tizimini noldan yo'lga qo'yib, jamoaning har oylik rejasini 100%+ bajarilishiga erishdi. Oyiga $30,000+ savdo aylanmasiga chiqdik.",
-    'test3.text': "Investitsiya loyihasini taqdim etishdagi aniqlik, hisob-kitoblar va ochiq muloqot bizni hamkorlikka undadi. Haqiqiy professional mutaxassis.",
-    'test4.text': "Katta mas'uliyat va tafsilotlarga e'tibor bilan ishlaydi. Jamoada sog'lom muhit va intizomni mukammal darajada shakllantira oladi.",
 
     /* CONTACT */
     'contact.title':     "Bog'lanish",
@@ -157,20 +139,20 @@ const translations = {
     'nav.skills':   "Навыки",
     'nav.contact':  "Контакт",
 
-    'home.badge':       \"Открыт к новым B2B проектам\",
+    'home.badge':       "Открыт к новым B2B проектам",
     'home.greeting':    "Привет, я",
-    'home.btn1':        \"Обсудить проект\",
+    'home.btn1':        "Обсудить проект",
     'home.btn2':        "Кейсы",
-    'home.btn_cv':      \"Скачать резюме (PDF)\",
-    'home.profession1': \"Руководитель B2B Продаж\",
-    'home.profession2': \"Систематизация & AmoCRM\",
+    'home.btn_cv':      "Скачать резюме (PDF)",
+    'home.profession1': "Руководитель B2B Продаж",
+    'home.profession2': "Систематизация & AmoCRM",
     'home.prof.label':  "Профессионал",
     'proj.details':     "Подробнее Case Study",
 
     'stat.invest.label':    "Привлечённые инвестиции (Nurinvest)",
     'stat.contracts.num':   "40 / мес",
-    'stat.investors.label':"Портфель крупных инвесторов (Nurinvest)",
-    'stat.revenue.label':  "Ежемесячный оборот продаж (HighWay)",
+    'stat.investors.label': "Портфель крупных инвесторов (Nurinvest)",
+    'stat.revenue.label':   "Ежемесячный оборот продаж (HighWay)",
     'stat.contracts.label': "Договоры зарубежного образования (HighWay)",
     'stat.kpi.label':       "AmoCRM & Воронка с нуля",
     'stat.speed.num':       "2x Скорость",
@@ -184,38 +166,28 @@ const translations = {
     'projects.title.prefix': "Мои Успешные",
     'projects.title.span':   "Кейсы",
 
-    'proj1.subtitle': "Направление и Результат",
-    'proj1.desc':     "Привлечено 30 крупных инвесторов, компании обеспечено $250 000+ прямых инвестиций.",
+    'proj1.title':    "Nurinvest: <br />$250,000+ Инвестиций",
+    'proj1.subtitle': "B2B Инвестиционный Консалтинг",
+    'proj1.desc':     "Привлечено 30 крупных инвесторов, компании обеспечено $250,000+ прямого инвестиционного капитала.",
 
     'proj2.title':    "HighWay: Система с нуля,<br>40 договоров в месяц",
-    'proj2.subtitle': "Консалтинг зарубежного образования",
-    'proj2.desc':     "Отдел продаж выстроен с нуля. Достигнуто 40 успешных договоров в месяц с ежемесячным оборотом $40 000+.",
-
-    'proj3.subtitle': "Направление и Результат",
-    'proj3.desc':     "Учёт рабочего времени сотрудников (переработки, отгулы, отпуска), контроль 100% выполнения планов продаж и корпоративные договоры.",
-
-    'proj3.title':    "Prompt Engineering:<br>AI в продажах",
-    'proj3.subtitle': "Направление и Результат",
-    'proj3.desc':     "Курс Samandar Sultonov в Najot Ta'lim. CRM-скрипты, автоматизированные ответы на возражения клиентов и ускорение процессов в 2 раза.",
+    'proj2.subtitle': "Консалтинг Зарубежного Образования",
+    'proj2.desc':     "Отдел продаж выстроен с нуля. Достигнуто 40 успешных договоров в месяц с ежемесячным оборотом $40,000+.",
 
     'work.title.span': "Мой Опыт",
     'work.title.rest': "Работы & Образование",
     'work.tab.exp':    "Опыт",
     'work.tab.edu':    "Образование & Курсы",
 
-    'work.yogdu.title': "B2B Менеджер",
-    'work.yogdu.time':  "Июнь 2026 —<br>По сей день",
-    'work.yogdu.desc':  "Точный учёт рабочего времени сотрудников (часы, переработки, отгулы и отпуска). Жёсткий контроль выполнения планов продаж и KPI, заключение B2B сделок.",
-
-    'work.highway.title': "Руководитель отдела продаж",
+    'work.highway.title': "Руководитель Отдела Продаж",
     'work.highway.sub':   "HighWay (Консалтинг зарубежного образования)",
     'work.highway.time':  "Март 2026 —<br>Июль 2026",
-    'work.highway.desc':  "Выстроил отдел продаж с нуля в консалтинговой компании по зарубежному образованию. Разработал полные стратегии обучения менеджеров и внедрил передовые техники продаж. Результат: от 30 до 40+ успешных договоров в месяц.",
+    'work.highway.desc':  "Выстроил отдел продаж с нуля в консалтинговой компании по зарубежному образованию. Разработал полные стратегии обучения менеджеров и внедрил передовые техники продаж. Результат: 40 успешных договоров в месяц и оборот $40,000+/мес.",
 
-    'work.nurinvest.title': "Руководитель продаж & Консультант",
+    'work.nurinvest.title': "Руководитель Продаж & Консультант",
     'work.nurinvest.sub':   "Nurinvest (Инвестиционный консультант)",
     'work.nurinvest.time':  "Февраль 2025 —<br>Декабрь 2025",
-    'work.nurinvest.desc':  "Профессиональные консультации и переговоры по инвестиционным продуктам. В среднем 5 крупных инвесторов в месяц (чек $10 000). Итого 30+ инвесторов, $250 000+ привлечённых инвестиций.",
+    'work.nurinvest.desc':  "Профессиональные консультации и переговоры по инвестиционным продуктам. За 10 месяцев привлечено 30 крупных инвесторов и обеспечено $250,000+ инвестиций.",
 
     'edu.najot.title': "Prompt Engineering (Искусственный Интеллект)",
     'edu.najot.sub':   "Najot Ta'lim (Samandar Sultonov)",
@@ -225,7 +197,7 @@ const translations = {
     'edu.mfactor.sub':   "M-Factor (Islombek Ibragimov)",
     'edu.mfactor.desc':  "SPIN-техники продаж, работа с возражениями, выявление скрытых потребностей клиента и искусство закрытия крупных сделок.",
 
-    'edu.ibrahim.title': "Систематизация продаж",
+    'edu.ibrahim.title': "Систематизация Продаж",
     'edu.ibrahim.sub':   "Ibrohim Gulyamov",
     'edu.ibrahim.desc':  "Построение устойчивой системы отдела продаж, KPI-механизмы, контроль менеджеров и планомерный рост оборота.",
 
@@ -243,28 +215,21 @@ const translations = {
     'skills.s2.desc':  "Ускорение процессов продаж и ведение точной аналитики с помощью современного ИИ.",
     'skills.s2.sub':   "Технологические Инструменты",
 
-    'test.title.span': "Отзывы Партнёров",
-    'test.title.rest': "И Рекомендации",
-    'test1.text': "Мухаммадюсуф мгновенно улавливает болевые точки клиента и является очень надёжным лидером в закрытии крупных сделок.",
-    'test2.text': "Выстроил AmoCRM с нуля и добился 100%+ выполнения месячного плана команды. Вышли на $30 000+ оборота в месяц.",
-    'test3.text': "Точность в презентации инвестпроекта, расчёты и открытое общение убедили нас в сотрудничестве. Настоящий профессионал.",
-    'test4.text': "Работает с большой ответственностью и вниманием к деталям. Безупречно формирует здоровую атмосферу и дисциплину в команде.",
-
     'contact.title':     "Контакт",
-    'contact.desc':      "Поговорим о вашем следующем проекте или бизнесе.",
-    'contact.copybtn':   "Скопировать номер",
+    'contact.desc':      "Давайте обсудим ваш следующий проект или бизнес.",
+    'contact.copybtn':   "Скопировать Номер",
     'contact.phone.title':    "Телефон",
     'contact.telegram.title': "Telegram",
     'contact.email.title':    "Email",
-    'contact.location.title': "Адрес",
+    'contact.location.title': "Локация",
     'contact.location.val':   "Ташкент, Узбекистан",
     'contact.social.title':   "Социальные Сети",
-    'contact.quick.title':    "Быстрый Контакт",
+    'contact.quick.title':    "Быстрая Связь",
     'contact.call.link':      "Позвонить (50-053-48-12)",
-    'contact.email.link':     "Электронная Почта",
+    'contact.email.link':     "Написать Email",
 
-    'form.title':    "Записаться на Консультацию",
-    'form.desc':     "Оставьте данные, и я свяжусь с вами в ближайшее время.",
+    'form.title':    "Запись на Консультацию",
+    'form.desc':     "Оставьте свои данные, и я свяжусь с вами в ближайшее время.",
     'form.name.lbl': "Ваше Имя *",
     'form.name.ph':  "Введите ваше имя",
     'form.contact.lbl': "Телефон или Telegram *",
@@ -272,7 +237,7 @@ const translations = {
     'form.service.lbl': "Интересующее Направление",
     'form.opt1': "Систематизация отдела продаж",
     'form.opt2': "Настройка и интеграция AmoCRM",
-    'form.opt3': "Привлечение инвестиций ($10K+ чеки)",
+    'form.opt3': "Привлечение инвестиций (чеки $10K+)",
     'form.opt4': "B2B переговоры и крупные сделки",
     'form.opt5': "Prompt Engineering и AI в продажах",
     'form.opt6': "Другое сотрудничество",
@@ -291,20 +256,20 @@ const translations = {
     'nav.skills':   "Skills",
     'nav.contact':  "Contact",
 
-    'home.badge':       \"Available for B2B Leadership Roles\",
+    'home.badge':       "Available for B2B Leadership Roles",
     'home.greeting':    "Hello, I'm",
-    'home.btn1':        \"Discuss Your Project\",
+    'home.btn1':        "Discuss Your Project",
     'home.btn2':        "Cases",
-    'home.btn_cv':      \"Download CV (PDF)\",
-    'home.profession1': \"Head of B2B Sales\",
-    'home.profession2': \"Sales Operations & AmoCRM\",
+    'home.btn_cv':      "Download CV (PDF)",
+    'home.profession1': "Head of Sales",
+    'home.profession2': "B2B Strategist & AmoCRM",
     'home.prof.label':  "Professional",
     'proj.details':     "View Case Study",
 
     'stat.invest.label':    "Investment Attracted (Nurinvest)",
     'stat.contracts.num':   "40 / mo",
-    'stat.investors.label':"Major Investors Portfolio (Nurinvest)",
-    'stat.revenue.label':  "Monthly Sales Turnover (HighWay)",
+    'stat.investors.label': "Major Investors Portfolio (Nurinvest)",
+    'stat.revenue.label':   "Monthly Sales Turnover (HighWay)",
     'stat.contracts.label': "Overseas Education Contracts (HighWay)",
     'stat.kpi.label':       "AmoCRM & Sales Funnel from scratch",
     'stat.speed.num':       "2x Speed",
@@ -318,38 +283,28 @@ const translations = {
     'projects.title.prefix': "My Successful",
     'projects.title.span':   "Cases",
 
-    'proj1.subtitle': "Direction & Achievement",
+    'proj1.title':    "Nurinvest: <br />$250,000+ Investment",
+    'proj1.subtitle': "B2B Investment Consulting",
     'proj1.desc':     "30 major investors secured, generating $250,000+ in direct investment capital for the company.",
 
     'proj2.title':    "HighWay: System from Zero,<br>40 Contracts/Month",
     'proj2.subtitle': "Overseas Education Consulting",
     'proj2.desc':     "Built the sales department from scratch. Achieved 40 successful contracts per month and $40,000+ in monthly sales revenue.",
 
-    'proj3.subtitle': "Direction & Achievement",
-    'proj3.desc':     "Employee time tracking (overtime, time-off, leave), monitoring 100% sales plan completion, and corporate contracts.",
-
-    'proj3.title':    "Prompt Engineering:<br>AI in Sales",
-    'proj3.subtitle': "Direction & Achievement",
-    'proj3.desc':     "Samandar Sultonov's course at Najot Ta'lim. CRM scripts, automated objection handling, and 2x process acceleration.",
-
     'work.title.span': "My Work",
     'work.title.rest': "Experience & Education",
     'work.tab.exp':    "Experience",
     'work.tab.edu':    "Education & Courses",
 
-    'work.yogdu.title': "B2B Manager",
-    'work.yogdu.time':  "June 2026 —<br>Present",
-    'work.yogdu.desc':  "Precise employee time tracking (hours, overtime, time-off, leave). Strict monitoring of sales plan completion and KPI metrics, closing B2B deals.",
-
     'work.highway.title': "Head of Sales",
     'work.highway.sub':   "HighWay (Overseas Education Consulting)",
     'work.highway.time':  "March 2026 —<br>July 2026",
-    'work.highway.desc':  "Built the sales department from scratch at an overseas education consulting company. Designed full manager training strategies and implemented advanced sales techniques, achieving 30–40+ successful contracts per month.",
+    'work.highway.desc':  "Built the sales department from scratch at an overseas education consulting company. Designed full manager training strategies and implemented advanced sales techniques, achieving 40 successful contracts per month and $40,000+/mo turnover.",
 
     'work.nurinvest.title': "Head of Sales & Consultant",
     'work.nurinvest.sub':   "Nurinvest (Investment Consultant)",
     'work.nurinvest.time':  "Feb 2025 —<br>Dec 2025",
-    'work.nurinvest.desc':  "Professional consultations and negotiations on investment products. Average 5 major investors per month (ticket $10,000). Total 30+ investors, $250,000+ in secured investments.",
+    'work.nurinvest.desc':  "Professional consultations and negotiations on investment products. In 10 months, secured 30 major investors and raised $250,000+ in direct investment capital.",
 
     'edu.najot.title': "Prompt Engineering (Artificial Intelligence)",
     'edu.najot.sub':   "Najot Ta'lim (Samandar Sultonov)",
@@ -376,13 +331,6 @@ const translations = {
     'skills.s2.title': "AI & Modern Tools",
     'skills.s2.desc':  "Accelerating sales processes and maintaining precise analytics using modern AI tools.",
     'skills.s2.sub':   "Tech Stack",
-
-    'test.title.span': "Partner Reviews",
-    'test.title.rest': "& Recommendations",
-    'test1.text': "Muhammadyusuf immediately senses the client's pain points and is a highly reliable leader in closing high-ticket deals.",
-    'test2.text': "He set up AmoCRM from scratch and achieved 100%+ monthly plan completion. We reached $30,000+ monthly turnover.",
-    'test3.text': "The precision in presenting the investment project, the calculations, and open communication convinced us to partner. A true professional.",
-    'test4.text': "Works with great responsibility and attention to detail. Perfectly builds a healthy atmosphere and discipline within the team.",
 
     'contact.title':     "Contact",
     'contact.desc':      "Let's talk about your next project or business.",
@@ -419,71 +367,89 @@ const translations = {
   }
 };
 
-/* ── Tilni qo'llash ── */
-function applyTranslations(lang) {
-  const t = translations[lang];
-  if (!t) return;
+/* =============================================
+   TILNI O'ZGARTIRISH (applyLanguage)
+   ============================================= */
+function applyLanguage(lang) {
+  if (!translations[lang]) lang = 'uz';
 
+  const t = translations[lang];
+
+  // Oddiy matnlar (textContent / innerHTML)
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
-    if (!t[key]) return;
-
-    const attr = el.getAttribute('data-i18n-attr');
-    if (attr) {
-      el.setAttribute(attr, t[key]);
-    } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-      el.placeholder = t[key];
-    } else {
-      el.innerHTML = t[key];
+    if (t[key] !== undefined) {
+      if (t[key].includes('<') && t[key].includes('>')) {
+        el.innerHTML = t[key];
+      } else {
+        el.textContent = t[key];
+      }
     }
   });
 
-  // <html lang="..."> ni yangilash
-  document.documentElement.lang = lang;
-
-  // Faol tugmani yangilash
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.lang === lang);
+  // Atributlar (masalan: placeholder, title)
+  document.querySelectorAll('[data-i18n-attr]').forEach(el => {
+    const attr = el.getAttribute('data-i18n-attr');
+    const key  = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) {
+      el.setAttribute(attr, t[key]);
+    }
   });
+
+  // Til tugmalarining active holatini yangilash
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+  });
+
+  // HTML lang atributini yangilash
+  document.documentElement.setAttribute('lang', lang);
+
+  // Tanlangan tilni localStorage ga saqlash
+  localStorage.setItem('ym_language', lang);
 }
 
-function setLang(lang) {
-  localStorage.setItem('lang', lang);
-  applyTranslations(lang);
-}
-
-/* ── Tema tizimi ── */
+/* =============================================
+   TEMA (DARK / LIGHT)
+   ============================================= */
 function applyTheme(theme) {
-  const btn = document.getElementById('theme-toggle');
-  if (theme === 'light') {
-    document.body.classList.add('light-theme');
-    if (btn) btn.innerHTML = '<i class="ri-moon-line"></i>';
-  } else {
-    document.body.classList.remove('light-theme');
-    if (btn) btn.innerHTML = '<i class="ri-sun-line"></i>';
+  const isLight = theme === 'light';
+  document.body.classList.toggle('light-theme', isLight);
+
+  const icon = document.querySelector('#theme-toggle i');
+  if (icon) {
+    icon.className = isLight ? 'ri-moon-line' : 'ri-sun-line';
   }
+
+  localStorage.setItem('ym_theme', theme);
 }
 
-function toggleTheme() {
-  const current = localStorage.getItem('theme') || 'dark';
-  const next = current === 'dark' ? 'light' : 'dark';
-  localStorage.setItem('theme', next);
-  applyTheme(next);
-}
-
-/* ── Ishga tushirish ── */
+/* =============================================
+   DOM YUKLANGANDA ISHGA TUSHISH
+   ============================================= */
 document.addEventListener('DOMContentLoaded', () => {
-  // Tema
-  const savedTheme = localStorage.getItem('theme') || 'dark';
+  // 1. Saqlangan yoki standart tilni yuklash
+  const savedLang = localStorage.getItem('ym_language') || 'uz';
+  applyLanguage(savedLang);
+
+  // Til tugmalariga click hodisasini ulash
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.getAttribute('data-lang');
+      applyLanguage(lang);
+    });
+  });
+
+  // 2. Saqlangan yoki standart temani yuklash (standart: dark)
+  const savedTheme = localStorage.getItem('ym_theme') || 'dark';
   applyTheme(savedTheme);
 
-  // Til
-  const savedLang = localStorage.getItem('lang') || 'uz';
-  applyTranslations(savedLang);
-
-  // Tugmalar
-  document.getElementById('theme-toggle')?.addEventListener('click', toggleTheme);
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.addEventListener('click', () => setLang(btn.dataset.lang));
-  });
+  // Tema tugmasiga click hodisasini ulash
+  const themeToggle = document.getElementById('theme-toggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = document.body.classList.contains('light-theme') ? 'light' : 'dark';
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      applyTheme(newTheme);
+    });
+  }
 });
