@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HighWay Keysi | Mahmudov Muhammadyusuf — B2B Sotuv Menejeri</title>
+    <meta name="description" content="HighWay kompaniyasida sotuv bo'limini 0 dan tizimlashtirish, oyiga 40 ta xalqaro shartnoma va $40,000+ oylik aylanma keysi." />
+    <link rel="icon" href="/static/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <link rel="stylesheet" href="/static/css/styles.css?v=30" />
+    <style>
+      .case-detail {
+        max-width: 860px;
+        margin: 5rem auto 3rem;
+        padding: 2.5rem;
+        background: var(--container-color);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 2rem;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      }
+      body.light-theme .case-detail {
+        background: #ffffff;
+        border-color: #e2e8f0;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      }
+      .case-badge {
+        display: inline-block;
+        padding: 0.35rem 1rem;
+        background: rgba(124, 58, 237, 0.15);
+        border: 1px solid rgba(124, 58, 237, 0.3);
+        color: #a78bfa;
+        border-radius: 2rem;
+        font-family: var(--second-font);
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+      body.light-theme .case-badge {
+        background: #ede9fe;
+        color: #6d28d9;
+        border-color: #ddd6fe;
+      }
+      .case-title {
+        font-family: var(--second-font);
+        font-size: 2rem;
+        color: var(--title-color);
+        margin-bottom: 1rem;
+        line-height: 1.3;
+      }
+      body.light-theme .case-title {
+        color: #0f172a;
+      }
+      .case-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        font-size: 0.9rem;
+        color: var(--text-color-light);
+      }
+      body.light-theme .case-meta {
+        border-color: #e2e8f0;
+        color: #64748b;
+      }
+      .case-meta span {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+      .case-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-bottom: 2.5rem;
+      }
+      .metric-box {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 1.25rem;
+        border-radius: 1.25rem;
+        text-align: center;
+      }
+      body.light-theme .metric-box {
+        background: #f8fafc;
+        border-color: #e2e8f0;
+      }
+      .metric-value {
+        font-family: var(--second-font);
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #a78bfa;
+        margin-bottom: 0.25rem;
+      }
+      body.light-theme .metric-value {
+        color: #4f46e5;
+      }
+      .metric-label {
+        font-size: 0.8rem;
+        color: var(--text-color);
+      }
+      body.light-theme .metric-label {
+        color: #475569;
+      }
+      .case-section {
+        margin-bottom: 2rem;
+      }
+      .case-section h3 {
+        font-family: var(--second-font);
+        font-size: 1.25rem;
+        color: var(--title-color);
+        margin-bottom: 0.75rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      body.light-theme .case-section h3 {
+        color: #0f172a;
+      }
+      .case-section p {
+        font-size: 1rem;
+        line-height: 1.75;
+        color: var(--text-color);
+      }
+      body.light-theme .case-section p {
+        color: #334155;
+      }
+      .case-section ul {
+        list-style: none;
+        padding: 0;
+      }
+      .case-section li {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.6rem;
+        margin-bottom: 0.75rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: var(--text-color);
+      }
+      body.light-theme .case-section li {
+        color: #334155;
+      }
+      .case-section li i {
+        color: #4ade80;
+        font-size: 1.2rem;
+        margin-top: 0.1rem;
+      }
+      .case-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 2.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      body.light-theme .case-actions {
+        border-color: #e2e8f0;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="/" class="nav__logo">
+          <span class="nav__logo-badge">YM</span>
+          <span class="nav__logo-text">yucuf<span class="nav__logo-accent">mahmudov</span></span>
+        </a>
+        <div class="nav__controls">
+          <button id="theme-toggle" class="nav__theme-btn" title="Tema"><i class="ri-sun-line"></i></button>
+          <a href="/" class="btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8rem;"><i class="ri-arrow-left-line"></i> Bosh sahifa</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main container">
+      <article class="case-detail">
+        <span class="case-badge">CHET ELDA TA'LIM KONSALTINGI</span>
+        <h1 class="case-title">HighWay: Sotuv Bo'limini 0 dan Tizimlashtirish</h1>
+
+        <div class="case-meta">
+          <span><i class="ri-calendar-line"></i> Mart 2026 — Iyul 2026 (5 oy)</span>
+          <span><i class="ri-user-star-line"></i> B2B Sotuv Menejeri</span>
+          <span><i class="ri-map-pin-line"></i> Toshkent, O'zbekiston</span>
+        </div>
+
+        <div class="case-grid">
+          <div class="metric-box">
+            <div class="metric-value">40 / oy</div>
+            <div class="metric-label">Xalqaro shartnomalar</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-value">$40,000+</div>
+            <div class="metric-label">Oylik savdo aylanmasi</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-value">3x Tezlik</div>
+            <div class="metric-label">Lidlarni qayta ishlash</div>
+          </div>
+        </div>
+
+        <div class="case-section">
+          <h3><i class="ri-error-warning-line" style="color: #ef4444;"></i> 1. Muammo va Boshlang'ich Holat</h3>
+          <p>
+            Sotuv jamoasi tizimsiz ishlar, kelgan lidlar o'z vaqtida qayta ishlanmas va barqaror oylik shartnoma ko'rsatkichi mavjud emas edi. Menedjerlar e'tirozlarga noaniq javob berar, savdo voronkasi bosqichlari kuzatilmas edi.
+          </p>
+        </div>
+
+        <div class="case-section">
+          <h3><i class="ri-lightbulb-line" style="color: #f59e0b;"></i> 2. Qo'llangan Yechim va Strategiya</h3>
+          <p>
+            Sotuv bo'limi 0 dan to'liq tizimlashtirildi. AmoCRM voronkasi, sotuvchilar uchun SPIN savdo skriptlari va kunlik KPI nazorati o'rnatildi. Sotuvchilar noldan professional darajada o'qitilib, mijozlar bilan muloqot vaqti qisqartirildi.
+          </p>
+        </div>
+
+        <div class="case-section">
+          <h3><i class="ri-checkbox-circle-line" style="color: #22c55e;"></i> 3. Erishilgan Aniq Natijalar</h3>
+          <ul>
+            <li><i class="ri-check-line"></i> Oyiga barqaror <b>40 ta</b> muvaffaqiyatli xalqaro shartnomalarga erishildi.</li>
+            <li><i class="ri-check-line"></i> Oylik savdo aylanmasi <b>$40,000+</b> miqdoriga yetkazildi.</li>
+            <li><i class="ri-check-line"></i> Sotuv jamoasi noldan professional tizimga o'tkazildi.</li>
+            <li><i class="ri-check-line"></i> Lidlar bilan ishlash va konversiya tezligi 3 barobarga oshdi.</li>
+          </ul>
+        </div>
+
+        <div class="case-actions">
+          <a href="https://t.me/muhammadyucufmm" target="_blank" class="btn-primary">
+            Loyiha haqida bog'lanish <i class="ri-arrow-right-up-line"></i>
+          </a>
+          <a href="/" class="btn-secondary">
+            <i class="ri-arrow-left-line"></i> Barcha Keyslar
+          </a>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer grid">
+      <div class="footer__copy">All Rights Reserved By <span>yucufmahmudov</span></div>
+      <div class="footer__year">&#169; <span>2026</span></div>
+    </footer>
+
+    <script src="/static/js/i18n.js?v=30"></script>
+  </body>
+</html>

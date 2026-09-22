@@ -2,7 +2,7 @@
 import os
 import json
 from datetime import datetime
-from flask import Flask, render_template, request, jsonify, redirect, url_for, send_file
+from flask import Flask, render_template, request, jsonify, redirect, url_for, send_file, send_from_directory, Response
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'muhammadyusuf-portfolio-secret-2026'
@@ -197,6 +197,13 @@ from flask import Flask, render_template, request, jsonify, redirect, url_for, s
 @app.route('/')
 def index():
     return render_template('index.html', data=PORTFOLIO_DATA)
+
+@app.route('/keys/<path:filename>')
+def serve_keys(filename):
+    if not filename.endswith('.html'):
+        filename = f"{filename}.html"
+    keys_dir = os.path.join(BASE_DIR, 'keys')
+    return send_from_directory(keys_dir, filename)
 
 @app.route('/robots.txt')
 def robots():
