@@ -36,7 +36,7 @@ const translations = {
     /* ABOUT */
     'about.title.span': "Natijadorlik",
     'about.title.rest': "Va Tizimli Yondashuv",
-    'about.desc': `AmoCRM, tizimli voronka va yuqori chekli muzokaralar orqali biznesingiz savdo aylanmasini yangi bosqichga olib chiqaman.<br><br><b>Nurinvest</b> kompaniyasida <b>$250,000+</b> to'g'ridan-to'g'ri investitsiya jalb qilganman (30 nafar investor). <b>HighWay</b> (chet elga o'qishga jo'natish konsaltingi) loyihasida sotuv bo'limini <b>0 dan butunlay o'zim tizimlashtirib</b>, <b>oyiga 40 ta xalqaro shartnoma</b> va <b>$40,000+ oylik aylanmaga</b> erishganman. Zamonaviy <b>AI va Prompt Engineering</b> texnologiyalari yordamida jamoa tezligi va konversiyasini oshiraman.`,
+    'about.desc': `Ismim Muhammadyusuf. So'nggi yillarda B2B savdo bo'limlarini tartibga solish, AmoCRM orqali voronkani shaffof qilish va jamoalarni boshqarish ustida ishlayapman.<br><br><b>Nurinvest</b> kompaniyasida 30 nafar yirik investor bilan ishlab, <b>$250,000+</b> sarmoya jalb qilishda qatnashdim. <b>HighWay</b> kompaniyasida esa sotuv tizimini <b>0 dan yo'lga qo'yib</b>, oylik shartnomalar sonini <b>40 taga</b> va <b>$40,000+</b> oylik aylanmaga yetkazishga muvaffaq bo'ldik.<br><br>Men har doim avval aniq tizim va qoidalarni o'rnatish, keyin esa uning asosida natijani oshirish tarafdoriman. Bo'sh vaqtimda sun'iy intellekt vositalarini (<b>Prompt Engineering</b>) o'rganib, ularni kundalik savdo amaliyotiga qanday tatbiq qilish ustida tajribalar o'tkazaman.`,
     'about.copy.title': "Raqamni nusxalash",
 
     /* PROJECTS */
@@ -160,7 +160,7 @@ const translations = {
 
     'about.title.span': "Результативность",
     'about.title.rest': "И Системный Подход",
-    'about.desc': `Масштабирую выручку бизнеса через AmoCRM, прозрачные воронки и техники закрытия крупных сделок.<br><br>В компании <b>Nurinvest</b> обеспечил привлечение <b>$250,000+</b> прямых инвестиций (30 инвесторов). В проекте <b>HighWay</b> выстроил отдел продаж <b>с нуля</b>, достигнув <b>40 договоров в месяц</b> и ежемесячного оборота <b>$40,000+</b>. Применяю инструменты <b>AI и Prompt Engineering</b> для ускорения работы команды и роста конверсии.`,
+    'about.desc': `Меня зовут Мухаммадюсуф. Моя основная деятельность сосредоточена на структурировании B2B продаж и автоматизации процессов через AmoCRM.<br><br>В компании <b>Nurinvest</b> обеспечил привлечение <b>$250,000+</b> прямых инвестиций (30 инвесторов). В проекте <b>HighWay</b> с нуля выстроил систему продаж, доведя объем до <b>40 успешных контрактов в месяц</b> и оборота <b>$40,000+</b>.<br><br>В работе придерживаюсь принципа «сначала понятная система и правила, затем масштабирование». Постоянно развиваюсь в сфере <b>Prompt Engineering</b>, внедряя возможности современных языковых моделей в реальные сценарии продаж.`,
     'about.copy.title': "Скопировать номер",
 
     'projects.title.prefix': "Мои Успешные",
@@ -277,7 +277,7 @@ const translations = {
 
     'about.title.span': "Results-Driven",
     'about.title.rest': "& Systematic Approach",
-    'about.desc': `Driving revenue growth through structured AmoCRM pipelines, high-ticket deal negotiation, and disciplined sales management.<br><br>Secured <b>$250,000+</b> in direct investment at <b>Nurinvest</b> (30 investors). At <b>HighWay</b>, built the sales department <b>from scratch</b>, scaling to <b>40 contracts per month</b> and <b>$40,000+ monthly turnover</b>. Leveraging modern <b>AI and Prompt Engineering</b> to accelerate team workflows and boost conversions.`,
+    'about.desc': `My name is Muhammadyusuf. I focus on streamlining B2B sales operations, structuring AmoCRM workflows, and creating predictable sales funnels.<br><br>At <b>Nurinvest</b>, I worked directly with 30 key investors, facilitating over <b>$250,000+</b> in investment capital. Later at <b>HighWay</b>, I built the sales framework <b>from scratch</b>, reaching a consistent pace of <b>40 contracts per month</b> and <b>$40,000+</b> monthly turnover.<br><br>My approach is simple: establish a solid structural foundation first, then scale execution. I also actively integrate <b>Prompt Engineering</b> and AI tools to eliminate friction in daily sales workflows.`,
     'about.copy.title': "Copy number",
 
     'projects.title.prefix': "My Successful",

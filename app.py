@@ -20,7 +20,7 @@ PORTFOLIO_DATA = {
         'Investitsion Konsultant',
         'Prompt Engineer & AI Integrator'
     ],
-    'bio_lead': "B2B va xizmat ko'rsatish kompaniyalarida sotuv bo'limini 0 dan tizimlashtirib, barqaror shartnomalar va yuqori chekli investitsiya kirimini ta'minlovchi B2B Sotuv Menejeri.",
+    'bio_lead': "B2B savdo bo'limlarini tartibga solish, AmoCRM orqali voronkani shaffof qilish va jamoalarni boshqaruvchi B2B Sotuv Menejeri.",
     'bio_details': [
         "24 yoshda, Toshkent shahrida istiqomat qilaman. B2B va B2C sohasida yuqori chekli bitimlarni muvaffaqiyatli yopish va savdo jamoalarini boshqarish bo'yicha 1.5 yildan ortiq samarali tajribaga egaman.",
         "Nurinvest kompaniyasida 30 dan ortiq investorlar bilan ishlab, kompaniyaga $250,000+ miqdorida investitsiya kirimini ta'minlaganman. HighWay (chet elga o'qishga jo'natish konsaltingi) kompaniyasida sotuv bo'limini 0 dan butunlay o'zim tizimlashtirib, sotuvchilarni o'qitish va ilg'or sotuv texnikalari bo'yicha to'liq strategiyalar ishlab chiqqanman — natijada oyiga 40 ta xalqaro shartnoma va $40,000+ oylik aylanmaga erishilgan.",
