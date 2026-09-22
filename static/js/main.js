@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const formData = {
         name: document.getElementById("form-name").value.trim(),
         contact: document.getElementById("form-contact").value.trim(),
-        service: document.getElementById("form-service") ? document.getElementById("form-service").value : "Konsultatsiya",
+        service: document.getElementById("form-service") ? document.getElementById("form-service").value : "Portfolio Xabari",
         message: document.getElementById("form-message").value.trim()
       };
 
