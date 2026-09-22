@@ -13,14 +13,14 @@ MESSAGES_FILE = os.path.join(BASE_DIR, 'messages.json')
 PORTFOLIO_DATA = {
     'name': 'Mahmudov Muhammadyusuf',
     'full_name': "Mahmudov Muhammadyusuf O'tkirjon o'g'li",
-    'role': "Sotuv Bo'limi Rahbari | B2B Savdo Tizimlashtirish | Investitsion Konsultant",
+    'role': "B2B Sotuv Menejeri | Savdo Tizimlashtirish | Investitsion Konsultant",
     'hero_badges': [
-        'Head of Sales',
-        'B2B Sotuv Boshqaruvchisi',
+        'B2B Sales Manager',
+        'B2B Sotuv Menejeri',
         'Investitsion Konsultant',
         'Prompt Engineer & AI Integrator'
     ],
-    'bio_lead': "B2B va xizmat ko'rsatish kompaniyalarida sotuv bo'limini 0 dan tizimlashtirib, barqaror shartnomalar va yuqori chekli investitsiya kirimini ta'minlovchi Sotuv Rahbari.",
+    'bio_lead': "B2B va xizmat ko'rsatish kompaniyalarida sotuv bo'limini 0 dan tizimlashtirib, barqaror shartnomalar va yuqori chekli investitsiya kirimini ta'minlovchi B2B Sotuv Menejeri.",
     'bio_details': [
         "24 yoshda, Toshkent shahrida istiqomat qilaman. B2B va B2C sohasida yuqori chekli bitimlarni muvaffaqiyatli yopish va savdo jamoalarini boshqarish bo'yicha 1.5 yildan ortiq samarali tajribaga egaman.",
         "Nurinvest kompaniyasida 30 dan ortiq investorlar bilan ishlab, kompaniyaga $250,000+ miqdorida investitsiya kirimini ta'minlaganman. HighWay (chet elga o'qishga jo'natish konsaltingi) kompaniyasida sotuv bo'limini 0 dan butunlay o'zim tizimlashtirib, sotuvchilarni o'qitish va ilg'or sotuv texnikalari bo'yicha to'liq strategiyalar ishlab chiqqanman — natijada oyiga 40 ta xalqaro shartnoma va $40,000+ oylik aylanmaga erishilgan.",
@@ -52,7 +52,7 @@ PORTFOLIO_DATA = {
             'company': 'HighWay',
             'company_link': "Chet elda ta'lim konsaltingi (Study Abroad)",
             'location': 'Toshkent',
-            'role': "Sotuv Bo'limi Rahbari | B2B Savdo Tizimlashtirish | Investitsion Konsultant",
+            'role': "B2B Sotuv Menejeri | Savdo Tizimlashtirish | Investitsion Konsultant",
             'period': '2026-yil mart — 2026-yil iyul',
             'duration': '5 oy',
             'badge': 'Yetakchi Keys',
@@ -69,7 +69,7 @@ PORTFOLIO_DATA = {
             'company': 'Nurinvest',
             'company_link': 'Nurinvest | Investment Consultant',
             'location': 'Toshkent',
-            'role': "Sotuv Bo'limi Rahbari | B2B Savdo Tizimlashtirish | Investitsion Konsultant",
+            'role': "B2B Sotuv Menejeri | Savdo Tizimlashtirish | Investitsion Konsultant",
             'period': '2025-yil fevral — 2025-yil dekabr',
             'duration': '10 oy',
             'badge': 'Investitsiya Yutug\'i',

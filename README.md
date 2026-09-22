@@ -1,6 +1,6 @@
 # Mahmudov Muhammadyusuf — Shaxsiy Portfolio Sayti (Python / Flask)
 
-Ushbu portfolio veb-sayti **Mahmudov Muhammadyusuf O'tkirjon o'g'li** (Head of Sales, B2B Manager, Investitsion Konsultant) uchun Python Flask asosida zamonaviy, interaktiv va ultra-professional dizaynda yaratilgan.
+Ushbu portfolio veb-sayti **Mahmudov Muhammadyusuf O'tkirjon o'g'li** (B2B Sotuv Menejeri, Investitsion Konsultant) uchun Python Flask asosida zamonaviy, interaktiv va ultra-professional dizaynda yaratilgan.
 
 ## 🚀 Tezkor Ishga Tushirish (Windows)
 
